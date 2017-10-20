@@ -38,7 +38,8 @@
         <item>Gragas</item>
         <item>Graves</item>
         <item>Hecarim</item>
-        <item>Heimerdinger</item> //this is not a name it is a collection of sounds
+        <item>Heimerdinger</item>
+        //this is not a name it is a collection of sounds
         <item>Illaoi</item>
         <item>Irelia</item>
         <item>Ivern</item>
@@ -71,7 +72,8 @@
         <item>Malzahar</item>
         <item>Maokai</item>
         <item>Master Yi</item>
-        <item>Miss Fortune</item> //fuck you riot
+        <item>Miss Fortune</item>
+        //fuck you riot
         <item>Mordekaiser</item>
         <item>Morgana</item>
         <item>Nami</item>
@@ -80,7 +82,8 @@
         <item>Nidalee</item>
         <item>Nocturne</item>
         <item>Nunu</item>
-        <item>Olaf</item> //The character from Frozen, not the LOL champ
+        <item>Olaf</item>
+        //The character from Frozen, not the LOL champ
         <item>Orianna</item>
         <item>Ornn</item>
         <item>Pantheon</item>
@@ -110,12 +113,14 @@
         <item>Taliyah</item>
         <item>Talon</item>
         <item>Taric</item>
-        <item>Teemo</item> //a MANS champ
+        <item>Teemo</item>
+        //a MANS champ
         <item>Thresh</item>
         <item>Tristana</item>
         <item>Trundle</item>
         <item>Tryndamere</item>
-        <item>Twisted Fate</item> //your name cant be twisted fate thats not a name its a concept wtf
+        <item>Twisted Fate</item>
+        //your name cant be twisted fate thats not a name its a concept wtf
         <item>Twitch</item>
         <item>Udyr</item>
         <item>Urgot</item>
@@ -123,12 +128,14 @@
         <item>Vayne</item>
         <item>Veigar</item>
         <item>Vel\'Koz</item>
-        <item>Vi</item> //i prefer emacs but to each their own
+        <item>Vi</item>
+        //i prefer emacs but to each their own
         <item>Viktor</item>
         <item>Vladimir</item>
         <item>Volibear</item>
         <item>Warwick</item>
-        <item>Wukong</item> //so is there a Sun Wukong variant in every MOBA?
+        <item>Wukong</item>
+        //so is there a Sun Wukong variant in every MOBA?
         <item>Xayah</item>
         <item>Xerath</item>
         <item>Xin Zhao</item>
@@ -141,4 +148,18 @@
         <item>Zyra</item>
 
     </string-array>
+    <string-array name="classes">//are subclasses necessary? This is mainly to aid the randomize
+        wheel, to allow you to pick at random for a specific role
+        <item>Tank</item>
+        //should these in fact be the roles themselves, i.e. mid, adc, jungle, support, solo?
+        <item>Fighter</item>
+        //are those roles more or less clear cut for each champion?
+        <item>Slayer</item>
+        <item>Mage</item>
+        <item>Controller</item>
+        <item>Marksmen</item>
+    </string-array>
+    <string name="title_activity_random_wheel">RandomWheelActivity</string>
+    <string name="random_wheel">Random Wheel</string>
+    <string name="welcome_to_the_random_champ_wheel">Welcome to the Random Champ Wheel!</string>
 </resources>
