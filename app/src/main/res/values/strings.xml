@@ -18,7 +18,7 @@
         <item>Caitlyn</item>
         <item>Camille</item>
         <item>Cassiopeia</item>
-        <item>Cho'Gath</item>
+        <item>Cho\'Gath</item>
         <item>Corki</item>
         <item>Darius</item>
         <item>Diana</item>
@@ -38,7 +38,7 @@
         <item>Gragas</item>
         <item>Graves</item>
         <item>Hecarim</item>
-        <item>Heimerdinger</item> //this is not a word i swear it
+        <item>Heimerdinger</item> //this is not a name it is a collection of sounds
         <item>Illaoi</item>
         <item>Irelia</item>
         <item>Ivern</item>
@@ -56,10 +56,10 @@
         <item>Kayle</item>
         <item>Kayn</item>
         <item>Kennen</item>
-        <item>Kha'Zix</item>
+        <item>Kha\'Zix</item>
         <item>Kindred</item>
         <item>Kled</item>
-        <item>Kog'Maw</item>
+        <item>Kog\'Maw</item>
         <item>LeBlanc</item>
         <item>Lee Sin</item>
         <item>Leona</item>
@@ -88,7 +88,7 @@
         <item>Quinn</item>
         <item>Rakan</item>
         <item>Rammus</item>
-        <item>Rek'Sai</item>
+        <item>Rek\'Sai</item>
         <item>Renekton</item>
         <item>Rengar</item>
         <item>Riven</item>
@@ -122,7 +122,7 @@
         <item>Varus</item>
         <item>Vayne</item>
         <item>Veigar</item>
-        <item>Vel'Koz</item>
+        <item>Vel\'Koz</item>
         <item>Vi</item> //i prefer emacs but to each their own
         <item>Viktor</item>
         <item>Vladimir</item>
