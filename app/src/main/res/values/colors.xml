@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="darkTeal">#0A3B3F</color>
+    <color name="gold">#C2771A</color>
+    <color name="black">#080808</color>
+    <color name="purple">#331232</color>
+    <color name="lightTeal">#0A7F87</color>
 </resources>
