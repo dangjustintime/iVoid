@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.ivoid.MainActivity">
-
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:subtitleTextColor="@color/colorAccent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <android.support.v7.view.menu.ActionMenuItemView
+                android:id="@+id/action_menu_item_view_champions"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Champions"
+                android:autoSizeMinTextSize="30dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <android.support.v7.view.menu.ActionMenuItemView
+                android:id="@+id/action_menu_item_view_items"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Items"
+                android:autoSizeMinTextSize="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="gravity"
+                android:gravity="center"/>
+            <android.support.v7.view.menu.ActionMenuItemView
+                android:id="@+id/action_menu_item_view_updates"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Updates"
+                android:autoSizeMinTextSize="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="gravity"
+                android:gravity="center"/>
+            <android.support.v7.view.menu.ActionMenuItemView
+                android:id="@+id/action_menu_item_view_random"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Random"
+                android:autoSizeMinTextSize="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="gravity"
+                android:gravity="center"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -20,4 +72,4 @@
         android:text="@string/random_wheel"
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="48dp" />
-</RelativeLayout>
+</LinearLayout>
