@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">iVoid</string>
+    <string name="api_url">https://na1.api.riotgames.com/lol/</string>
+    <string name="api_key">RGAPI-dedadd91-b407-446e-820f-ecef7f2fb09d</string>
     <string-array name="characters">
         <item>Aatrox</item>
         <item>Ahri</item>
