@@ -31,7 +31,7 @@ public class RandomWheelActivity extends AppCompatActivity {
         mChampWheel = (LuckyWheel) findViewById(R.id.champwheel);
         mSpinWheel = (Button) findViewById(R.id.spinButton);
         List<WheelItem> wheelItems = new ArrayList<>();
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 40; i++)
         {
             if(i%2==0)
             {
