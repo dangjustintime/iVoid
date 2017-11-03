@@ -4,6 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.util.Log;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.example.ivoid.Dto.*;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,4 +26,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (MainActivity.this, RandomWheelActivity.class);
         startActivity(intent);
     }
+    public void updateData() throws IOException {
+        /* download a new json file here */
+
+        // Copy all data into a Java object
+        try(Reader reader = new InputStreamReader(MainActivity.class.getResourceAsStream("items.json"), "UTF-8")){
+            Gson gson = new GsonBuilder().create();
+            ItemListDto itemList = gson.fromJson(reader, ItemListDto.class);
+            Log.v("ITEM LIST: ",itemList.version);
+
+        }
+    }
+
+
+
 }
