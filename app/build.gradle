@@ -21,7 +21,11 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    //luckywheel
     compile 'com.github.mmoamenn:LuckyWheel_Android:0.0.2'
+    //RIOT API WRAPPER, usage is dependant on recieving a riot api
+    //https://github.com/taycaldwell/riot-api-java
+    compile 'com.github.taycaldwell:riot-api-java:4.0.1'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

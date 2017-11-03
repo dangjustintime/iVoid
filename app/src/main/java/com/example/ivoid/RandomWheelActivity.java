@@ -31,13 +31,19 @@ public class RandomWheelActivity extends AppCompatActivity {
         mChampWheel = (LuckyWheel) findViewById(R.id.champwheel);
         mSpinWheel = (Button) findViewById(R.id.spinButton);
         List<WheelItem> wheelItems = new ArrayList<>();
-        wheelItems.add(new WheelItem(Color.RED, convertStringToBitmap("Hello World!")));
-        wheelItems.add(new WheelItem(Color.GREEN, convertStringToBitmap("Goodbye World!")));
-        wheelItems.add(new WheelItem(Color.BLUE, convertStringToBitmap("Goodbye World!")));
-        wheelItems.add(new WheelItem(R.color.gold, convertStringToBitmap("LOL!")));
-        wheelItems.add(new WheelItem(Color.RED, convertStringToBitmap("Goodbye World!")));
-        wheelItems.add(new WheelItem(Color.GREEN, convertStringToBitmap("Goodbye World!")));
-        wheelItems.add(new WheelItem(Color.BLUE, convertStringToBitmap("Goodbye World!")));
+        for(int i = 0; i < 100; i++)
+        {
+            if(i%2==0)
+            {
+                wheelItems.add(new WheelItem(Color.RED, convertStringToBitmap("Hello World!")));
+            }
+            else if(i%3==0)
+            {
+                wheelItems.add(new WheelItem(Color.BLUE, convertStringToBitmap("Goodbye World!")));
+            }
+            else
+                wheelItems.add(new WheelItem(Color.GREEN, convertStringToBitmap("I Smell!")));
+        }
         mChampWheel.addWheelItems(wheelItems);
 
         mSpinWheel.setOnClickListener(new View.OnClickListener() {
