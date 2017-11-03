@@ -164,4 +164,8 @@
     <string name="title_activity_random_wheel">RandomWheelActivity</string>
     <string name="random_wheel">Random Wheel</string>
     <string name="welcome_to_the_random_champ_wheel">Welcome to the Random Champ Wheel!</string>
+    <string name="champion_button">Champion Button</string>
+    <string name="items_button">Items Button</string>
+    <string name="updates_button">Updates Button</string>
+    <string name="random_button">Random Button</string>
 </resources>
