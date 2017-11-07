@@ -15,6 +15,8 @@ import com.bluehomestudio.luckywheel.WheelItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 /**
  * Created by Gage on 10/20/2017.
  */
@@ -49,7 +51,7 @@ public class RandomWheelActivity extends AppCompatActivity {
         mSpinWheel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mChampWheel.rotateWheelTo(0);
+                mChampWheel.rotateWheelTo(ThreadLocalRandom.current().nextInt(0, 39 + 1));
             }
         });
 

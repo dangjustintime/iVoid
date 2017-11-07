@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iVoid.iml" filepath="$PROJECT_DIR$/iVoid.iml" />
       <module fileurl="file://C:\Users\Gage\Documents\softwareengineering\iVoid1\iVoid.iml" filepath="C:\Users\Gage\Documents\softwareengineering\iVoid1\iVoid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/iVoid1.iml" filepath="$PROJECT_DIR$/iVoid1.iml" />
       <module fileurl="file://C:\Users\Justin Dang\Desktop\iVoid\iVoid1.iml" filepath="C:\Users\Justin Dang\Desktop\iVoid\iVoid1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iVoid1.iml" filepath="$PROJECT_DIR$/iVoid1.iml" />
     </modules>
   </component>
 </project>

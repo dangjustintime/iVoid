@@ -26,11 +26,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (MainActivity.this, RandomWheelActivity.class);
         startActivity(intent);
     }
-    public void updateData() throws IOException {
-        /* download a new json file here */
-
-        // Copy all data into a Java object
-        try(Reader reader = new InputStreamReader(MainActivity.class.getResourceAsStream("items.json"), "UTF-8")){
+    public void updateData(View v) throws IOException {
+        try(Reader reader = new InputStreamReader(MainActivity.class.getResourceAsStream("assets/items.json"), "UTF-8")){
             Gson gson = new GsonBuilder().create();
             ItemListDto itemList = gson.fromJson(reader, ItemListDto.class);
             Log.v("ITEM LIST: ",itemList.version);
