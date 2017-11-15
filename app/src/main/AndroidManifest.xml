@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RandomWheelActivity"/>
+        <activity android:name=".RandomWheelActivity" />
+        <activity android:name=".ItemsActivity" />
+        <activity android:name=".ChampionsActivity" />
+        <activity android:name=".UpdatesActivity"></activity>
     </application>
 
 </manifest>

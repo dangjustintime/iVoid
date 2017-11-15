@@ -13,34 +13,37 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/image_button_items"
+            android:id="@+id/image_button_items_main"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/items_button"
-            app:srcCompat="@android:drawable/btn_dialog" />
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:onClick="itemsClick"/>
 
         <ImageButton
-            android:id="@+id/image_button_champions"
+            android:id="@+id/image_button_champions_main"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/champion_button"
-            app:srcCompat="@mipmap/ic_launcher" />
+            app:srcCompat="@mipmap/ic_launcher"
+            android:onClick="championsClick"/>
 
         <ImageButton
-            android:id="@+id/image_button_updates"
+            android:id="@+id/image_button_updates_main"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/updates_button"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:onClick="updatesClick"/>
 
         <ImageButton
-            android:id="@+id/image_button_random"
+            android:id="@+id/image_button_random_main"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
