@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ivoid.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_button_items_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/items_button"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:onClick="itemsClick"/>
+
+        <ImageButton
+            android:id="@+id/image_button_champions_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/champion_button"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:onClick="championsClick"/>
+
+        <ImageButton
+            android:id="@+id/image_button_updates_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/updates_button"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:onClick="updatePage"/>
+
+        <ImageButton
+            android:id="@+id/image_button_random_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/random_button"
+            android:onClick="randomClick"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="144dp"
+        android:onClick="randomClick"
+        android:text="@string/random_wheel"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:onClick="updateData"
+        android:text="Update Data"
+        android:textAlignment="center" />
+
+</LinearLayout>
