@@ -1,6 +1,7 @@
 package com.example.ivoid;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -50,11 +51,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void updatesClick(View v) {
-        //Start ItemsActivity
-        Intent intent = new Intent (MainActivity.this, UpdatesActivity.class);
-        startActivity(intent);
-    }
 
     public void randomClick(View v) {
         //Start RandomWheelActivity
@@ -69,7 +65,23 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    public void updatesClick(View v){
 
+        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://na.leagueoflegends.com/en/news/game-updates/patch/patch-722-notes"));
+        //    startActivity(intent);
+
+        String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-722-notes";
+
+        if (!url.startsWith("http://") && !url.startsWith("https://"))
+            url = "http://" + url;
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+
+
+
+    }
 
 
 }
