@@ -7,6 +7,7 @@
     tools:context="com.example.ivoid.ItemInfoActivity"
     android:orientation="vertical">
     <TextView
+        android:id="@+id/item_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Health Potion"
