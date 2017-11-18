@@ -168,4 +168,37 @@
     <string name="items_button">Items Button</string>
     <string name="updates_button">Updates Button</string>
     <string name="random_button">Random Button</string>
+    //item icon urls
+    <string-array name="item_icon_urls">
+        //starter items
+        <item name="Cull">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/33/Cull_item.png/revision/latest/scale-to-width-down/64?cb=20161029063344</item>
+        <item name="Doran's Blade">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3f/Doran%27s_Blade_item.png/revision/latest?cb=20130319090302</item>
+        <item name="Doran's Ring">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2d/Doran%27s_Ring_item.png/revision/latest?cb=20130319094421</item>
+        <item name="Doran's Shield">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ea/Doran%27s_Shield_item.png/revision/latest?cb=20170506230015</item>
+        <item name="Guardian's Hammer">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/87/Guardian%27s_Hammer_item.png/revision/latest/scale-to-width-down/64?cb=20170217212310</item>
+        <item name="Guardian's Horn">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/61/Guardian%27s_Horn_item.png/revision/latest?cb=20130511141513</item>
+        <item name="Guardian's Orb">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c2/Orb_of_Winter_item.png/revision/latest/scale-to-width-down/64?cb=20170217052756</item>
+        //consumables
+        <item name="Control Ward">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1b/Control_Ward_item.png/revision/latest?cb=20170506221602</item>
+        <item name="Corrupting Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/87/Corrupting_Potion_item.png/revision/latest?cb=20170506221015</item>
+        <item name="Elixir of Iron">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/65/Elixir_of_Iron_item.png/revision/latest/scale-to-width-down/64?cb=20170409190007</item>
+        <item name="Elixir of Sorcery">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/27/Elixir_of_Sorcery_item.png/revision/latest/scale-to-width-down/64?cb=20170409190014</item>
+        <item name="Elixir of Wrath">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/62/Elixir_of_Wrath_item.png/revision/latest/scale-to-width-down/64?cb=20170409190015</item>
+        <item name="Entropy Field">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/93/Entropy_Field_item.png/revision/latest/scale-to-width-down/40?cb=20171113035914</item>
+        <item name="Espresso Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/52/Espresso_Snax_item.png/revision/latest/scale-to-width-down/40?cb=20161122214249</item>
+        <item name="Flash Zone">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/04/Flash_Zone_item.png/revision/latest/scale-to-width-down/40?cb=20171113035914</item>
+        <item name="Frosted Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a9/Frosted_Snax_item.png/revision/latest/scale-to-width-down/20?cb=20170506220635</item>
+        <item name="Health Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/13/Health_Potion_item.png/revision/latest?cb=20140115130243</item>
+        <item name="Hunters Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/63/Hunter%27s_Potion_item.png/revision/latest/scale-to-width-down/40?cb=20161029061848</item>
+        <item name="Oracles Extract">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a2/Oracle%27s_Extract_item.png/revision/latest?cb=20130110022424</item>
+        <item name="Port Pad">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cf/Port_Pad_item.png/revision/latest/scale-to-width-down/40?cb=20171113035915</item>
+        <item name="Rainbow Snax Party Pack!">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/ba/Rainbow_Snax_Party_Pack%21_item.png/revision/latest/scale-to-width-down/40?cb=20161122214249</item>
+        <item name="Refillable Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7f/Refillable_Potion_item.png/revision/latest?cb=20170629164821</item>
+        <item name="Shield Totem">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ac/Shield_Totem_item.png/revision/latest/scale-to-width-down/40?cb=20171113035915</item>
+        <item name="Siege Ballista">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/14/Siege_Ballista_item.png/revision/latest/scale-to-width-down/40?cb=20171113035916</item>
+        <item name="Super Spicy Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/64/Super_Spicy_Snax_item.png/revision/latest/scale-to-width-down/40?cb=20161122214248</item>
+        <item name="Tower: Beam of Ruination">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/00/Tower-_Beam_of_Ruination_item.png/revision/latest/scale-to-width-down/40?cb=20171113035916</item>
+        <item name="Tower: Storm Bulwark">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c6/Tower-_Storm_Bulwark_item.png/revision/latest/scale-to-width-down/40?cb=20171113035917</item>
+        <item name="Vanguard Banner">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/74/Vanguard_Banner_item.png/revision/latest/scale-to-width-down/40?cb=20171113035917</item>
+    </string-array>
 </resources>
