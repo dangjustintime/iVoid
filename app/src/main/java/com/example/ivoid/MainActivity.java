@@ -64,17 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void updatesClick(View v) {
         //Start UpdatesActivity
-        Intent intent = new Intent (MainActivity.this, UpdatesActivity.class);
+        Intent intent = new Intent(MainActivity.this, UpdatesActivity.class);
         startActivity(intent);
-    }
-
-    public void updateData(View v) throws IOException {
-        try(Reader reader = new InputStreamReader(MainActivity.class.getResourceAsStream("assets/items.json"), "UTF-8")){
-            Gson gson = new GsonBuilder().create();
-            ItemListDto itemList = gson.fromJson(reader, ItemListDto.class);
-            Log.v("ITEM LIST: ",itemList.version);
-
-        }
     }
 
 }
