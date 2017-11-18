@@ -1,8 +1,10 @@
 package com.example.ivoid;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -45,5 +47,11 @@ public class ChampionsActivity extends AppCompatActivity {
         super.onPostExecute(result);
         if(result != null)
             Toast.makeText(ChampionsActivity.this, String.valueOf(result.getSummonerLevel()), Toast.LENGTH_SHORT).show();}
+    }
+
+    public void championInfoClick(View v) {
+        //Start ItemsActivity
+        Intent intent = new Intent (ChampionsActivity.this, ChampionInfoActivity.class);
+        startActivity(intent);
     }
 }

@@ -200,5 +200,15 @@
         <item name="Tower: Beam of Ruination">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/00/Tower-_Beam_of_Ruination_item.png/revision/latest/scale-to-width-down/40?cb=20171113035916</item>
         <item name="Tower: Storm Bulwark">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c6/Tower-_Storm_Bulwark_item.png/revision/latest/scale-to-width-down/40?cb=20171113035917</item>
         <item name="Vanguard Banner">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/74/Vanguard_Banner_item.png/revision/latest/scale-to-width-down/40?cb=20171113035917</item>
+        //trinkets
+        <item name="Arcane Sweeper">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8d/Hextech_Sweeper_item.png/revision/latest?cb=20130319090439</item>
+        <item name="Farsight Alteration">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/75/Farsight_Alteration_item.png/revision/latest?cb=20151101000720</item>
+        <item name="Golden Transcendence">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/eb/Golden_Transcendence_item.png/revision/latest?cb=20150821061629</item>
+        <item name="Oracle Alteration">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cb/Oracle_Alteration_item.png/revision/latest?cb=20170506221931</item>
+        <item name="Seer Stone">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3c/Seer_Stone_item.png/revision/latest?cb=20170806091249</item>
+        <item name="Siege Sight Warder">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d1/Stealth_Ward_%28Item%29_item.png/revision/latest?cb=20130319091502</item>
+        <item name="Soul Anchor">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a4/Soul_Anchor_item.png/revision/latest/scale-to-width-down/64?cb=20140423000717</item>
+        <item name="Sweeping Lens">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a5/Sweeping_Lens_item.png/revision/latest?cb=20170409215623</item>
+        <item name="Warding Totem">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e2/Warding_Totem_item.png/revision/latest?cb=20170409215530</item>
     </string-array>
 </resources>

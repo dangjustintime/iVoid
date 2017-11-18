@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ivoid.UpdatesActivity">
+    tools:context="com.example.ivoid.UpdatesActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="updates"
-        android:textSize="100dp" />
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/patch_notes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patch Notes"
+        android:onClick="patchNotesClick"
+        />
+    <Button
+        android:id="@+id/latest_news_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest News"
+        android:onClick="latestNewsClick"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

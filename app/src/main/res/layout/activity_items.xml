@@ -39,5 +39,11 @@
         android:layout_height="wrap_content"
         android:scrollbars="vertical">
     </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/item_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Info Activity"
+        android:onClick="itemsInfoClick"/>
 
 </LinearLayout>
