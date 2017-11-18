@@ -12,10 +12,9 @@ import net.rithms.riot.api.RiotApi;
 public class MyApi extends Application {
     private RiotApi api;
     public MyApi(){
-        ApiConfig config = new ApiConfig().setKey("RGAPI-a398042b-97b2-4372-a7f4-78dfcf138e15");
+        ApiConfig config = new ApiConfig().setKey("RGAPI-8a25c8ed-87a7-473d-bab7-a0db87c835e2");
         this.api = new RiotApi(config);
     }
-
     public RiotApi getApi() {
         return api;
     }

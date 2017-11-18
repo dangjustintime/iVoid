@@ -16,5 +16,4 @@ public class ItemListDto {
 	Map<String, ItemDto> data;
 	public String version;
 	ItemTreeDto tree[];
-
 }

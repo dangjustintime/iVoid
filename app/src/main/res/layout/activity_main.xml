@@ -30,7 +30,7 @@
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/items_button"
-                app:srcCompat="@android:drawable/btn_dialog"
+                android:src="@drawable/item_icon"
                 android:onClick="itemsClick"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -53,7 +53,8 @@
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/champion_button"
-                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/amumu"
+                android:scaleType="fitCenter"
                 android:onClick="championsClick"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -75,7 +76,8 @@
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/updates_button"
-                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:src="@drawable/exclamation"
+                android:scaleType="fitCenter"
                 android:onClick="updatesClick"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -95,9 +97,9 @@
                 android:id="@+id/image_button_random_main"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@android:color/transparent"
                 android:contentDescription="@string/random_button"
-                app:srcCompat="@android:drawable/checkbox_on_background"
+                android:src="@drawable/dice"
+                android:scaleType="fitXY"
                 android:onClick="randomClick"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -108,20 +110,4 @@
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="randomClick"
-        android:text="@string/random_wheel" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
-        android:elevation="0dp"
-        android:onClick="updateData"
-        android:text="Update Data"
-        android:textAlignment="center" />
-
 </LinearLayout>

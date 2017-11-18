@@ -1,25 +1,21 @@
 package com.example.ivoid;
 
 import android.content.Intent;
-import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
-import com.example.ivoid.Dto.ItemListDto;
-
-import net.rithms.riot.api.RiotApiException;
-import net.rithms.riot.api.endpoints.summoner.dto.Summoner;
-import net.rithms.riot.constant.Platform;
+import com.example.ivoid.Model.ItemListAdapter;
 
 public class ItemsActivity extends AppCompatActivity {
     //views
     private RecyclerView itemsRecyclerView;
     private RecyclerView.Adapter itemsRecyclerViewAdapter;
     private RecyclerView.LayoutManager itemsRecyclerViewLayoutManager;
+
+    ItemListAdapter itemListAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +26,11 @@ public class ItemsActivity extends AppCompatActivity {
         itemsRecyclerView.hasFixedSize();
         itemsRecyclerViewLayoutManager = new LinearLayoutManager(this);
         itemsRecyclerView.setLayoutManager(itemsRecyclerViewLayoutManager);
+
+
+        //String blah = itemListAdapter.
+
+        //Toast.makeText()
     }
     public void itemsInfoClick(View v) {
         //Start ItemsActivity
