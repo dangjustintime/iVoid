@@ -110,8 +110,6 @@
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
     </LinearLayout>
-<<<<<<< HEAD
-=======
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -119,5 +117,4 @@
         android:onClick="randomClick"
         android:text="@string/random_wheel" />
 
->>>>>>> 6628ea8c08bbb7800d3f4d731972fcbd7057dd81
 </LinearLayout>
