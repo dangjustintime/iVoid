@@ -37,14 +37,14 @@ public class RandomWheelActivity extends AppCompatActivity {
         {
             if(i%2==0)
             {
-                wheelItems.add(new WheelItem(Color.RED, convertStringToBitmap("Hello World!")));
+                wheelItems.add(new WheelItem(Color.LTGRAY, convertStringToBitmap("Hello World!")));
             }
             else if(i%3==0)
             {
-                wheelItems.add(new WheelItem(Color.BLUE, convertStringToBitmap("Goodbye World!")));
+                wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap("Goodbye World!")));
             }
             else
-                wheelItems.add(new WheelItem(Color.GREEN, convertStringToBitmap("I Smell!")));
+                wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap("I Smell!")));
         }
         mChampWheel.addWheelItems(wheelItems);
 
