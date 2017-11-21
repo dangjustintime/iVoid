@@ -1,9 +1,11 @@
 package com.example.ivoid;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
@@ -13,12 +15,20 @@ import net.rithms.riot.constant.Platform;
 
 public class ChampionsActivity extends AppCompatActivity {
 
+    private CardView championCardView;
+
+
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
         FetchSummonerTask summonerTask = new FetchSummonerTask();
         summonerTask.execute("tryndamere");
+
+        championCardView = (CardView) findViewById(R.id.champion_card_view);
+        championCardView.setCardBackgroundColor(R.color.lightGray);
+
     }
     public class FetchSummonerTask extends AsyncTask<String, Void, Summoner> {
 

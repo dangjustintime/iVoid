@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.ivoid.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/velkoz" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -64,36 +70,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <ImageButton
-                android:id="@+id/image_button_updates_main"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/updates_button"
-                android:src="@drawable/exclamation"
-                android:scaleType="fitCenter"
-                android:onClick="updatesClick"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Updates"
-                android:textStyle="bold"
-                android:textSize="12dp"
-                android:textColor="@color/colorAccent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <ImageButton
                 android:id="@+id/image_button_random_main"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:contentDescription="@string/random_button"
                 android:src="@drawable/dice"
                 android:scaleType="fitXY"
-                android:onClick="randomClick"/>
+                android:onClick="randomClick"
+                android:background="@color/lightGray"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -103,11 +87,28 @@
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="randomClick"
-        android:text="@string/random_wheel" />
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/patch_notes_button"
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:onClick="patchNotesClick"
+            android:text="Patch Notes"
+            android:background="@color/lightGray"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/latest_news_button"
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:onClick="latestNewsClick"
+            android:text="Latest News Click"
+            android:background="@color/lightGray"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
 
 </LinearLayout>

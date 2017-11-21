@@ -33,6 +33,7 @@
             android:src="@drawable/ic_sort_white_48dp"/>
     </LinearLayout>
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/champion_card_view"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +42,6 @@
         android:onClick="championInfoClick"
         android:layout_margin="8dp">
         <LinearLayout
-            android:id="@+id/champion_card_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
