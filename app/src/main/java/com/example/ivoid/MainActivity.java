@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //bind views to layout views
-        velKozImageView = (ImageView) findViewById(R.id.vel_koz_image_view);
+        // velKozImageView = (ImageView) findViewById(R.id.vel_koz_image_view);
         itemsImageButton = (ImageButton) findViewById(R.id.image_button_items_main);
         championsImageButton = (ImageButton) findViewById(R.id.image_button_champions_main);
         updatesImageButton = (ImageButton) findViewById(R.id.image_button_updates_main);

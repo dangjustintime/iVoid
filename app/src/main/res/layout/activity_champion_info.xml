@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context="com.example.ivoid.ItemInfoActivity">
 
@@ -11,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,6 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:paddingLeft="10dp"
                 android:text="Vel'Koz"
                 android:textSize="30dp"
                 android:textStyle="bold" />
@@ -29,14 +33,31 @@
                 android:id="@+id/champion_title_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The Eye of the Void" />
+                android:paddingLeft="10dp"
+                android:text="The Eye of the Void"
+                android:textSize="18sp" />
         </LinearLayout>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            app:srcCompat="@drawable/unplayed_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/mage" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/middle_icon" />
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,13 +67,15 @@
             android:id="@+id/champion_icon_image_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/velkoz2" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -102,13 +125,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:background="@color/info_background"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/fab_margin"
+        android:paddingVertical="@dimen/fab_margin">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Description"
-            android:textSize="20dp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
@@ -116,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Limited to 5 at one time. Limited to 1 type of Healing Potion. Click to Consume: Restores 150 Health over 15 seconds."
-            android:textSize="20dp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>
