@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">iVoid</string>
+    <string name="api_url">https://na1.api.riotgames.com/lol/</string>
+    <string name="api_key">RGAPI-dedadd91-b407-446e-820f-ecef7f2fb09d</string>
+    <string name="patch_notes">Patch Notes</string>
+    <string name="latest_news">Latest News</string>
+    <string-array name="characters">
+        <item>Aatrox</item>
+        <item>Ahri</item>
+        <item>Akali</item>
+        <item>Alistar</item>
+        <item>Amumu</item>
+        <item>Anivia</item>
+        <item>Annie</item>
+        <item>Ashe</item>
+        <item>Aurelion</item>
+        <item>Azir</item>
+        <item>Bard</item>
+        <item>Blitzcrank</item>
+        <item>Brand</item>
+        <item>Braum</item>
+        <item>Caitlyn</item>
+        <item>Camille</item>
+        <item>Cassiopeia</item>
+        <item>Cho\'Gath</item>
+        <item>Corki</item>
+        <item>Darius</item>
+        <item>Diana</item>
+        <item>Dr. Mundo</item>
+        <item>Draven</item>
+        <item>Ekko</item>
+        <item>Elise</item>
+        <item>Evelynn</item>
+        <item>Ezreal</item>
+        <item>Fiddlesticks</item>
+        <item>Fiora</item>
+        <item>Fizz</item>
+        <item>Galio</item>
+        <item>Gangplank</item>
+        <item>Garen</item>
+        <item>Gnar</item>
+        <item>Gragas</item>
+        <item>Graves</item>
+        <item>Hecarim</item>
+        <item>Heimerdinger</item>
+        //this is not a name it is a collection of sounds
+        <item>Illaoi</item>
+        <item>Irelia</item>
+        <item>Ivern</item>
+        <item>Janna</item>
+        <item>Jarvan</item>
+        <item>Jax</item>
+        <item>Jayce</item>
+        <item>Jhin</item>
+        <item>Jinx</item>
+        <item>Kalista</item>
+        <item>Karma</item>
+        <item>Karthus</item>
+        <item>Kassadin</item>
+        <item>Katarina</item>
+        <item>Kayle</item>
+        <item>Kayn</item>
+        <item>Kennen</item>
+        <item>Kha\'Zix</item>
+        <item>Kindred</item>
+        <item>Kled</item>
+        <item>Kog\'Maw</item>
+        <item>LeBlanc</item>
+        <item>Lee Sin</item>
+        <item>Leona</item>
+        <item>Lissandra</item>
+        <item>Lucian</item>
+        <item>Lulu</item>
+        <item>Lux</item>
+        <item>Malphite</item>
+        <item>Malzahar</item>
+        <item>Maokai</item>
+        <item>Master Yi</item>
+        <item>Miss Fortune</item>
+        //fuck you riot
+        <item>Mordekaiser</item>
+        <item>Morgana</item>
+        <item>Nami</item>
+        <item>Nasus</item>
+        <item>Nautilus</item>
+        <item>Nidalee</item>
+        <item>Nocturne</item>
+        <item>Nunu</item>
+        <item>Olaf</item>
+        //The character from Frozen, not the LOL champ
+        <item>Orianna</item>
+        <item>Ornn</item>
+        <item>Pantheon</item>
+        <item>Poppy</item>
+        <item>Quinn</item>
+        <item>Rakan</item>
+        <item>Rammus</item>
+        <item>Rek\'Sai</item>
+        <item>Renekton</item>
+        <item>Rengar</item>
+        <item>Riven</item>
+        <item>Rumble</item>
+        <item>Ryze</item>
+        <item>Sejuani</item>
+        <item>Shaco</item>
+        <item>Shen</item>
+        <item>Shyvana</item>
+        <item>Singed</item>
+        <item>Sion</item>
+        <item>Sivir</item>
+        <item>Skarner</item>
+        <item>Sona</item>
+        <item>Soraka</item>
+        <item>Swain</item>
+        <item>Syndra</item>
+        <item>Tahm Kench</item>
+        <item>Taliyah</item>
+        <item>Talon</item>
+        <item>Taric</item>
+        <item>Teemo</item>
+        //a MANS champ
+        <item>Thresh</item>
+        <item>Tristana</item>
+        <item>Trundle</item>
+        <item>Tryndamere</item>
+        <item>Twisted Fate</item>
+        //your name cant be twisted fate thats not a name its a concept wtf
+        <item>Twitch</item>
+        <item>Udyr</item>
+        <item>Urgot</item>
+        <item>Varus</item>
+        <item>Vayne</item>
+        <item>Veigar</item>
+        <item>Vel\'Koz</item>
+        <item>Vi</item>
+        //i prefer emacs but to each their own
+        <item>Viktor</item>
+        <item>Vladimir</item>
+        <item>Volibear</item>
+        <item>Warwick</item>
+        <item>Wukong</item>
+        //so is there a Sun Wukong variant in every MOBA?
+        <item>Xayah</item>
+        <item>Xerath</item>
+        <item>Xin Zhao</item>
+        <item>Yasuo</item>
+        <item>Yorick</item>
+        <item>Zac</item>
+        <item>Zed</item>
+        <item>Ziggs</item>
+        <item>Zilean</item>
+        <item>Zyra</item>
+
+    </string-array>
+    <string-array name="classes">//are subclasses necessary? This is mainly to aid the randomize
+        wheel, to allow you to pick at random for a specific role
+        <item>Tank</item>
+        //should these in fact be the roles themselves, i.e. mid, adc, jungle, support, solo?
+        <item>Fighter</item>
+        //are those roles more or less clear cut for each champion?
+        <item>Slayer</item>
+        <item>Mage</item>
+        <item>Controller</item>
+        <item>Marksmen</item>
+    </string-array>
+    <string name="title_activity_random_wheel">RandomWheelActivity</string>
+    <string name="random_wheel">Random Wheel</string>
+    <string name="welcome_to_the_random_champ_wheel">Welcome to the Random Champ Wheel!</string>
+    <string name="champion_button">Champion Button</string>
+    <string name="items_button">Items Button</string>
+    <string name="updates_button">Updates Button</string>
+    <string name="random_button">Random Button</string>
+    //item icon urls
+    <string-array name="item_icon_urls">
+        //starter items
+        <item name="Cull">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/33/Cull_item.png/revision/latest/scale-to-width-down/64?cb=20161029063344</item>
+        <item name="Doran's Blade">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3f/Doran%27s_Blade_item.png/revision/latest?cb=20130319090302</item>
+        <item name="Doran's Ring">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2d/Doran%27s_Ring_item.png/revision/latest?cb=20130319094421</item>
+        <item name="Doran's Shield">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ea/Doran%27s_Shield_item.png/revision/latest?cb=20170506230015</item>
+        <item name="Guardian's Hammer">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/87/Guardian%27s_Hammer_item.png/revision/latest/scale-to-width-down/64?cb=20170217212310</item>
+        <item name="Guardian's Horn">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/61/Guardian%27s_Horn_item.png/revision/latest?cb=20130511141513</item>
+        <item name="Guardian's Orb">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c2/Orb_of_Winter_item.png/revision/latest/scale-to-width-down/64?cb=20170217052756</item>
+        //consumables
+        <item name="Control Ward">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1b/Control_Ward_item.png/revision/latest?cb=20170506221602</item>
+        <item name="Corrupting Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/87/Corrupting_Potion_item.png/revision/latest?cb=20170506221015</item>
+        <item name="Elixir of Iron">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/65/Elixir_of_Iron_item.png/revision/latest/scale-to-width-down/64?cb=20170409190007</item>
+        <item name="Elixir of Sorcery">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/27/Elixir_of_Sorcery_item.png/revision/latest/scale-to-width-down/64?cb=20170409190014</item>
+        <item name="Elixir of Wrath">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/62/Elixir_of_Wrath_item.png/revision/latest/scale-to-width-down/64?cb=20170409190015</item>
+        <item name="Entropy Field">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/93/Entropy_Field_item.png/revision/latest/scale-to-width-down/40?cb=20171113035914</item>
+        <item name="Espresso Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/52/Espresso_Snax_item.png/revision/latest/scale-to-width-down/40?cb=20161122214249</item>
+        <item name="Flash Zone">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/04/Flash_Zone_item.png/revision/latest/scale-to-width-down/40?cb=20171113035914</item>
+        <item name="Frosted Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a9/Frosted_Snax_item.png/revision/latest/scale-to-width-down/20?cb=20170506220635</item>
+        <item name="Health Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/13/Health_Potion_item.png/revision/latest?cb=20140115130243</item>
+        <item name="Hunters Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/63/Hunter%27s_Potion_item.png/revision/latest/scale-to-width-down/40?cb=20161029061848</item>
+        <item name="Oracles Extract">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a2/Oracle%27s_Extract_item.png/revision/latest?cb=20130110022424</item>
+        <item name="Port Pad">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cf/Port_Pad_item.png/revision/latest/scale-to-width-down/40?cb=20171113035915</item>
+        <item name="Rainbow Snax Party Pack!">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/ba/Rainbow_Snax_Party_Pack%21_item.png/revision/latest/scale-to-width-down/40?cb=20161122214249</item>
+        <item name="Refillable Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7f/Refillable_Potion_item.png/revision/latest?cb=20170629164821</item>
+        <item name="Shield Totem">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ac/Shield_Totem_item.png/revision/latest/scale-to-width-down/40?cb=20171113035915</item>
+        <item name="Siege Ballista">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/14/Siege_Ballista_item.png/revision/latest/scale-to-width-down/40?cb=20171113035916</item>
+        <item name="Super Spicy Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/64/Super_Spicy_Snax_item.png/revision/latest/scale-to-width-down/40?cb=20161122214248</item>
+        <item name="Tower: Beam of Ruination">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/00/Tower-_Beam_of_Ruination_item.png/revision/latest/scale-to-width-down/40?cb=20171113035916</item>
+        <item name="Tower: Storm Bulwark">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c6/Tower-_Storm_Bulwark_item.png/revision/latest/scale-to-width-down/40?cb=20171113035917</item>
+        <item name="Vanguard Banner">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/74/Vanguard_Banner_item.png/revision/latest/scale-to-width-down/40?cb=20171113035917</item>
+        //trinkets
+        <item name="Arcane Sweeper">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8d/Hextech_Sweeper_item.png/revision/latest?cb=20130319090439</item>
+        <item name="Farsight Alteration">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/75/Farsight_Alteration_item.png/revision/latest?cb=20151101000720</item>
+        <item name="Golden Transcendence">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/eb/Golden_Transcendence_item.png/revision/latest?cb=20150821061629</item>
+        <item name="Oracle Alteration">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cb/Oracle_Alteration_item.png/revision/latest?cb=20170506221931</item>
+        <item name="Seer Stone">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3c/Seer_Stone_item.png/revision/latest?cb=20170806091249</item>
+        <item name="Siege Sight Warder">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d1/Stealth_Ward_%28Item%29_item.png/revision/latest?cb=20130319091502</item>
+        <item name="Soul Anchor">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a4/Soul_Anchor_item.png/revision/latest/scale-to-width-down/64?cb=20140423000717</item>
+        <item name="Sweeping Lens">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a5/Sweeping_Lens_item.png/revision/latest?cb=20170409215623</item>
+        <item name="Warding Totem">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e2/Warding_Totem_item.png/revision/latest?cb=20170409215530</item>
+    </string-array>
+</resources>

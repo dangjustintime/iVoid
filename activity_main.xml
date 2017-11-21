@@ -7,71 +7,107 @@
     android:orientation="vertical"
     tools:context="com.example.ivoid.MainActivity">
 
+    <ImageView
+        android:id="@+id/vel_koz_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/velkoz"
+        android:scaleType="centerCrop"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/image_button_items_main"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/items_button"
-            app:srcCompat="@android:drawable/btn_dialog"
-            android:onClick="itemsClick"/>
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/image_button_champions_main"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/champion_button"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:onClick="championsClick"/>
+            <ImageButton
+                android:id="@+id/image_button_items_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/items_button"
+                android:onClick="itemsClick"
+                android:src="@drawable/item_icon" />
 
-        <ImageButton
-            android:id="@+id/image_button_updates_main"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/updates_button"
-            app:srcCompat="@android:drawable/btn_star_big_on"
-            android:onClick="updatePage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/image_button_random_main"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/random_button"
-            android:onClick="randomClick"
-            app:srcCompat="@android:drawable/checkbox_on_background" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/image_button_champions_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/champion_button"
+                android:onClick="championsClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/amumu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Champions"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/image_button_random_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/random_button"
+                android:onClick="randomClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/dice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/patch_notes_button"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="105dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="144dp"
-        android:onClick="randomClick"
-        android:text="@string/random_wheel"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="48dp" />
+        android:onClick="patchNotesClick"
+        android:text="@string/patch_notes" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
-        android:elevation="0dp"
-        android:onClick="updateData"
-        android:text="Update Data"
-        android:textAlignment="center" />
+        android:id="@+id/latest_news_button"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:onClick="latestNewsClick"
+        android:text="@string/latest_news" />
 
 </LinearLayout>
