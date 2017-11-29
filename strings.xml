@@ -4,6 +4,236 @@
     <string name="api_key">RGAPI-dedadd91-b407-446e-820f-ecef7f2fb09d</string>
     <string name="patch_notes">Patch Notes</string>
     <string name="latest_news">Latest News</string>
+    <string-array name="items">
+        <item>Abyssal Mask</item>
+        <item>Adaptive Helm</item>
+        <item>Aegis of the Legion</item>
+        <item>Aether Wisp</item>
+        <item>Amplifying Tome</item>
+        <item>Ancient Coin</item>
+        <item>Arcane Sweeper</item>
+        <item>Archangel's Staff</item>
+        <item>Ardent Censer</item>
+        <item>Athene's Unholy Grail</item>
+        <item>B. F. Sword</item>
+        <item>Bami's Cinder</item>
+        <item>Banner of Command</item>
+        <item>Banshee's Veil</item>
+        <item>Berserker's Greaves</item>
+        <item>Bilgewater Cutless</item>
+        <item>Blade of the Ruined King</item>
+        <item>Blasting Wand</item>
+        <item>Boots of Mobility</item>
+        <item>Boots of Speed</item>
+        <item>Boots of Swifness</item>
+        <item>Bramble Vest</item>
+        <item>Brawler's Gloves</item>
+        <item>Catalyst of Aeons</item>
+        <item>Caulfield's Warhammer</item>
+        <item>Chain Vest</item>
+        <item>Chalice of Harmony</item>
+        <item>Circlet of the Iron Solari</item>
+        <item>Cloak of Agility</item>
+        <item>Cloak of Stars</item>
+        <item>Cloth Armor</item>
+        <item>Commencing Stopwatch</item>
+        <item>Control Ward</item>
+        <item>Corrupting Potion</item>
+        <item>Cosmic Shackle</item>
+        <item>Crystalline Bracer</item>
+        <item>Cull</item>
+        <item>Dagger</item>
+        <item>Dark Matter Scythe</item>
+        <item>Dark Star Sigil</item>
+        <item>Dead Man's Plate</item>
+        <item>Death's Dance</item>
+        <item>Death's Daughter</item>
+        <item>Dervish Blade</item>
+        <item>Diet Poro-Snax</item>
+        <item>Doran's Blade</item>
+        <item>Doran's Ring</item>
+        <item>Doran's Sheild</item>
+        <item>Duskblade of Draktharr</item>
+        <item>Edge of Night</item>
+        <item>Elixir of Iron</item>
+        <item>Elixir of Sorcery</item>
+        <item>Elixir of Wrath</item>
+        <item>Entropy Field</item>
+        <item>Espresso Snax</item>
+        <item>Essence Reaver</item>
+        <item>Executioner's Calling</item>
+        <item>Explorer's Ward</item>
+        <item>Eye of the Equinox</item>
+        <item>Eye of the Herald</item>
+        <item>Eye of the Oasis</item>
+        <item>Eye of the Watchers</item>
+        <item>Face of the Mountain</item>
+        <item>Farie Charm</item>
+        <item>Farsight Alteration</item>
+        <item>Fiendish Codex</item>
+        <item>Fire at Will</item>
+        <item>Flash Zone</item>
+        <item>Forbidden Idol</item>
+        <item>Forgefire Cape</item>
+        <item>Frost Queen's Claim</item>
+        <item>Frosted Snax</item>
+        <item>Frostfang</item>
+        <item>Frozen Heart</item>
+        <item>Frozen Mallet</item>
+        <item>Gargoyle StonerPlate</item>
+        <item>Giant Slayer</item>
+        <item>Giant's Belt</item>
+        <item>Glacial Shroud</item>
+        <item>Golden Transcendence</item>
+        <item>Gravity Boots</item>
+        <item>Greater Stealth Totem(Trinket)</item>
+        <item>Guardian Angel</item>
+        <item>Guardian's Hammer</item>
+        <item>Guardian's Horn</item>
+        <item>Guardian's Orb</item>
+        <item>Guinsoo's RageBlade</item>
+        <item>Haunting Guise</item>
+        <item>Health Potion</item>
+        <item>Hexdrinker</item>
+        <item>Hextech GLP-800</item>
+        <item>Hextech Gunblade</item>
+        <item>Hextech Protobelt-01</item>
+        <item>Hextech Revolver</item>
+        <item>Hunter's Machete</item>
+        <item>Hunter's Potion</item>
+        <item>Hunter's Talisman</item>
+        <item>Iceborn Gauntlet</item>
+        <item>Infernal Mask</item>
+        <item>Infinity Edge</item>
+        <item>Ionian Boots of Lucidity</item>
+        <item>Jaurim's Fist</item>
+        <item>Kindlegem</item>
+        <item>Kircheis Shard</item>
+        <item>Knight's Vow</item>
+        <item>Last Whisper</item>
+        <item>Liandry's Torment</item>
+        <item>Lich Bane</item>
+        <item>Locket of the Iron Solari</item>
+        <item>Long Sword</item>
+        <item>Lord Dominik's Regards</item>
+        <item>Lord Van Damm's Pillager</item>
+        <item>Lost Chapter</item>
+        <item>Luden's Echo</item>
+        <item>Manamune</item>
+        <item>Maw of Malmortius</item>
+        <item>Mejai's Soulstealer</item>
+        <item>Mercurial Scimitar</item>
+        <item>Mercury's Treads</item>
+        <item>Mikael's Crucible</item>
+        <item>Molten Edge</item>
+        <item>Moonflair Spellblade</item>
+        <item>Morellonomicon</item>
+        <item>Mortal Reminder</item>
+        <item>Muramana</item>
+        <item>Nashor's Tooth</item>
+        <item>Needlessly Large Rod</item>
+        <item>Negatron Cloak</item>
+        <item>Nexus Siege:Siege Weapon Slot</item>
+        <item>Ninja Tabi</item>
+        <item>Nomad's Medallion</item>
+        <item>Null-Magic Mantle</item>
+        <item>Ohmwrecker</item>
+        <item>Oracle Alteration</item>
+        <item>Oracle's Extract</item>
+        <item>Overlord's BloodMail</item>
+        <item>Perfect Hex Core</item>
+        <item>Phage</item>
+        <item>Phantom Dancer</item>
+        <item>Pickaxe</item>
+        <item>Poacher's Dirk</item>
+        <item>Poro-Snax</item>
+        <item>Port Pad</item>
+        <item>Prototype Hex Core</item>
+        <item>Quicksilver Sash</item>
+        <item>Rabadon's Deathcap</item>
+        <item>Rainbow Snax Party Pack!</item>
+        <item>Raise Morale</item>
+        <item>Randuin's Omen</item>
+        <item>Rapid Firecannon</item>
+        <item>Raptor Cloak</item>
+        <item>Ravenous Hydra</item>
+        <item>Recurve Bow</item>
+        <item>Redemption</item>
+        <item>Refukkabke Potion</item>
+        <item>Rejuvenation Bead</item>
+        <item>Relic Shield</item>
+        <item>Righteour Glory</item>
+        <item>Rod of Ages</item>
+        <item>Ruby Crystal</item>
+        <item>Ruby Sightstone</item>
+        <item>Rylai's Crystal Scepter</item>
+        <item>Salvation</item>
+        <item>Sanguine Blade</item>
+        <item>Sapphire Crystal</item>
+        <item>Seeker's Armguard</item>
+        <item>Seer Stone</item>
+        <item>Seraph's Embrace</item>
+        <item>Serrated Dirk</item>
+        <item>Sheen</item>
+        <item>Shield Totem</item>
+        <item>Siege Ballista</item>
+        <item>Siege Refund</item>
+        <item>Siege Sight Warder</item>
+        <item>Siege Teleport</item>
+        <item>Sightstone</item>
+        <item>Singularity Lantern</item>
+        <item>Skirmisher's Sabre</item>
+        <item>Slightly Magical Boots</item>
+        <item>Sorcerer's Shoes</item>
+        <item>Soul Anchor(Trinket)</item>
+        <item>Spectre's Cowl</item>
+        <item>Spellthief's Edge</item>
+        <item>Spirit Visage</item>
+        <item>Stalker's Blade</item>
+        <item>Statikk Shiv</item>
+        <item>Sterak's Gage</item>
+        <item>Stinger</item>
+        <item>Stopwatch</item>
+        <item>Sunfire Cape</item>
+        <item>Super Spicy Snax</item>
+        <item>Sweeping Lens(Trinket)</item>
+        <item>Talisman of Ascension</item>
+        <item>Targon's Brace</item>
+        <item>Tear of the Goddess</item>
+        <item>The Black Cleaver</item>
+        <item>The Black Spear</item>
+        <item>The Bloodthirster</item>
+        <item>The Dark Seal</item>
+        <item>The Hex Core mk-1</item>
+        <item>The Hex Core mk-2</item>
+        <item>The Lightbringer</item>
+        <item>The Obsidian Cleaver</item>
+        <item>Thronmail</item>
+        <item>Tiamat</item>
+        <item>Titanic Hydra</item>
+        <item>Totle Biscuit of Rejuvenation</item>
+        <item>Tower: Beam of Ruination</item>
+        <item>Tower: Storm Bulwark</item>
+        <item>Trakcer's Knife</item>
+        <item>Trinity Force</item>
+        <item>Trinity Fusion</item>
+        <item>Vampire Scepter</item>
+        <item>Vanguard Banner</item>
+        <item>Void Staff</item>
+        <item>Warden's Mail</item>
+        <item>Warding Totem (Trinket)</item>
+        <item>Warmog's Armor</item>
+        <item>Wicked Hatchet</item>
+        <item>Wit's End</item>
+        <item>Wooglet's Witchcap</item>
+        <item>Wooglet's Wictchcrown</item>
+        <item>Youmuu's Ghostblade</item>
+        <item>Zeal</item>
+        <item>Zeke's Convergence</item>
+        <item>Zhonya's Hourglass</item>
+        <item>Zhonya's Paradox</item>
+        <item>Zz' Rot Portal</item>
+    </string-array>
     <string-array name="characters">
         <item>Aatrox</item>
         <item>Ahri</item>
