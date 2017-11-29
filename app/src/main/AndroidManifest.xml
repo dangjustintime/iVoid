@@ -21,7 +21,6 @@
         <activity android:name=".RandomWheelActivity" />
         <activity android:name=".ItemsActivity" />
         <activity android:name=".ChampionsActivity" />
-        <activity android:name=".UpdatesActivity" />
         <activity android:name=".ItemInfoActivity" />
         <activity android:name=".ChampionInfoActivity"></activity>
     </application>
