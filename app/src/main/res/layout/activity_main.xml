@@ -12,32 +12,36 @@
         android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@drawable/velkoz" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="58dp"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
+
             <ImageButton
                 android:id="@+id/image_button_items_main"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="51dp"
+                android:layout_height="52dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/items_button"
-                android:src="@drawable/item_icon"
-                android:onClick="itemsClick"/>
+                android:onClick="itemsClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cull" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Items"
-                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
                 android:textSize="12dp"
-                android:textColor="@color/colorAccent"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,15 +50,16 @@
             android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
+
             <ImageButton
                 android:id="@+id/image_button_champions_main"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="55dp"
+                android:layout_height="53dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/champion_button"
-                android:src="@drawable/amumu"
+                android:onClick="championsClick"
                 android:scaleType="fitCenter"
-                android:onClick="championsClick"/>
+                android:src="@drawable/helmet" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,15 +74,16 @@
             android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
+
             <ImageButton
                 android:id="@+id/image_button_random_main"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:background="@android:color/transparent"
                 android:contentDescription="@string/random_button"
-                android:src="@drawable/dice"
-                android:scaleType="fitXY"
                 android:onClick="randomClick"
-                android:background="@color/lightGray"/>
+                android:scaleType="fitCenter"
+                android:src="@drawable/dice" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,26 +93,28 @@
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/patch_notes_button"
             android:layout_width="150dp"
             android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:background="@color/lightButtonBack"
             android:onClick="patchNotesClick"
-            android:text="Patch Notes"
-            android:background="@color/lightGray"
-            android:layout_margin="5dp"/>
+            android:text="Patch Notes" />
 
         <Button
             android:id="@+id/latest_news_button"
             android:layout_width="150dp"
             android:layout_height="65dp"
             android:layout_margin="5dp"
-            android:background="@color/lightGray"
+            android:background="@color/lightButtonBack"
             android:onClick="latestNewsClick"
             android:text="Latest News" />
     </LinearLayout>
