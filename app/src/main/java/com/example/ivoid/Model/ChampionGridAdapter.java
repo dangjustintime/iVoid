@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.example.ivoid.R;
 import com.squareup.picasso.Picasso;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import static com.example.ivoid.R.color.purple;
 
@@ -33,10 +33,10 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
     }
     //member variables
     private Context context;
-    private List<Champion> championList;
+    private ArrayList<Champion> championList;
 
     //constructor
-    public ChampionGridAdapter(Context context, List<Champion> champions) {
+    public ChampionGridAdapter(Context context, ArrayList<Champion> championList) {
         this.context = context;
         this.championList = championList;
     }

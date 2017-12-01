@@ -7,15 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        /*
         Retrofit.Builder builder = new Retrofit.Builder()
                 .baseUrl("https://na1.api.riotgames.com")
                 .addConverterFactory(GsonConverterFactory.create());
@@ -60,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Response Failed", Toast.LENGTH_SHORT).show();
             }
         });
+        */
 
 
     }

@@ -10,6 +10,8 @@ import java.util.List;
 
 public class Champion {
     public class ability {
+        @SerializedName("id")
+        private int id;
         @SerializedName("name")
         private String name;
         @SerializedName("costBurn")
@@ -19,6 +21,8 @@ public class Champion {
         @SerializedName("description")
         private String description;
         //getters and setters
+        public int getId() { return id; }
+        public void setId(int id) { this.id = id; }
         public String getName() { return name;}
         public void setName(String name) { this.name = name; }
         public String getCost() { return cost; }

@@ -20,6 +20,7 @@ import net.rithms.riot.api.RiotApiException;
 import net.rithms.riot.api.endpoints.summoner.dto.Summoner;
 import net.rithms.riot.constant.Platform;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -35,7 +36,8 @@ public class ChampionsActivity extends AppCompatActivity {
     private RecyclerView championsRecyclerView;
     private ChampionGridAdapter championRecyclerAdapter;
     private EditText championsEditText;
-    private Map<String,Champion> championMap;
+    private ChampionMap championMap;
+    private ArrayList<Champion> championArrayList;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +48,7 @@ public class ChampionsActivity extends AppCompatActivity {
         championsEditText = (EditText) findViewById(R.id.edit_text_search_item);
         championCardView = (CardView) findViewById(R.id.champion_card_view);
         championCardView.setCardBackgroundColor(R.color.lightGray);
-
+        /*
         Retrofit.Builder builder = new Retrofit.Builder()
                 .baseUrl("https://na1.api.riotgames.com")
                 .addConverterFactory(GsonConverterFactory.create());
@@ -57,9 +59,9 @@ public class ChampionsActivity extends AppCompatActivity {
         call.enqueue(new Callback<ChampionMap>() {
             @Override
             public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
-                ChampionMap map = response.body();
-                championMap = map.getChampionMap();
-                Toast.makeText(ChampionsActivity.this, "Response Success", Toast.LENGTH_LONG).show();
+                championMap = response.body();
+                championArrayList = championMap.getList();
+                Toast.makeText(ChampionsActivity.this, championArrayList.get(80).getTitle(), Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {
@@ -67,13 +69,16 @@ public class ChampionsActivity extends AppCompatActivity {
             }
         });
 
-        /*
+
+
+
         //recycler view
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
-        championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false));
-        championRecyclerAdapter = new ChampionGridAdapter(this, championMap);
+        championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 1, GridLayoutManager.VERTICAL, false));
+        championRecyclerAdapter = new ChampionGridAdapter(this, championArrayList);
         championsRecyclerView.setAdapter(championRecyclerAdapter);
-        */
+        *
+
 
 
 

@@ -58,7 +58,7 @@
                 android:elevation="100dp"
                 />
             <TextView
-                android:id="@+id/text_view__item_name"
+                android:id="@+id/text_view_item_name"
                 android:textAlignment="center"
                 android:layout_width="50dp"
                 android:layout_height="25dp"
@@ -70,7 +70,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/champion_grid_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="500dp">
 
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>
