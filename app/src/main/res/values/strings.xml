@@ -2,6 +2,238 @@
     <string name="app_name">iVoid</string>
     <string name="api_url">https://na1.api.riotgames.com/lol/</string>
     <string name="api_key">RGAPI-dedadd91-b407-446e-820f-ecef7f2fb09d</string>
+    <string name="patch_notes">Patch Notes</string>
+    <string name="latest_news">Latest News</string>
+    <string-array name="items">
+        <item>Abyssal Mask</item>
+        <item>Adaptive Helm</item>
+        <item>Aegis of the Legion</item>
+        <item>Aether Wisp</item>
+        <item>Amplifying Tome</item>
+        <item>Ancient Coin</item>
+        <item>Arcane Sweeper</item>
+        <item>Archangel's Staff</item>
+        <item>Ardent Censer</item>
+        <item>Athene's Unholy Grail</item>
+        <item>B. F. Sword</item>
+        <item>Bami's Cinder</item>
+        <item>Banner of Command</item>
+        <item>Banshee's Veil</item>
+        <item>Berserker's Greaves</item>
+        <item>Bilgewater Cutless</item>
+        <item>Blade of the Ruined King</item>
+        <item>Blasting Wand</item>
+        <item>Boots of Mobility</item>
+        <item>Boots of Speed</item>
+        <item>Boots of Swifness</item>
+        <item>Bramble Vest</item>
+        <item>Brawler's Gloves</item>
+        <item>Catalyst of Aeons</item>
+        <item>Caulfield's Warhammer</item>
+        <item>Chain Vest</item>
+        <item>Chalice of Harmony</item>
+        <item>Circlet of the Iron Solari</item>
+        <item>Cloak of Agility</item>
+        <item>Cloak of Stars</item>
+        <item>Cloth Armor</item>
+        <item>Commencing Stopwatch</item>
+        <item>Control Ward</item>
+        <item>Corrupting Potion</item>
+        <item>Cosmic Shackle</item>
+        <item>Crystalline Bracer</item>
+        <item>Cull</item>
+        <item>Dagger</item>
+        <item>Dark Matter Scythe</item>
+        <item>Dark Star Sigil</item>
+        <item>Dead Man's Plate</item>
+        <item>Death's Dance</item>
+        <item>Death's Daughter</item>
+        <item>Dervish Blade</item>
+        <item>Diet Poro-Snax</item>
+        <item>Doran's Blade</item>
+        <item>Doran's Ring</item>
+        <item>Doran's Sheild</item>
+        <item>Duskblade of Draktharr</item>
+        <item>Edge of Night</item>
+        <item>Elixir of Iron</item>
+        <item>Elixir of Sorcery</item>
+        <item>Elixir of Wrath</item>
+        <item>Entropy Field</item>
+        <item>Espresso Snax</item>
+        <item>Essence Reaver</item>
+        <item>Executioner's Calling</item>
+        <item>Explorer's Ward</item>
+        <item>Eye of the Equinox</item>
+        <item>Eye of the Herald</item>
+        <item>Eye of the Oasis</item>
+        <item>Eye of the Watchers</item>
+        <item>Face of the Mountain</item>
+        <item>Farie Charm</item>
+        <item>Farsight Alteration</item>
+        <item>Fiendish Codex</item>
+        <item>Fire at Will</item>
+        <item>Flash Zone</item>
+        <item>Forbidden Idol</item>
+        <item>Forgefire Cape</item>
+        <item>Frost Queen's Claim</item>
+        <item>Frosted Snax</item>
+        <item>Frostfang</item>
+        <item>Frozen Heart</item>
+        <item>Frozen Mallet</item>
+        <item>Gargoyle StonerPlate</item>
+        <item>Giant Slayer</item>
+        <item>Giant's Belt</item>
+        <item>Glacial Shroud</item>
+        <item>Golden Transcendence</item>
+        <item>Gravity Boots</item>
+        <item>Greater Stealth Totem(Trinket)</item>
+        <item>Guardian Angel</item>
+        <item>Guardian's Hammer</item>
+        <item>Guardian's Horn</item>
+        <item>Guardian's Orb</item>
+        <item>Guinsoo's RageBlade</item>
+        <item>Haunting Guise</item>
+        <item>Health Potion</item>
+        <item>Hexdrinker</item>
+        <item>Hextech GLP-800</item>
+        <item>Hextech Gunblade</item>
+        <item>Hextech Protobelt-01</item>
+        <item>Hextech Revolver</item>
+        <item>Hunter's Machete</item>
+        <item>Hunter's Potion</item>
+        <item>Hunter's Talisman</item>
+        <item>Iceborn Gauntlet</item>
+        <item>Infernal Mask</item>
+        <item>Infinity Edge</item>
+        <item>Ionian Boots of Lucidity</item>
+        <item>Jaurim's Fist</item>
+        <item>Kindlegem</item>
+        <item>Kircheis Shard</item>
+        <item>Knight's Vow</item>
+        <item>Last Whisper</item>
+        <item>Liandry's Torment</item>
+        <item>Lich Bane</item>
+        <item>Locket of the Iron Solari</item>
+        <item>Long Sword</item>
+        <item>Lord Dominik's Regards</item>
+        <item>Lord Van Damm's Pillager</item>
+        <item>Lost Chapter</item>
+        <item>Luden's Echo</item>
+        <item>Manamune</item>
+        <item>Maw of Malmortius</item>
+        <item>Mejai's Soulstealer</item>
+        <item>Mercurial Scimitar</item>
+        <item>Mercury's Treads</item>
+        <item>Mikael's Crucible</item>
+        <item>Molten Edge</item>
+        <item>Moonflair Spellblade</item>
+        <item>Morellonomicon</item>
+        <item>Mortal Reminder</item>
+        <item>Muramana</item>
+        <item>Nashor's Tooth</item>
+        <item>Needlessly Large Rod</item>
+        <item>Negatron Cloak</item>
+        <item>Nexus Siege:Siege Weapon Slot</item>
+        <item>Ninja Tabi</item>
+        <item>Nomad's Medallion</item>
+        <item>Null-Magic Mantle</item>
+        <item>Ohmwrecker</item>
+        <item>Oracle Alteration</item>
+        <item>Oracle's Extract</item>
+        <item>Overlord's BloodMail</item>
+        <item>Perfect Hex Core</item>
+        <item>Phage</item>
+        <item>Phantom Dancer</item>
+        <item>Pickaxe</item>
+        <item>Poacher's Dirk</item>
+        <item>Poro-Snax</item>
+        <item>Port Pad</item>
+        <item>Prototype Hex Core</item>
+        <item>Quicksilver Sash</item>
+        <item>Rabadon's Deathcap</item>
+        <item>Rainbow Snax Party Pack!</item>
+        <item>Raise Morale</item>
+        <item>Randuin's Omen</item>
+        <item>Rapid Firecannon</item>
+        <item>Raptor Cloak</item>
+        <item>Ravenous Hydra</item>
+        <item>Recurve Bow</item>
+        <item>Redemption</item>
+        <item>Refukkabke Potion</item>
+        <item>Rejuvenation Bead</item>
+        <item>Relic Shield</item>
+        <item>Righteour Glory</item>
+        <item>Rod of Ages</item>
+        <item>Ruby Crystal</item>
+        <item>Ruby Sightstone</item>
+        <item>Rylai's Crystal Scepter</item>
+        <item>Salvation</item>
+        <item>Sanguine Blade</item>
+        <item>Sapphire Crystal</item>
+        <item>Seeker's Armguard</item>
+        <item>Seer Stone</item>
+        <item>Seraph's Embrace</item>
+        <item>Serrated Dirk</item>
+        <item>Sheen</item>
+        <item>Shield Totem</item>
+        <item>Siege Ballista</item>
+        <item>Siege Refund</item>
+        <item>Siege Sight Warder</item>
+        <item>Siege Teleport</item>
+        <item>Sightstone</item>
+        <item>Singularity Lantern</item>
+        <item>Skirmisher's Sabre</item>
+        <item>Slightly Magical Boots</item>
+        <item>Sorcerer's Shoes</item>
+        <item>Soul Anchor(Trinket)</item>
+        <item>Spectre's Cowl</item>
+        <item>Spellthief's Edge</item>
+        <item>Spirit Visage</item>
+        <item>Stalker's Blade</item>
+        <item>Statikk Shiv</item>
+        <item>Sterak's Gage</item>
+        <item>Stinger</item>
+        <item>Stopwatch</item>
+        <item>Sunfire Cape</item>
+        <item>Super Spicy Snax</item>
+        <item>Sweeping Lens(Trinket)</item>
+        <item>Talisman of Ascension</item>
+        <item>Targon's Brace</item>
+        <item>Tear of the Goddess</item>
+        <item>The Black Cleaver</item>
+        <item>The Black Spear</item>
+        <item>The Bloodthirster</item>
+        <item>The Dark Seal</item>
+        <item>The Hex Core mk-1</item>
+        <item>The Hex Core mk-2</item>
+        <item>The Lightbringer</item>
+        <item>The Obsidian Cleaver</item>
+        <item>Thronmail</item>
+        <item>Tiamat</item>
+        <item>Titanic Hydra</item>
+        <item>Totle Biscuit of Rejuvenation</item>
+        <item>Tower: Beam of Ruination</item>
+        <item>Tower: Storm Bulwark</item>
+        <item>Trakcer's Knife</item>
+        <item>Trinity Force</item>
+        <item>Trinity Fusion</item>
+        <item>Vampire Scepter</item>
+        <item>Vanguard Banner</item>
+        <item>Void Staff</item>
+        <item>Warden's Mail</item>
+        <item>Warding Totem (Trinket)</item>
+        <item>Warmog's Armor</item>
+        <item>Wicked Hatchet</item>
+        <item>Wit's End</item>
+        <item>Wooglet's Witchcap</item>
+        <item>Wooglet's Wictchcrown</item>
+        <item>Youmuu's Ghostblade</item>
+        <item>Zeal</item>
+        <item>Zeke's Convergence</item>
+        <item>Zhonya's Hourglass</item>
+        <item>Zhonya's Paradox</item>
+        <item>Zz' Rot Portal</item>
+    </string-array>
     <string-array name="characters">
         <item>Aatrox</item>
         <item>Ahri</item>
@@ -150,59 +382,16 @@
         <item>Zyra</item>
 
     </string-array>
-    <string-array name="roles">//are subclasses necessary? This is mainly to aid the randomize
+    <string-array name="classes">//are subclasses necessary? This is mainly to aid the randomize
         wheel, to allow you to pick at random for a specific role
+        <item>Tank</item>
         //should these in fact be the roles themselves, i.e. mid, adc, jungle, support, solo?
-        <item>Top</item>
+        <item>Fighter</item>
         //are those roles more or less clear cut for each champion?
-        <item>Support</item>
-        <item>Bottom</item>
-        <item>Mid</item>
-        <item>Jungle</item>
-    </string-array>
-    <string-array name="Top">
-        <item>Aatrox</item>
-        <item>Akali</item>
-        <item>Camille</item>
-        <item>Cho-Gath</item>
-        <item>Darius</item>
-        <item>Dr. Mundo</item>
-        <item>Fiora</item>
-        <item>Gangplank</item>
-        <item>Garen</item>
-        <item>Gnar</item>
-        <item>Heimerdinger</item>
-        <item>Illaoi</item>
-        <item>Irelia</item>
-        <item>Jax</item>
-        <item>Jayce</item>
-        <item>Kayle</item>
-        <item>Kennen</item>
-        <item>Kled</item>
-        <item>Malphite</item>
-        <item>Maokai</item>
-        <item>Mordekaiser</item>
-        <item>Nasus</item>
-        <item>Nautilus</item>
-        <item>Olaf</item>
-        <item>Ornn</item>
-        <item>Pantheon</item>
-        <item>Poppy</item>
-        <item>Quinn</item>
-        <item>Renekton</item>
-        <item>Riven</item>
-        <item>Rumble</item>
-        <item>Shen</item>
-        <item>Singed</item>
-        <item>Sion</item>
-        <item>Swain</item>
-        <item>Teemo</item>
-        <item>Trundle</item>
-        <item>Tryndamere</item>
-        <item>Urgot</item>
-        <item>Wukong</item>
-        <item>Yasuo</item>
-        <item>Yorick</item>
+        <item>Slayer</item>
+        <item>Mage</item>
+        <item>Controller</item>
+        <item>Marksmen</item>
     </string-array>
     <string name="title_activity_random_wheel">RandomWheelActivity</string>
     <string name="random_wheel">Random Wheel</string>
@@ -211,6 +400,13 @@
     <string name="items_button">Items Button</string>
     <string name="updates_button">Updates Button</string>
     <string name="random_button">Random Button</string>
+
+    //Champion icon url
+    <string-array name="champion_icon_urls">
+
+
+    </string-array>
+
     //item icon urls
     <string-array name="item_icon_urls">
         //starter items
@@ -253,5 +449,209 @@
         <item name="Soul Anchor">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a4/Soul_Anchor_item.png/revision/latest/scale-to-width-down/64?cb=20140423000717</item>
         <item name="Sweeping Lens">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a5/Sweeping_Lens_item.png/revision/latest?cb=20170409215623</item>
         <item name="Warding Totem">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e2/Warding_Totem_item.png/revision/latest?cb=20170409215530</item>
+        //Distributed
+        <item name="Cloak of Stars">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9d/Cloak_of_Stars_item.png/revision/latest/scale-to-width-down/40?cb=20170813143920</item>
+        <item name="Cosmic Shackle">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ea/Cosmic_Shackle_item.png/revision/latest/scale-to-width-down/40?cb=20170813143921</item>
+        <item name="Dark Matter Scythe">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/05/Dark_Matter_Scythe_item.png/revision/latest/scale-to-width-down/40?cb=20170813143928</item>
+        <item name="Dark Star Sigil">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/26/Dark_Star_Sigil_item.png/revision/latest/scale-to-width-down/40?cb=20170813143929</item>
+        <item name="Elixir of Skill">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/31/Ichor_of_Illumination_item.png/revision/latest/scale-to-width-down/40?cb=20170217211200</item>
+        <item name="Eye of the Herald">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b0/Eye_of_the_Herald_item.png/revision/latest/scale-to-width-down/40?cb=20170730183027</item>
+        <item name="Gravity Boots">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/53/Gravity_Boots_item.png/revision/latest/scale-to-width-down/40?cb=20170813143922</item>
+        <item name="Looted Oracle's Extract">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a2/Oracle%27s_Extract_item.png/revision/latest/scale-to-width-down/40?cb=20130110022424</item>
+        <item name="Mana Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1d/Mana_Potion_item.png/revision/latest/scale-to-width-down/40?cb=20140115130205</item>
+        <item name="Minion Dematerializer">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8f/Minion_Dematerializer_item.png/revision/latest/scale-to-width-down/40?cb=20171105020122</item>
+        <item name="Peering Farsight Ward">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/75/Farsight_Alteration_item.png/revision/latest/scale-to-width-down/40?cb=20151101000720</item>
+        <item name="Pilfered Health Potion">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a9/Pilfered_Health_Potion_item.png/revision/latest/scale-to-width-down/40?cb=20171105014005</item>
+        <item name="Pilfered Potion of Rouge">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f2/Elixir_of_Fortitude_item.png/revision/latest/scale-to-width-down/40?cb=20130319090319</item>
+        <item name="Pilfered Stealth Ward">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d1/Stealth_Ward_%28Item%29_item.png/revision/latest/scale-to-width-down/40?cb=20130319091502</item>
+        <item name="Poro-Snax">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/68/Poro-Snax_item.png/revision/latest/scale-to-width-down/40?cb=20170412062504</item>
+        <item name="Protoype Hex Core">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/12/Prototype_Hex_Core_item.png/revision/latest/scale-to-width-down/40?cb=20140910235928</item>
+        <item name="Replica Stopwatch">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e6/Stopwatch_item.png/revision/latest/scale-to-width-down/40?cb=20170809225738</item>
+        <item name="Singularity Lantern">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d4/Singularity_Lantern_item.png/revision/latest/scale-to-width-down/40?cb=20170813143923</item>
+        <item name="Slightly Magical Boots">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/49/Slightly_Magical_Boots_item.png/revision/latest/scale-to-width-down/40?cb=20171015164418</item>
+        <item name="Sly Sack of Gold">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/48/Sly_Sack_of_Gold_item.png/revision/latest/scale-to-width-down/40?cb=20171015202744</item>
+        <item name="The Black Spear">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/db/The_Black_Spear_item.png/revision/latest/scale-to-width-down/40?cb=20141104220251</item>
+        <item name="Total Biscuit of Everlasting Will">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/10/Total_Biscuit_of_Everlasting_Will_item.png/revision/latest/scale-to-width-down/40?cb=20171105020255</item>
+        <item name="Travel Size Elixir of Iron">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d6/Travel_Size_Elixir_of_Iron_item.png/revision/latest/scale-to-width-down/40?cb=20171105020453</item>
+        <item name="Traval Size Elixir of Sorcery">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4a/Travel_Size_Elixir_of_Sorcery_item.png/revision/latest/scale-to-width-down/40?cb=20171105020428</item>
+        <item name="Traval Size Elixir of Wrath">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2b/Travel_Size_Elixir_of_Wrath_item.png/revision/latest/scale-to-width-down/40?cb=20171105014054</item>
+        //Basic items
+        <item name="Amplifying Totem">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b9/Amplifying_Tome_item.png/revision/latest/scale-to-width-down/40?cb=20130319085955</item>
+        <item name="Ancient Coin">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/53/Ancient_Coin_item.png/revision/latest/scale-to-width-down/40?cb=20170419042613</item>
+        <item name="B. F. Sword">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ab/B._F._Sword_item.png/revision/latest/scale-to-width-down/40?cb=20170104021722</item>
+        <item name="Blasting Wand">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3b/Blasting_Wand_item.png/revision/latest/scale-to-width-down/40?cb=20170506224951</item>
+        <item name="Boots of Speed">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4e/Boots_of_Speed_item.png/revision/latest/scale-to-width-down/40?cb=20130319090217</item>
+        <item name="Brawler's Glove">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/fe/Brawler%27s_Gloves_item.png/revision/latest/scale-to-width-down/40?cb=20130319090229</item>
+        <item name="Cloak of Agility">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3e/Cloak_of_Agility_item.png/revision/latest/scale-to-width-down/40?cb=20130319090241</item>
+        <item name="Cloth Armor">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/6f/Cloth_Armor_item.png/revision/latest/scale-to-width-down/40?cb=20130319090243</item>
+        <item name="Dagger">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7e/Dagger_item.png/revision/latest/scale-to-width-down/40?cb=20130319090247</item>
+        <item name="Faerie Charm">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/df/Faerie_Charm_item.png/revision/latest/scale-to-width-down/40?cb=20130319090330</item>
+        <item name="Hunter's Machete">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a2/Hunter%27s_Machete_item.png/revision/latest/scale-to-width-down/40?cb=20130710102448</item>
+        <item name="Hunter's Talisman">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/21/Hunter%27s_Talisman_item.png/revision/latest/scale-to-width-down/40?cb=20161029062738</item>
+        <item name="Long Sword">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/64/Long_Sword_item.png/revision/latest/scale-to-width-down/40?cb=20130319090634</item>
+        <item name="Needlessly Large Rod">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/13/Needlessly_Large_Rod_item.png/revision/latest/scale-to-width-down/40?cb=20170216220059</item>
+        <item name="Null-Magic Mantle">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2a/Null-Magic_Mantle_item.png/revision/latest/scale-to-width-down/40?cb=20130319091042</item>
+        <item name="Pickaxe">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3b/Pickaxe_item.png/revision/latest/scale-to-width-down/40?cb=20130319091156</item>
+        <item name="Rejuvenation Bead">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/0f/Rejuvenation_Bead_item.png/revision/latest/scale-to-width-down/40?cb=20130319091329</item>
+        <item name="Relic Sheild">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/51/Relic_Shield_item.png/revision/latest/scale-to-width-down/40?cb=20170419042616</item>
+        <item name="Ruby Crystal">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/82/Ruby_Crystal_item.png/revision/latest/scale-to-width-down/40?cb=20131123164948</item>
+        <item name="Sapphire Crystal">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/63/Sapphire_Crystal_item.png/revision/latest/scale-to-width-down/40?cb=20130319091440</item>
+        <item name="Spelltheif's Edge">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/09/Spellthief%27s_Edge_item.png/revision/latest/scale-to-width-down/40?cb=20170419042621</item>
+        <item name="Stopwatch">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e6/Stopwatch_item.png/revision/latest/scale-to-width-down/40?cb=20170809225738</item>
+        <item name="The Dark Seal">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4e/The_Dark_Seal_item.png/revision/latest/scale-to-width-down/40?cb=20161029063102</item>
+        //Advanced items
+        <item name="Aegis of the Legion">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/22/Aegis_of_the_Legion_item.png/revision/latest/scale-to-width-down/40?cb=20161031094643</item>
+        <item name="Aether Wisp">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cd/Aether_Wisp_item.png/revision/latest/scale-to-width-down/40?cb=20151221221514</item>
+        <item name="Bami's Cider">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d9/Bami%27s_Cinder_item.png/revision/latest/scale-to-width-down/40?cb=20170217221624</item>
+        <item name="Bilgewater Cutless">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/44/Bilgewater_Cutlass_item.png/revision/latest/scale-to-width-down/40?cb=20130319090159</item>
+        <item name="Bramble Vest">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/af/Bramble_Vest_item.png/revision/latest/scale-to-width-down/40?cb=20170629174618</item>
+        <item name="Catalyst of Aeons">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/5f/Catalyst_of_Aeons_item.png/revision/latest/scale-to-width-down/40?cb=20170217041544</item>
+        <item name="Caulfield's Warhammer">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/29/Caulfield%27s_Warhammer_item.png/revision/latest/scale-to-width-down/40?cb=20151029090947</item>
+        <item name="Chain Vest">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/89/Chain_Vest_item.png/revision/latest/scale-to-width-down/40?cb=20130319090235</item>
+        <item name="Chalice of Harmony">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/05/Chalice_of_Harmony_item.png/revision/latest/scale-to-width-down/40?cb=20170506225123</item>
+        <item name="Crystalline Bracer">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f1/Crystalline_Bracer_item.png/revision/latest/scale-to-width-down/40?cb=20170506222334</item>
+        <item name="Executioner's Calling">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3d/Executioner%27s_Calling_item.png/revision/latest/scale-to-width-down/40?cb=20130319090327</item>
+        <item name="Fiendish Codex">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a2/Fiendish_Codex_item.png/revision/latest/scale-to-width-down/40?cb=20170824202742</item>
+        <item name="Forbidden Idol">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ae/Forbidden_Idol_item.png/revision/latest/scale-to-width-down/40?cb=20170506222312</item>
+        <item name="Frostfang">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/76/Frostfang_item.png/revision/latest/scale-to-width-down/40?cb=20170506221052</item>
+        <item name="Giant's Belt">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/68/Giant%27s_Belt_item.png/revision/latest/scale-to-width-down/40?cb=20130319090342</item>
+        <item name="Giant Slayer">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/21/Giant_Slayer_item.png/revision/latest/scale-to-width-down/40?cb=20151101000721</item>
+        <item name="Glacial Shroud">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/bd/Glacial_Shroud_item.png/revision/latest/scale-to-width-down/40?cb=20170217043309</item>
+        <item name="Haunting Guise">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/40/Haunting_Guise_item.png/revision/latest/scale-to-width-down/40?cb=20170217044513</item>
+        <item name="Hexdrinker">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4d/Hexdrinker_item.png/revision/latest/scale-to-width-down/40?cb=20170506224838</item>
+        <item name="Hextech Revolver">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e4/Hextech_Revolver_item.png/revision/latest/scale-to-width-down/40?cb=20170217052754</item>
+        <item name="Jaurim's Fist">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/db/Jaurim%27s_Fist_item.png/revision/latest/scale-to-width-down/40?cb=20170506225633</item>
+        <item name="Kindlegem">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b8/Kindlegem_item.png/revision/latest/scale-to-width-down/40?cb=20130319090535</item>
+        <item name="Kircheis Shard">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d1/Kircheis_Shard_item.png/revision/latest/scale-to-width-down/40?cb=20151101000225</item>
+        <item name="Last Whisper">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/ba/Last_Whisper_item.png/revision/latest/scale-to-width-down/40?cb=20151101000226</item>
+        <item name="Lost Chapter">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/31/Lost_Chapter_item.png/revision/latest/scale-to-width-down/40?cb=20170218021023</item>
+        <item name="Negatron Cloak">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/ff/Negatron_Cloak_item.png/revision/latest/scale-to-width-down/40?cb=20130319091023</item>
+        <item name="Nomad's Medallion">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f6/Nomad%27s_Medallion_item.png/revision/latest/scale-to-width-down/40?cb=20170217040058</item>
+        <item name="Phage">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Phage_item.png/revision/latest/scale-to-width-down/40?cb=20130319091122</item>
+        <item name="Poacher's Dirk">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/63/Poacher%27s_Dirk_item.png/revision/latest/scale-to-width-down/40?cb=20161031094639</item>
+        <item name="Quicksilver Sash">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f9/Quicksilver_Sash_item.png/revision/latest/scale-to-width-down/40?cb=20130319091235</item>
+        <item name="Raptor Cloak">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2d/Raptor_Cloak_item.png/revision/latest/scale-to-width-down/40?cb=20141111214512</item>
+        <item name="Recurve Bow">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8e/Recurve_Bow_item.png/revision/latest/scale-to-width-down/40?cb=20130319091312</item>
+        <item name="Seeker's Armguard">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/78/Seeker%27s_Armguard_item.png/revision/latest/scale-to-width-down/40?cb=20130319094451</item>
+        <item name="Serrated Dirk">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c2/Serrated_Dirk_item.png/revision/latest/scale-to-width-down/40?cb=20161030000218</item>
+        <item name="Sheen">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c6/Sheen_item.png/revision/latest/scale-to-width-down/40?cb=20130319091454</item>
+        <item name="Sightstone">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1f/Sightstone_item.png/revision/latest/scale-to-width-down/40?cb=20170216222321</item>
+        <item name="Skirmisher's Sabre">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/67/Skirmisher%27s_Sabre_item.png/revision/latest/scale-to-width-down/40?cb=20150623123528</item>
+        <item name="Spectre's Cowl">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/10/Spectre%27s_Cowl_item.png/revision/latest/scale-to-width-down/40?cb=20170217050914</item>
+        <item name="Stalker's Blade">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/17/Stalker%27s_Blade_item.png/revision/latest/scale-to-width-down/40?cb=20150623122339</item>
+        <item name="Stinger">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e9/Stinger_item.png/revision/latest/scale-to-width-down/40?cb=20130319091535</item>
+        <item name="Targon's Brace">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/db/Targon%27s_Brace_item.png/revision/latest/scale-to-width-down/40?cb=20170217040654</item>
+        <item name="Tear of the Goddess">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2b/Tear_of_the_Goddess_item.png/revision/latest/scale-to-width-down/40?cb=20161029071212</item>
+        <item name="The Hex Core mk-1">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/20/The_Hex_Core_mk-1_item.png/revision/latest/scale-to-width-down/40?cb=20140910235929</item>
+        <item name="The Hex Core mk-2">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/73/The_Hex_Core_mk-2_item.png/revision/latest/scale-to-width-down/40?cb=20140910235928</item>
+        <item name="Tiamat">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e3/Tiamat_item.png/revision/latest/scale-to-width-down/40?cb=20130319091614</item>
+        <item name="Tracker's Knife">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9e/Tracker%27s_Knife_item.png/revision/latest/scale-to-width-down/40?cb=20151101001904</item>
+        <item name="Vampricic Scepter">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ec/Vampiric_Scepter_item.png/revision/latest/scale-to-width-down/40?cb=20170217041353</item>
+        <item name="Warden's Mail">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/ff/Warden%27s_Mail_item.png/revision/latest/scale-to-width-down/40?cb=20130319091639</item>
+        <item name="Zeal">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c6/Zeal_item.png/revision/latest/scale-to-width-down/40?cb=20130319091841</item>
+        // Finished Items
+        <item name="Abyssal Mask">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8f/Abyssal_Mask_item.png/revision/latest/scale-to-width-down/40?cb=20170517180846</item>
+        <item name="Adaptive Helm">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/eb/Adaptive_Helm_item.png/revision/latest/scale-to-width-down/40?cb=20170916174711</item>
+        <item name="Arcane Sweeper">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8d/Hextech_Sweeper_item.png/revision/latest/scale-to-width-down/40?cb=20130319090439</item>
+        <item name="Archangel's Staff">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/47/Archangel%27s_Staff_item.png/revision/latest/scale-to-width-down/40?cb=20170506223936</item>
+        <item name="Ardent Censer">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/47/Ardent_Censer_item.png/revision/latest/scale-to-width-down/40?cb=20170506222400</item>
+        <item name="Athene's Unholy Grail">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cc/Athene%27s_Unholy_Grail_item.png/revision/latest/scale-to-width-down/40?cb=20161029072012</item>
+        <item name="Banner of Command">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9e/Banner_of_Command_item.png/revision/latest/scale-to-width-down/40?cb=20170506224116</item>
+        <item name="Banshee's Vail">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/03/Banshee%27s_Veil_item.png/revision/latest/scale-to-width-down/40?cb=20130319090152</item>
+        <item name="Berserker's Greaves">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/bd/Berserker%27s_Greaves_item.png/revision/latest/scale-to-width-down/40?cb=20170104022343</item>
+        <item name="Blade of the Ruined King">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2f/Blade_of_the_Ruined_King_item.png/revision/latest/scale-to-width-down/40?cb=20170824202421</item>
+        <item name="Bloodrazor">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e1/Bloodrazor_item.png/revision/latest/scale-to-width-down/40?cb=20160504140211</item>
+        <item name="Boots of Mobility">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/90/Boots_of_Mobility_item.png/revision/latest/scale-to-width-down/40?cb=20130319090211</item>
+        <item name="Boots of Swiftness">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/69/Boots_of_Swiftness_item.png/revision/latest/scale-to-width-down/40?cb=20130319090224</item>
+        <item name="Cinderhulk">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/af/Juggernaut_item.png/revision/latest/scale-to-width-down/40?cb=20141211092344</item>
+        <item name="Circlet of the Iron Solari">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/42/Circlet_of_the_Iron_Solari_item.png/revision/latest/scale-to-width-down/40?cb=20170809015412</item>
+        <item name="Dead Man's Plate">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/22/Dead_Man%27s_Plate_item.png/revision/latest/scale-to-width-down/40?cb=20170218021511</item>
+        <item name="Death's Dance">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1c/Death%27s_Dance_item.png/revision/latest/scale-to-width-down/40?cb=20161029063510</item>
+        <item name="Death's Daughter">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2b/Death%27s_Daughter_item.png/revision/latest/scale-to-width-down/40?cb=20150708135046</item>
+        <item name="Duskblade of Draktharr">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9f/Duskblade_of_Draktharr_item.png/revision/latest/scale-to-width-down/40?cb=20161030000433</item>
+        <item name="Edge of Night">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/69/Edge_of_Night_item.png/revision/latest/scale-to-width-down/40?cb=20161031094641</item>
+        <item name="Essence Reaver">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/40/Essence_Reaver_item.png/revision/latest/scale-to-width-down/40?cb=20170506221621</item>
+        <item name="Eye of the Equinox">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b6/Eye_of_the_Equinox_item.png/revision/latest/scale-to-width-down/40?cb=20161029021954</item>
+        <item name="Eye of the Oasis">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4b/Eye_of_the_Oasis_item.png/revision/latest/scale-to-width-down/40?cb=20161029021917</item>
+        <item name="Eye of the Watchers">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/18/Eye_of_the_Watchers_item.png/revision/latest/scale-to-width-down/40?cb=20161029021823</item>
+        <item name="Face of the Mountain">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e8/Face_of_the_Mountain_item.png/revision/latest/scale-to-width-down/40?cb=20170217040656</item>
+        <item name="Fire at Will">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/de/Fire_at_Will_item.png/revision/latest/scale-to-width-down/40?cb=20170130183805</item>
+        <item name="Forgefire Cape">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/46/Forgefire_Cape_item.png/revision/latest/scale-to-width-down/40?cb=20170809015409</item>
+        <item name="Frost Queen's Claim">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/77/Frost_Queen%27s_Claim_item.png/revision/latest/scale-to-width-down/40?cb=20131116140853</item>
+        <item name="Frozen Heart">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/58/Frozen_Heart_item.png/revision/latest/scale-to-width-down/40?cb=20160427183148</item>
+        <item name="Frozen Mallet">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ac/Frozen_Mallet_item.png/revision/latest/scale-to-width-down/40?cb=20130319090339</item>
+        <item name="Gargoyle Plate">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/bd/Gargoyle_Stoneplate_item.png/revision/latest/scale-to-width-down/40?cb=20170419044320</item>
+        <item name="Guardian Angel">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f4/Guardian_Angel_item.png/revision/latest/scale-to-width-down/40?cb=20170517180504</item>
+        <item name="Guinsoo's Blade">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/95/Guinsoo%27s_Rageblade_item.png/revision/latest/scale-to-width-down/40?cb=20160427183218</item>
+        <item name="Hextech GLP-800">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c9/Hextech_GLP-800_item.png/revision/latest/scale-to-width-down/40?cb=20170506225204</item>
+        <item name="Hextech Gunblade">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/64/Hextech_Gunblade_item.png/revision/latest/scale-to-width-down/40?cb=20170506221751</item>
+        <item name="Hextexh Protobelt-01">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8d/Hextech_Protobelt-01_item.png/revision/latest/scale-to-width-down/40?cb=20170506224503</item>
+        <item name="Ironborn Gauntlet">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c4/Iceborn_Gauntlet_item.png/revision/latest/scale-to-width-down/40?cb=20130319090444</item>
+        <item name="Infernal Mask">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/07/Infernal_Mask_item.png/revision/latest/scale-to-width-down/40?cb=20170809015410</item>
+        <item name="Infinity Edge">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/15/Infinity_Edge_item.png/revision/latest/scale-to-width-down/40?cb=20130319090446</item>
+        <item name="Ionian Boots of Lucidity">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/14/Ionian_Boots_of_Lucidity_item.png/revision/latest/scale-to-width-down/40?cb=20170506230216</item>
+        <item name="Knight's Vow">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/fb/Knight%27s_Vow_item.png/revision/latest/scale-to-width-down/40?cb=20161031094645</item>
+        <item name="Liandry's Torment">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/fd/Liandry%27s_Torment_item.png/revision/latest/scale-to-width-down/40?cb=20130710101719</item>
+        <item name="Lick Bane">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/60/Lich_Bane_item.png/revision/latest/scale-to-width-down/40?cb=20130319090609</item>
+        <item name="Locket of the Iron Solari">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/56/Locket_of_the_Iron_Solari_item.png/revision/latest/scale-to-width-down/40?cb=20130319090622</item>
+        <item name="Lord Dominik's Regards">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2d/Lord_Dominik%27s_Regards_item.png/revision/latest/scale-to-width-down/40?cb=20161029064936</item>
+        <item name="Lord Vann Damm's Pillager">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/fe/Lord_Van_Damm%27s_Pillager_item.png/revision/latest/scale-to-width-down/40?cb=20130111191527</item>
+        <item name="Luden's Echo">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7b/Luden%27s_Echo_item.png/revision/latest/scale-to-width-down/40?cb=20150305110241</item>
+        <item name="Manamune">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/60/Manamune_item.png/revision/latest/scale-to-width-down/40?cb=20170216222325</item>
+        <item name="Maw of Malmortius">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/14/Maw_of_Malmortius_item.png/revision/latest/scale-to-width-down/40?cb=20170108230950</item>
+        <item name="Mejai's Soulstealer">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2e/Mejai%27s_Soulstealer_item.png/revision/latest/scale-to-width-down/40?cb=20170824202621</item>
+        <item name="Mercurial Scimitar">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/0a/Mercurial_Scimitar_item.png/revision/latest/scale-to-width-down/40?cb=20130710102449</item>
+        <item name="Mercury's Treads">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/96/Mercury%27s_Treads_item.png/revision/latest/scale-to-width-down/40?cb=20130319090758</item>
+        <item name="Mikael's Crucible">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/de/Mikael%27s_Crucible_item.png/revision/latest/scale-to-width-down/40?cb=20130710101718</item>
+        <item name="Molten Edge">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8b/Molten_Edge_item.png/revision/latest/scale-to-width-down/40?cb=20170809015408</item>
+        <item name="Moonflair Spellbalde">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d5/Moonflair_Spellblade_item.png/revision/latest/scale-to-width-down/40?cb=20170217212902</item>
+        <item name="Morellonomicon">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7b/Morellonomicon_item.png/revision/latest/scale-to-width-down/40?cb=20170506225924</item>
+        <item name="Mortal Reminder">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cf/Mortal_Reminder_item.png/revision/latest/scale-to-width-down/40?cb=20161029064934</item>
+        <item name="Muramana">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/18/Muramana_item.png/revision/latest/scale-to-width-down/40?cb=20130710101717</item>
+        <item name="Nashor's Tooth">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/16/Nashor%27s_Tooth_item.png/revision/latest/scale-to-width-down/40?cb=20130616211315</item>
+        <item name="Ninja Tabi">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/35/Ninja_Tabi_item.png/revision/latest/scale-to-width-down/40?cb=20130319091031</item>
+        <item name="Ohmwrecker">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/6c/Ohmwrecker_item.png/revision/latest/scale-to-width-down/40?cb=20130710102757</item>
+        <item name="Perfect Hex Core">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2e/Perfect_Hex_Core_item.png/revision/latest/scale-to-width-down/40?cb=20140910235929</item>
+        <item name="Phantom Dancer">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/ce/Phantom_Dancer_item.png/revision/latest/scale-to-width-down/40?cb=20170216211257</item>
+        <item name="Rabadom's Deathcap">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest/scale-to-width-down/40?cb=20130319091242</item>
+        <item name="Rabadom's Deathcrown">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ad/Rabadon%27s_Deathcrown_item.png/revision/latest/scale-to-width-down/40?cb=20170809015410</item>
+        <item name="Raise Moral">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a4/Raise_Morale_item.png/revision/latest/scale-to-width-down/40?cb=20150708135045</item>
+        <item name="Randuin's Omen">https://vignette.wikia.nocookie.net/leagueoflegends/images/0/08/Randuin%27s_Omen_item.png/revision/latest/scale-to-width-down/40?cb=20150807154633</item>
+        <item name="Rapid Firecannon">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/92/Rapid_Firecannon_item.png/revision/latest/scale-to-width-down/40?cb=20161029064940</item>
+        <item name="Ravenous Hydra">https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e8/Ravenous_Hydra_item.png/revision/latest/scale-to-width-down/40?cb=20170217220302</item>
+        <item name="Redemption">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/94/Redemption_item.png/revision/latest/scale-to-width-down/40?cb=20161031094647</item>
+        <item name="Righteous Glory">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9f/Righteous_Glory_item.png/revision/latest/scale-to-width-down/40?cb=20170506225701</item>
+        <item name="Rod of Ages">https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8c/Rod_of_Ages_item.png/revision/latest/scale-to-width-down/40?cb=20161029071618</item>
+        <item name="Ruby Sightstore">https://vignette.wikia.nocookie.net/leagueoflegends/images/5/5d/Ruby_Sightstone_item.png/revision/latest/scale-to-width-down/40?cb=20170216220450</item>
+        <item name="Runaan's Hurricane">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f5/Runaan%27s_Hurricane_item.png/revision/latest/scale-to-width-down/40?cb=20170506224805</item>
+        <item name="Ruinic Echoes">https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cc/Magus_item.png/revision/latest/scale-to-width-down/40?cb=20141211092426</item>
+        <item name="Rylai's Crystal Scepter">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f2/Rylai%27s_Crystal_Scepter_item.png/revision/latest/scale-to-width-down/40?cb=20130319091435</item>
+        <item name="Salvation">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/de/Salvation_item.png/revision/latest/scale-to-width-down/40?cb=20170809015412</item>
+        <item name="Seraph's Embrace">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b9/Seraph%27s_Embrace_item.png/revision/latest/scale-to-width-down/40?cb=20170506224600</item>
+        <item name="Sorcerer's Shoes">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/60/Sorcerer%27s_Shoes_item.png/revision/latest/scale-to-width-down/40?cb=20130319091505</item>
+        <item name="Spirit Visage">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/6f/Spirit_Visage_item.png/revision/latest/scale-to-width-down/40?cb=20130319091526</item>
+        <item name="Statikk Shav">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f8/Statikk_Shiv_item.png/revision/latest/scale-to-width-down/40?cb=20170506225803</item>
+        <item name="Sterak's Gage">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9b/Sterak%27s_Gage_item.png/revision/latest/scale-to-width-down/40?cb=20150812200406</item>
+        <item name="Sunfire Cape">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/61/Sunfire_Cape_item.png/revision/latest/scale-to-width-down/40?cb=20170506225305</item>
+        <item name="Talisman of Ascension">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/32/Talisman_of_Ascension_item.png/revision/latest/scale-to-width-down/40?cb=20170217040100</item>
+        <item name="The Black Cleaver">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png/revision/latest/scale-to-width-down/40?cb=20170217222000</item>
+        <item name="The Bloodthirster">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/72/The_Bloodthirster_item.png/revision/latest/scale-to-width-down/40?cb=20170603190613</item>
+        <item name="The Lightbringer">https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7d/The_Lightbringer_item.png/revision/latest/scale-to-width-down/40?cb=20130319091608</item>
+        <item name="The Obsidian Cleaver">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/99/The_Obsidian_Cleaver_item.png/revision/latest/scale-to-width-down/40?cb=20170809015411</item>
+        <item name="Thornmail">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4f/Thornmail_item.png/revision/latest/scale-to-width-down/40?cb=20170217051147</item>
+        <item name="Titanic Hydra">https://vignette.wikia.nocookie.net/leagueoflegends/images/2/22/Titanic_Hydra_item.png/revision/latest/scale-to-width-down/40?cb=20170217220618</item>
+        <item name="Trinity Force">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png/revision/latest/scale-to-width-down/40?cb=20130319091621</item>
+        <item name="Trinity Fusion">https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d0/Trinity_Fusion_item.png/revision/latest/scale-to-width-down/40?cb=20170809015413</item>
+        <item name="Void Staff">https://vignette.wikia.nocookie.net/leagueoflegends/images/6/65/Void_Staff_item.png/revision/latest/scale-to-width-down/40?cb=20130319091635</item>
+        <item name="Warmog's Armor">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9f/Warmog%27s_Armor_item.png/revision/latest/scale-to-width-down/40?cb=20170409190019</item>
+        <item name="Warrior">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4f/Warrior_item.png/revision/latest/scale-to-width-down/40?cb=20141211092448</item>
+        <item name="Wit's End">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/16/Wit%27s_End_item.png/revision/latest/scale-to-width-down/40?cb=20130319091648</item>
+        <item name="Wooglet's Witchcap">https://vignette.wikia.nocookie.net/leagueoflegends/images/3/38/Wooglet%27s_Witchcap_item.png/revision/latest/scale-to-width-down/40?cb=20170217212904</item>
+        <item name="Wooglet's Witchcrown">https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a5/Wooglet%27s_Witchcrown_item.png/revision/latest/scale-to-width-down/40?cb=20170913174025</item>
+        <item name="Youmuu's Ghostblade">https://vignette.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png/revision/latest/scale-to-width-down/40?cb=20161031083940</item>
+        <item name="Zeke's Convergence">https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1a/Zeke%27s_Convergence_item.png/revision/latest/scale-to-width-down/40?cb=20170622224853</item>
+        <item name="Zhonya's Hourglass">https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Zhonya%27s_Hourglass_item.png/revision/latest/scale-to-width-down/40?cb=20161029071416</item>
+        <item name="Zhonya's Paradox">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9a/Zhonya%27s_Paradox_item.png/revision/latest/scale-to-width-down/40?cb=20170913175441</item>
+        <item name="Zz'Rot Portal">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/fb/Zz%27Rot_Portal_item.png/revision/latest/scale-to-width-down/40?cb=20170218024745</item>
     </string-array>
 </resources>
