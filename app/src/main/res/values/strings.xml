@@ -403,6 +403,45 @@
 
     //Champion icon url
     <string-array name="champion_icon_urls">
+        <item name ="Aatrox">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Aatrox.png</item>
+        <item name ="Ahri">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Ahri.png</item>
+        <item name ="Akali">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Akali.png</item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
+        <item name =""></item>
 
 
     </string-array>
