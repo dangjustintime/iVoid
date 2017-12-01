@@ -49,35 +49,12 @@ public class ChampionsActivity extends AppCompatActivity {
         championCardView = (CardView) findViewById(R.id.champion_card_view);
         championCardView.setCardBackgroundColor(R.color.lightGray);
         /*
-        Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://na1.api.riotgames.com")
-                .addConverterFactory(GsonConverterFactory.create());
-        Retrofit retrofit = builder.build();
-
-        ApiClient client = retrofit.create(ApiClient.class);
-        Call<ChampionMap> call = client.reposForChampionMap();
-        call.enqueue(new Callback<ChampionMap>() {
-            @Override
-            public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
-                championMap = response.body();
-                championArrayList = championMap.getList();
-                Toast.makeText(ChampionsActivity.this, championArrayList.get(80).getTitle(), Toast.LENGTH_LONG).show();
-            }
-            @Override
-            public void onFailure(Call<ChampionMap> call, Throwable t) {
-                Toast.makeText(ChampionsActivity.this, "Response Failed", Toast.LENGTH_LONG).show();
-            }
-        });
-
-
-
-
         //recycler view
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
         championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 1, GridLayoutManager.VERTICAL, false));
         championRecyclerAdapter = new ChampionGridAdapter(this, championArrayList);
         championsRecyclerView.setAdapter(championRecyclerAdapter);
-        *
+        */
 
 
 

@@ -18,6 +18,8 @@ public class Item {
         public int getSell() { return sell; }
         public void setSell(int sell) { this.sell = sell; }
     }
+    @SerializedName("id")
+    private int id;
     @SerializedName("name")
     private String name;
     @SerializedName("plaintext")
@@ -27,6 +29,8 @@ public class Item {
     @SerializedName("gold")
     private gold price;
     //getters and setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public String getPlainText() { return plainText; }
