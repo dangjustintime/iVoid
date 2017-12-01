@@ -20,6 +20,9 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.firebase:firebase-storage:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //luckywheel
     compile 'com.github.mmoamenn:LuckyWheel_Android:0.0.2'
@@ -35,7 +38,14 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:26.0.0'
     //gson library (converts JSON files into java objects and back)
     compile 'com.google.code.gson:gson:2.8.2'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     //picasso (image loader)
     compile 'com.squareup.picasso:picasso:2.5.2'
     testCompile 'junit:junit:4.12'
 }
+
+
+
+apply plugin: 'com.google.gms.google-services'
