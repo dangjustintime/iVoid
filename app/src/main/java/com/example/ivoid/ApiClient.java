@@ -1,7 +1,7 @@
 package com.example.ivoid;
 
 import com.example.ivoid.Model.Champion;
-import com.example.ivoid.Model.ChampionList;
+import com.example.ivoid.Model.ChampionMap;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -16,5 +16,5 @@ public interface ApiClient {
     @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b")
     Call<Champion> reposForChampion(@Path("id") String id);
     @GET("/lol/static-data/v3/champions?locale=en_US&dataById=false&api_key=RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b")
-    Call<ChampionList> reposForChampionList();
+    Call<ChampionMap> reposForChampionMap();
 }

@@ -5,18 +5,23 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
-import com.example.ivoid.Model.ChampionList;
+import com.example.ivoid.Model.ChampionGridAdapter;
+import com.example.ivoid.Model.ChampionMap;
 
 import net.rithms.riot.api.RiotApiException;
 import net.rithms.riot.api.endpoints.summoner.dto.Summoner;
 import net.rithms.riot.constant.Platform;
 
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,7 +32,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ChampionsActivity extends AppCompatActivity {
 
     private CardView championCardView;
-    private List<Champion> championList;
+    private RecyclerView championsRecyclerView;
+    private ChampionGridAdapter championRecyclerAdapter;
+    private EditText championsEditText;
+    private Map<String,Champion> championMap;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +43,7 @@ public class ChampionsActivity extends AppCompatActivity {
         FetchSummonerTask summonerTask = new FetchSummonerTask();
         summonerTask.execute("tryndamere");
 
+        championsEditText = (EditText) findViewById(R.id.edit_text_search_item);
         championCardView = (CardView) findViewById(R.id.champion_card_view);
         championCardView.setCardBackgroundColor(R.color.lightGray);
 
@@ -44,19 +53,30 @@ public class ChampionsActivity extends AppCompatActivity {
         Retrofit retrofit = builder.build();
 
         ApiClient client = retrofit.create(ApiClient.class);
-        Call<ChampionList> call = client.reposForChampionList();
-        call.enqueue(new Callback<ChampionList>() {
+        Call<ChampionMap> call = client.reposForChampionMap();
+        call.enqueue(new Callback<ChampionMap>() {
             @Override
-            public void onResponse(Call<ChampionList> call, Response<ChampionList> response) {
-                ChampionList repos = response.body();
-                championList = repos.getList();
-
+            public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
+                ChampionMap map = response.body();
+                championMap = map.getChampionMap();
+                Toast.makeText(ChampionsActivity.this, "Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
-            public void onFailure(Call<ChampionList> call, Throwable t) {
-                Toast.makeText(ChampionsActivity.this, "Response Failed", Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<ChampionMap> call, Throwable t) {
+                Toast.makeText(ChampionsActivity.this, "Response Failed", Toast.LENGTH_LONG).show();
             }
         });
+
+        /*
+        //recycler view
+        championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
+        championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false));
+        championRecyclerAdapter = new ChampionGridAdapter(this, championMap);
+        championsRecyclerView.setAdapter(championRecyclerAdapter);
+        */
+
+
+
     }
     public class FetchSummonerTask extends AsyncTask<String, Void, Summoner> {
 
