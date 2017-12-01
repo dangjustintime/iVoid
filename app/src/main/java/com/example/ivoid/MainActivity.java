@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
 import com.example.ivoid.Model.ChampionMap;
+import com.example.ivoid.Model.Item;
+import com.example.ivoid.Model.ItemMap;
 
 import java.util.ArrayList;
 
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private static String API_KEY = "RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b";
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
+    private ItemMap itemMap;
+    private ArrayList<Item> itemArrayList;
 
 
     @Override
@@ -54,8 +58,9 @@ public class MainActivity extends AppCompatActivity {
         Retrofit retrofit = builder.build();
 
         ApiClient client = retrofit.create(ApiClient.class);
-        Call<ChampionMap> call = client.reposForChampionMap();
-        call.enqueue(new Callback<ChampionMap>() {
+        //call for championMap
+        Call<ChampionMap> callChampionMap = client.reposForChampionMap();
+        callChampionMap.enqueue(new Callback<ChampionMap>() {
             @Override
             public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
                 championMap = response.body();
@@ -64,7 +69,21 @@ public class MainActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Response Failed", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+            }
+        });
+        //call for itemMap
+        Call<ItemMap> callItemMap = client.reposForItemMap();
+        callItemMap.enqueue(new Callback<ItemMap>() {
+            @Override
+            public void onResponse(Call<ItemMap> call, Response<ItemMap> response) {
+                itemMap = response.body();
+                itemArrayList = itemMap.getList();
+                Toast.makeText(MainActivity.this, itemArrayList.get(1).getPlainText(), Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onFailure(Call<ItemMap> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Item Response Failed", Toast.LENGTH_LONG).show();
             }
         });
 

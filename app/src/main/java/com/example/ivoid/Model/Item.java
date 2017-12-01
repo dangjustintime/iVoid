@@ -28,7 +28,7 @@ public class Item {
     private String description;
     @SerializedName("gold")
     private gold price;
-    //getters and setters
+    //getters and settersx
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public String getName() { return name; }
