@@ -7,6 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.example.ivoid.Model.Champion;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
     public ImageButton championsImageButton;
     public ImageButton updatesImageButton;
     public ImageButton randomImageButton;
+    public Champion champ;
+
+    private static String API_KEY = "RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +41,26 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Retrofit.Builder builder = new Retrofit.Builder()
+                .baseUrl("https://na1.api.riotgames.com")
+                .addConverterFactory(GsonConverterFactory.create());
+        Retrofit retrofit = builder.build();
+
+        ApiClient client = retrofit.create(ApiClient.class);
+        Call<Champion> call = client.reposForChampion("24");
+        call.enqueue(new Callback<Champion>() {
+            @Override
+            public void onResponse(Call<Champion> call, Response<Champion> response) {
+                Champion repos = response.body();
+                Toast.makeText(MainActivity.this, repos.getName(), Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onFailure(Call<Champion> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Response Failed", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
     }
 
