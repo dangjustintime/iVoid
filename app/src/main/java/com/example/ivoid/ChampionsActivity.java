@@ -38,56 +38,52 @@ public class ChampionsActivity extends AppCompatActivity {
     private EditText championsEditText;
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
+    private Retrofit retrofit = null;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
-        FetchSummonerTask summonerTask = new FetchSummonerTask();
-        summonerTask.execute("tryndamere");
 
         championsEditText = (EditText) findViewById(R.id.edit_text_search_item);
         championCardView = (CardView) findViewById(R.id.champion_card_view);
         championCardView.setCardBackgroundColor(R.color.lightGray);
-        /*
+
         //recycler view
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
-        championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 1, GridLayoutManager.VERTICAL, false));
-        championRecyclerAdapter = new ChampionGridAdapter(this, championArrayList);
-        championsRecyclerView.setAdapter(championRecyclerAdapter);
-        */
-
-
-
-
+        championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+        getAPIData();
     }
-    public class FetchSummonerTask extends AsyncTask<String, Void, Summoner> {
-
-        MyApi api = new MyApi();
-        @Override
-        protected Summoner doInBackground(String... params) {
-
-            try {
-                Summoner summoner = ((api.getApi()
-                        .getSummonerByName(Platform.NA, params[0])));
-                if(summoner != null) {
-                    return summoner;
-                }
-            } catch (RiotApiException e) {
-                e.printStackTrace();
-            }
-
-            return null;
-        }
-        @Override
-        protected void onPostExecute(Summoner result){
-        super.onPostExecute(result);
-        if(result != null)
-            Toast.makeText(ChampionsActivity.this, String.valueOf(result.getSummonerLevel()), Toast.LENGTH_SHORT).show();}
-    }
-
     public void championInfoClick(View v) {
         //Start ItemsActivity
         Intent intent = new Intent (ChampionsActivity.this, ChampionInfoActivity.class);
         startActivity(intent);
     }
+    //API call
+    public void getAPIData() {
+        if(retrofit == null) {
+            retrofit = new Retrofit.Builder()
+                    .baseUrl("https://na1.api.riotgames.com")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+
+        ApiClient client = retrofit.create(ApiClient.class);
+        //call for championMap
+        Call<ChampionMap> callChampionMap = client.reposForChampionMap();
+        callChampionMap.enqueue(new Callback<ChampionMap>() {
+            @Override
+            public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
+                ChampionMap responseChampionMap = (ChampionMap) response.body().getChampionMap();
+                ArrayList<Champion> responseChampionArrayList = responseChampionMap.getList();
+                championsRecyclerView.setAdapter(new ChampionGridAdapter(getApplicationContext(), responseChampionArrayList));
+            }
+            @Override
+            public void onFailure(Call<ChampionMap> call, Throwable t) {
+                Toast.makeText(ChampionsActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
 }
+
+
+
