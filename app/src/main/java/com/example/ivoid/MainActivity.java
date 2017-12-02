@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
 import com.example.ivoid.Model.ChampionMap;
@@ -15,12 +14,6 @@ import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemMap;
 
 import java.util.ArrayList;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -51,44 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://na1.api.riotgames.com")
-                .addConverterFactory(GsonConverterFactory.create());
-        Retrofit retrofit = builder.build();
-
-        ApiClient client = retrofit.create(ApiClient.class);
-        //call for championMap
-        Call<ChampionMap> callChampionMap = client.reposForChampionMap();
-        callChampionMap.enqueue(new Callback<ChampionMap>() {
-            @Override
-            public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
-                championMap = response.body();
-                championArrayList = championMap.getList();
-                Toast.makeText(MainActivity.this, championArrayList.get(80).getTitle(), Toast.LENGTH_LONG).show();
-            }
-            @Override
-            public void onFailure(Call<ChampionMap> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
-            }
-        });
-        //call for itemMap
-        Call<ItemMap> callItemMap = client.reposForItemMap();
-        callItemMap.enqueue(new Callback<ItemMap>() {
-            @Override
-            public void onResponse(Call<ItemMap> call, Response<ItemMap> response) {
-                itemMap = response.body();
-                itemArrayList = itemMap.getList();
-                Toast.makeText(MainActivity.this, itemArrayList.get(1).getPlainText(), Toast.LENGTH_LONG).show();
-            }
-            @Override
-            public void onFailure(Call<ItemMap> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Item Response Failed", Toast.LENGTH_LONG).show();
-            }
-        });
-
-
-
     }
 
     public void itemsClick(View v) {
