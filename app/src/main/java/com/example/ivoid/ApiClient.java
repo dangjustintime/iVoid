@@ -14,13 +14,12 @@ import retrofit2.http.Path;
  */
 
 public interface ApiClient {
-    String API_KEY = "RGAPI-8da3f5ce-b8df-4473-9ea1-e345f60387a0";
-    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-8da3f5ce-b8df-4473-9ea1-e345f60387a0")
+    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-3a0b7441-0440-42e9-9546-b0c91bc987fb")
     Call<Champion> reposForChampion(@Path("id") String id);
-    @GET("/lol/static-data/v3/champions?locale=en_US&dataById=false&api_key=RGAPI-8da3f5ce-b8df-4473-9ea1-e345f60387a0")
+    @GET("/lol/static-data/v3/champions?locale=en_US&dataById=false&api_key=RGAPI-3a0b7441-0440-42e9-9546-b0c91bc987fb")
     Call<ChampionMap> reposForChampionMap();
-    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-8da3f5ce-b8df-4473-9ea1-e345f60387a0")
+    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-3a0b7441-0440-42e9-9546-b0c91bc987fb")
     Call<Item> reposForItem();
-    @GET("/lol/static-data/v3/items?locale=en_US&tags=all&api_key=RGAPI-8da3f5ce-b8df-4473-9ea1-e345f60387a0")
+    @GET("/lol/static-data/v3/items?locale=en_US&tags=all&api_key=RGAPI-3a0b7441-0440-42e9-9546-b0c91bc987fb")
     Call<ItemMap> reposForItemMap();
 }

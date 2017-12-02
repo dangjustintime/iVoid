@@ -31,6 +31,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ChampionsActivity extends AppCompatActivity {
+    public static final String API_KEY = "RGAPI-3a0b7441-0440-42e9-9546-b0c91bc987fb";
 
     private CardView championCardView;
     private RecyclerView championsRecyclerView;
@@ -44,14 +45,14 @@ public class ChampionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
 
-        championsEditText = (EditText) findViewById(R.id.edit_text_search_item);
         championCardView = (CardView) findViewById(R.id.champion_card_view);
         championCardView.setCardBackgroundColor(R.color.lightGray);
 
         //recycler view
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
         championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
-        getAPIData();
+        //call API
+        //getAPIData();
     }
     public void championInfoClick(View v) {
         //Start ItemsActivity
@@ -73,9 +74,10 @@ public class ChampionsActivity extends AppCompatActivity {
         callChampionMap.enqueue(new Callback<ChampionMap>() {
             @Override
             public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
-                ChampionMap responseChampionMap = (ChampionMap) response.body().getChampionMap();
+                ChampionMap responseChampionMap = response.body();
                 ArrayList<Champion> responseChampionArrayList = responseChampionMap.getList();
                 championsRecyclerView.setAdapter(new ChampionGridAdapter(getApplicationContext(), responseChampionArrayList));
+                Toast.makeText(ChampionsActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {

@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import static com.example.ivoid.R.color.purple;
+import static com.example.ivoid.R.color.lightGray;
 
 /**
  * Created by Justin Dang on 11/30/2017.
@@ -47,10 +47,12 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
     }
     //view binder
     @SuppressLint("ResourceAsColor")
+    @Override
     public void onBindViewHolder(ChampionViewHolder holder, int position) {
+
         Champion champion = championList.get(position);
         holder.championName.setText(champion.getName());
-        holder.championImage.setBackgroundColor(purple);
+        holder.championImage.setBackgroundColor(lightGray);
         //image loader with picasso
         Picasso.with(context)
                 .load("http://elohell.net/public/champions/avatar/VelKozSquare1.png")
