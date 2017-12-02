@@ -44,7 +44,7 @@
         android:layout_below="@+id/hello"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:entries="@array/roles"
+/>/        android:entries="@array/roles"
         android:popupBackground="@color/colorBackground" />
 
 </RelativeLayout>
