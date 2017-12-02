@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:fastScrollEnabled="true"
+    android:persistentDrawingCache="scrolling"
+    android:scrollingCache="true"
+    tools:scrollingCache="false">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:persistentDrawingCache="none"
         android:scrollIndicators="none|right"
         tools:context="com.example.ivoid.ItemInfoActivity">
 
@@ -20,12 +24,12 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/champion_splash_image_view"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitStart"
-                app:srcCompat="@drawable/velkoz" />
+                app:srcCompat="@drawable/velkoz_tiny" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -72,33 +76,6 @@
 
         </FrameLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,6 +94,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/champion_passive_title_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Organic Deconstruction"
@@ -124,6 +102,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/champion_passive_description_text view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vel'Koz's abilities apply Organic Deconstruction to enemies on hit. If 3 stacks are accumulated, the enemy will take a burst of true damage."
@@ -164,6 +143,7 @@
                     android:paddingVertical="@dimen/fab_margin">
 
                     <TextView
+                        android:id="@+id/champion_q_title_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Plasma Fission"
@@ -171,6 +151,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/champion_q_description_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vel'Koz shoots a bolt of plasma that splits in two on reactivation or upon hitting an enemy. The bolt slows and damages on hit."
@@ -214,6 +195,7 @@
                     android:paddingVertical="@dimen/fab_margin">
 
                     <TextView
+                        android:id="@+id/champion_w_title_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Void Rift"
@@ -221,7 +203,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item_description_text_view"
+                        android:id="@+id/champion_w_description_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vel'Koz opens a rift to the void that deals an initial burst of damage, then explodes for a second burst of damage after a delay."
@@ -232,6 +214,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -264,6 +247,7 @@
                     android:paddingVertical="@dimen/fab_margin">
 
                     <TextView
+                        android:id="@+id/champion_e_title_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tectonic Disruption"
@@ -271,7 +255,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item_description_text_view"
+                        android:id="@+id/champion_e_description_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vel'Koz causes an area to explode, knocking up enemies, and knocking close enemies slightly away."
@@ -282,6 +266,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -314,6 +299,7 @@
                     android:paddingVertical="@dimen/fab_margin">
 
                     <TextView
+                        android:id="@+id/champion_r_title_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Life Form Disintegration Ray"
@@ -321,7 +307,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item_description_text_view"
+                        android:id="@+id/champion_r_description_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vel'Koz unleashes a channelled beam that follows the cursor for 2.5 seconds that deals magic damage. Organic Deconstruction Researches enemy champions causing them to take true damage instead."
