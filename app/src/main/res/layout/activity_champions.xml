@@ -51,6 +51,10 @@
                 android:textSize="15dp" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/text_view_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/champion_grid_recycler_view"
         android:layout_width="match_parent"

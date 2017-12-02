@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
@@ -53,6 +54,7 @@ public class ChampionsActivity extends AppCompatActivity {
         championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //call API
         //getAPIData();
+
     }
     public void championInfoClick(View v) {
         //Start ItemsActivity
