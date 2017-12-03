@@ -53,14 +53,6 @@
                     android:textColor="@color/gold"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/item_price_sell_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="2dp"
-                    android:text="(20)"
-                    android:textColor="@color/gold"
-                    android:textSize="20dp" />
             </LinearLayout>
 
             <LinearLayout
