@@ -37,7 +37,6 @@ public class ChampionsActivity extends AppCompatActivity {
     private CardView championCardView;
     private RecyclerView championsRecyclerView;
     private ChampionGridAdapter championRecyclerAdapter;
-    private EditText championsEditText;
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
     private Retrofit retrofit = null;

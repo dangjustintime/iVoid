@@ -49,7 +49,6 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
     @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(ChampionViewHolder holder, int position) {
-
         Champion champion = championList.get(position);
         holder.championName.setText(champion.getName());
         holder.championImage.setBackgroundColor(lightGray);
@@ -57,7 +56,6 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
         Picasso.with(context)
                 .load("http://elohell.net/public/champions/avatar/VelKozSquare1.png")
                 .into(holder.championImage);
-
     }
     @Override
     //get the number of selected toppings
