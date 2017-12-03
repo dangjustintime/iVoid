@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitStart"
-                app:srcCompat="@drawable/velkoz_tiny" />
+                app:srcCompat="@drawable/velkoz" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -102,7 +102,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/champion_passive_description_text view"
+                android:id="@+id/champion_passive_description_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vel'Koz's abilities apply Organic Deconstruction to enemies on hit. If 3 stacks are accumulated, the enemy will take a burst of true damage."

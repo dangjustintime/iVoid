@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.bluehomestudio.luckywheel.LuckyWheel;
+import com.bluehomestudio.luckywheel.OnLuckyWheelReachTheTarget;
 import com.bluehomestudio.luckywheel.WheelItem;
 
 import java.util.ArrayList;
@@ -33,25 +35,30 @@ public class RandomWheelActivity extends AppCompatActivity {
         mChampWheel = (LuckyWheel) findViewById(R.id.champwheel);
         mSpinWheel = (Button) findViewById(R.id.spinButton);
         List<WheelItem> wheelItems = new ArrayList<>();
-        for(int i = 0; i < 40; i++)
+        final String [] Top = getResources().getStringArray(R.array.Top);
+        int count = 0;
+        for(int i = 0; i < Top.length; i++)
         {
-            if(i%2==0)
-            {
-                wheelItems.add(new WheelItem(Color.LTGRAY, convertStringToBitmap("Hello World!")));
-            }
-            else if(i%3==0)
-            {
-                wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap("Goodbye World!")));
-            }
+            if(count % 2 == 0)
+            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
             else
-                wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap("I Smell!")));
+                wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
+            count++;
         }
+
         mChampWheel.addWheelItems(wheelItems);
 
         mSpinWheel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mChampWheel.rotateWheelTo(ThreadLocalRandom.current().nextInt(0, 39 + 1));
+                final int random = ThreadLocalRandom.current().nextInt(0, 39 + 1);
+                mChampWheel.rotateWheelTo(random);
+                mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
+                    @Override
+                    public void onReachTarget() {
+                        Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
 

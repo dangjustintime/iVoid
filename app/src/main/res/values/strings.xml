@@ -791,4 +791,50 @@
         <item name="Zhonya's Paradox">https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9a/Zhonya%27s_Paradox_item.png/revision/latest/scale-to-width-down/40?cb=20170913175441</item>
         <item name="Zz'Rot Portal">https://vignette.wikia.nocookie.net/leagueoflegends/images/f/fb/Zz%27Rot_Portal_item.png/revision/latest/scale-to-width-down/40?cb=20170218024745</item>
     </string-array>
+    <string-array name="Top">
+        +        <item>Aatrox</item>
+        +        <item>Akali</item>
+        +        <item>Camille</item>
+        +        <item>Cho-Gath</item>
+        +        <item>Darius</item>
+        +        <item>Dr. Mundo</item>
+        +        <item>Fiora</item>
+        +        <item>Gangplank</item>
+        +        <item>Garen</item>
+        +        <item>Gnar</item>
+        +        <item>Heimerdinger</item>
+        +        <item>Illaoi</item>
+        +        <item>Irelia</item>
+        +        <item>Jax</item>
+        +        <item>Jayce</item>
+        +        <item>Kayle</item>
+        +        <item>Kennen</item>
+        +        <item>Kled</item>
+        +        <item>Malphite</item>
+        +        <item>Maokai</item>
+        +        <item>Mordekaiser</item>
+        +        <item>Nasus</item>
+        +        <item>Nautilus</item>
+        +        <item>Olaf</item>
+        +        <item>Ornn</item>
+        +        <item>Pantheon</item>
+        +        <item>Poppy</item>
+        +        <item>Quinn</item>
+        +        <item>Renekton</item>
+        +        <item>Riven</item>
+                 <item>Riven</item>
+        +        <item>Rumble</item>
+        +        <item>Shen</item>
+        +        <item>Singed</item>
+        +        <item>Sion</item>
+        +        <item>Swain</item>
+        +        <item>Teemo</item>
+                 <item>Teemo</item>
+        +        <item>Trundle</item>
+        +        <item>Tryndamere</item>
+        +        <item>Urgot</item>
+        +        <item>Wukong</item>
+        +        <item>Yasuo</item>
+        +        <item>Yorick</item>
+    </string-array>
 </resources>
