@@ -45,7 +45,7 @@ public class  ItemsActivity extends AppCompatActivity {
         itemsRecyclerView = (RecyclerView) findViewById(R.id.item_grid_recycler_view);
         itemsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //call API
-        getAPIData();
+        //getAPIData();
 
     }
     public void itemsInfoClick(View v) {
