@@ -401,7 +401,7 @@
     <string name="random_button">Random Button</string>
 
     //Champion icon url
-    <string-array name="champion_icon_urls">
+    <string-array name="champion_urls">
         <item name="Aatrox">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Aatrox.png</item>
         <item name="Ahri">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Ahri.png</item>
         <item name="Akali">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Akali.png</item>
@@ -540,7 +540,7 @@
         <item name="Ziggs">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Ziggs.png</item>
         <item name="Zilean">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Zilean.png</item>
         <item name="Zoe">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Zoe.png</item>
-        <item name="Zyra">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Zyra.png</item>
+    <item name="Zyra">https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Zyra.png</item>
     </string-array>
 
     //item icon urls
