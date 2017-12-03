@@ -384,14 +384,13 @@
     </string-array>
     <string-array name="classes">//are subclasses necessary? This is mainly to aid the randomize
         wheel, to allow you to pick at random for a specific role
-        <item>Tank</item>
+        <item>Top</item>
         //should these in fact be the roles themselves, i.e. mid, adc, jungle, support, solo?
-        <item>Fighter</item>
+        <item>Mid</item>
         //are those roles more or less clear cut for each champion?
-        <item>Slayer</item>
-        <item>Mage</item>
-        <item>Controller</item>
-        <item>Marksmen</item>
+        <item>Jungle</item>
+        <item>ADC</item>
+        <item>Support</item>
     </string-array>
     <string name="title_activity_random_wheel">RandomWheelActivity</string>
     <string name="random_wheel">Random Wheel</string>
@@ -814,6 +813,7 @@
         +        <item>Maokai</item>
         +        <item>Mordekaiser</item>
         +        <item>Nasus</item>
+                 <item>Nasus</item>
         +        <item>Nautilus</item>
         +        <item>Olaf</item>
         +        <item>Ornn</item>
@@ -836,5 +836,131 @@
         +        <item>Wukong</item>
         +        <item>Yasuo</item>
         +        <item>Yorick</item>
+    </string-array>
+    <string-array name="Mid">
+        <item>Ahri</item>
+        <item>Anivia</item>
+        <item>Annie</item>
+        <item>Aurelion Sol</item>
+        <item>Azir</item>
+        <item>Brand</item>
+        <item>Cassiopeia</item>
+        <item>Corki</item>
+        <item>Diana</item>
+        <item>Ekko</item>
+        <item>Fizz</item>
+        <item>Galio</item>
+        <item>Gangplank</item>
+        <item>Heimerdinger</item>
+        <item>Jayce</item>
+        <item>Karma</item>
+        <item>Karthus</item>
+        <item>Kassadin</item>
+        <item>Katarina</item>
+        <item>Kennen</item>
+        <item>LeBlanc</item>
+        <item>Lissandra</item>
+        <item>Lucian</item>
+        <item>Lux</item>
+        <item>Malzahar</item>
+        <item>Orianna</item>
+        <item>Syndra</item>
+        <item>Taliyah</item>
+        <item>Talon</item>
+        <item>Twisted Fate</item>
+        <item>Veigar</item>
+        <item>Vel'Koz</item>
+        <item>Viktor</item>
+        <item>Vladimir</item>
+        <item>Xerath</item>
+        <item>Yasuo</item>
+        <item>Zed</item>
+        <item>Ziggs</item>
+        <item>Zoe</item>
+        <item>Zyra</item>
+    </string-array>
+    <string-array name="Support">
+        <item>Alistar</item>
+        <item>Bard</item>
+        <item>Blitzcrank</item>
+        <item>Brand</item>
+        <item>Braum</item>
+        <item>Janna</item>
+        <item>Karma</item>
+        <item>Leona</item>
+        <item>Lulu</item>
+        <item>Morgana</item>
+        <item>Nami</item>
+        <item>Rakan</item>
+        <item>Soraka</item>
+        <item>Sona</item>
+        <item>Tahm Kench</item>
+        <item>Taric</item>
+        <item>Thresh</item>
+        <item>Vel'Koz</item>
+        <item>Zilean</item>
+        <item>Zyra</item>
+    </string-array>
+    <string-array name="Jungle">
+        <item>Aatrox</item>
+        <item>Amumu</item>
+        <item>Cho'Gath</item>
+        <item>Dr. Mundo</item>
+        <item>Ekko</item>
+        <item>Elise</item>
+        <item>Evelynn</item>
+        <item>Ezreal</item>
+        <item>Fiddlesticks</item>
+        <item>Gragas</item>
+        <item>Graves</item>
+        <item>Hecarim</item>
+        <item>Ivern</item>
+        <item>Jarvan IV</item>
+        <item>Jarvan IV</item>
+        <item>Kayn</item>
+        <item>Kayn</item>
+        <item>Kha'Zix</item>
+        <item>Kindred</item>
+        <item>Lee Sin</item>
+        <item>Master Yi</item>
+        <item>Nidalee</item>
+        <item>Nocturne</item>
+        <item>Nunu</item>
+        <item>Olaf</item>
+        <item>Ornn</item>
+        <item>Pantheon</item>
+        <item>Rammus</item>
+        <item>Rek'Sai</item>
+        <item>Rengar</item>
+        <item>Sejuani</item>
+        <item>Shaco</item>
+        <item>Shyvana</item>
+        <item>Skarner</item>
+        <item>Udyr</item>
+        <item>Vi</item>
+        <item>Volibear</item>
+        <item>Warwick</item>
+        <item>Xin Zhao</item>
+        <item>Zac</item>
+    </string-array>
+    <string-array name="ADC">
+        <item>Ashe</item>
+        <item>Caitlyn</item>
+        <item>Draven</item>
+        <item>Ezreal</item>
+        <item>Ezreal</item>
+        <item>Jhin</item>
+        <item>Jinx</item>
+        <item>Kalista</item>
+        <item>Kog'Maw</item>
+        <item>Lucian</item>
+        <item>Miss Fortune</item>
+        <item>Sivir</item>
+        <item>Tristana</item>
+        <item>Twitch</item>
+        <item>Varus</item>
+        <item>Vayne</item>
+        <item>Vayne</item>
+        <item>Xayah</item>
     </string-array>
 </resources>
