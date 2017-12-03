@@ -8,21 +8,28 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:screenOrientation="portrait"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RandomWheelActivity" />
-        <activity android:name=".ItemsActivity" />
-        <activity android:name=".ChampionsActivity" />
-        <activity android:name=".ItemInfoActivity" />
-        <activity android:name=".ChampionInfoActivity"></activity>
+        <activity android:name=".RandomWheelActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ItemsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChampionsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ItemInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChampionInfoActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
