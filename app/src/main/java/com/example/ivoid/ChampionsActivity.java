@@ -52,7 +52,7 @@ public class ChampionsActivity extends AppCompatActivity {
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
         championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //call API
-        //getAPIData();
+        getAPIData();
 
     }
     public void championInfoClick(View v) {
