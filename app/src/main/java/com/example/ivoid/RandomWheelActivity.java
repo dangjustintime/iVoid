@@ -43,170 +43,31 @@ public class RandomWheelActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.classes, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mClassSelector.setAdapter(adapter);
-        List<WheelItem> wheelItems = new ArrayList<>();
-        final String [] Top = getResources().getStringArray(R.array.Top);
-        int count = 0;
-        for(int i = 0; i < Top.length; i++)
-        {
-            if(count % 2 == 0)
-            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
-            else
-                wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
-            count++;
-        }
-
-        mChampWheel.addWheelItems(wheelItems);
-
-
+        setmChampWheel(R.array.characters);
         mClassSelector.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i == 0)
                 {
                     //Toast.makeText(RandomWheelActivity.this, "Top Lane Selected", Toast.LENGTH_SHORT).show();
-                    List<WheelItem> wheelItems = new ArrayList<>();
-                    final String [] Top = getResources().getStringArray(R.array.Top);
-                    int count = 0;
-                    for(int j = 0; j < Top.length; j++)
-                    {
-                        if(count % 2 == 0)
-                            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
-                        else
-                            wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
-                        count++;
-                    }
-
-                    mChampWheel.addWheelItems(wheelItems);
-                    mSpinWheel.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            final int random = ThreadLocalRandom.current().nextInt(Top.length);
-                            mChampWheel.rotateWheelTo(random);
-                            mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
-                                @Override
-                                public void onReachTarget() {
-                                    Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        }
-                    });
+                    setmChampWheel(R.array.Top);
                 }
                 else if(i == 1)
                 {
                     //Toast.makeText(RandomWheelActivity.this, "Mid Lane Selected", Toast.LENGTH_SHORT).show();
-                    List<WheelItem> wheelItems = new ArrayList<>();
-                    final String [] Top = getResources().getStringArray(R.array.Mid);
-                    int count = 0;
-                    for(int j = 0; j < Top.length; j++)
-                    {
-                        if(count % 2 == 0)
-                            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
-                        else
-                            wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
-                        count++;
-                    }
-
-                    mChampWheel.addWheelItems(wheelItems);
-                    mSpinWheel.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            final int random = ThreadLocalRandom.current().nextInt(Top.length);
-                            mChampWheel.rotateWheelTo(random);
-                            mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
-                                @Override
-                                public void onReachTarget() {
-                                    Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        }
-                    });
+                    setmChampWheel(R.array.Mid);
                 }
                 else if(i == 2) {
                     //Toast.makeText(RandomWheelActivity.this, "Jungle", Toast.LENGTH_SHORT).show();
-                    List<WheelItem> wheelItems = new ArrayList<>();
-                    final String [] Top = getResources().getStringArray(R.array.Jungle);
-                    int count = 0;
-                    for(int j = 0; j < Top.length; j++)
-                    {
-                        if(count % 2 == 0)
-                            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
-                        else
-                            wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
-                        count++;
-                    }
-
-                    mChampWheel.addWheelItems(wheelItems);
-                    mSpinWheel.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            final int random = ThreadLocalRandom.current().nextInt(Top.length);
-                            mChampWheel.rotateWheelTo(random);
-                            mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
-                                @Override
-                                public void onReachTarget() {
-                                    Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        }
-                    });
+                    setmChampWheel(R.array.Jungle);
                 }
                 else if(i == 3) {
                     //Toast.makeText(RandomWheelActivity.this, "ADC Selected", Toast.LENGTH_SHORT).show();
-                    List<WheelItem> wheelItems = new ArrayList<>();
-                    final String [] Top = getResources().getStringArray(R.array.ADC);
-                    int count = 0;
-                    for(int j = 0; j < Top.length; j++)
-                    {
-                        if(count % 2 == 0)
-                            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
-                        else
-                            wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
-                        count++;
-                    }
-
-                    mChampWheel.addWheelItems(wheelItems);
-                    mSpinWheel.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            final int random = ThreadLocalRandom.current().nextInt(Top.length);
-                            mChampWheel.rotateWheelTo(random);
-                            mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
-                                @Override
-                                public void onReachTarget() {
-                                    Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        }
-                    });
+                    setmChampWheel(R.array.ADC);
                 }
                 else if(i == 4) {
                     //Toast.makeText(RandomWheelActivity.this, "Support Selected", Toast.LENGTH_SHORT).show();
-                    List<WheelItem> wheelItems = new ArrayList<>();
-                    final String [] Top = getResources().getStringArray(R.array.Support);
-                    int count = 0;
-                    for(int j = 0; j < Top.length; j++)
-                    {
-                        if(count % 2 == 0)
-                            wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
-                        else
-                            wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
-                        count++;
-                    }
-
-                    mChampWheel.addWheelItems(wheelItems);
-                    mSpinWheel.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            final int random = ThreadLocalRandom.current().nextInt(Top.length);
-                            mChampWheel.rotateWheelTo(random);
-                            mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
-                                @Override
-                                public void onReachTarget() {
-                                    Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        }
-                    });
+                    setmChampWheel(R.array.Support);
                 }
             }
 
@@ -231,5 +92,33 @@ public class RandomWheelActivity extends AppCompatActivity {
         Canvas can = new Canvas(im);
         can.drawText(text, 0, baseline, paint);
         return im;
+    }
+    public void setmChampWheel(int id){
+        List<WheelItem> wheelItems = new ArrayList<>();
+        final String [] Top = getResources().getStringArray(id);
+        int count = 0;
+        for(int j = 0; j < Top.length; j++)
+        {
+            if(count % 2 == 0)
+                wheelItems.add(new WheelItem(Color.GRAY, convertStringToBitmap(Integer.toString(count))));
+            else
+                wheelItems.add(new WheelItem(Color.DKGRAY, convertStringToBitmap(Integer.toString(count))));
+            count++;
+        }
+
+        mChampWheel.addWheelItems(wheelItems);
+        mSpinWheel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final int random = ThreadLocalRandom.current().nextInt(Top.length);
+                mChampWheel.rotateWheelTo(random);
+                mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
+                    @Override
+                    public void onReachTarget() {
+                        Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
     }
 }
