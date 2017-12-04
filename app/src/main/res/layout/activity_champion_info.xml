@@ -40,7 +40,7 @@
                     android:id="@+id/champion_name_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_margin="0dp"
                     android:paddingLeft="10dp"
                     android:text="Vel'Koz"
                     android:textSize="30dp"
@@ -139,8 +139,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:orientation="vertical"
-                    android:paddingHorizontal="@dimen/fab_margin"
-                    android:paddingVertical="@dimen/fab_margin">
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/champion_q_title_text_view"
@@ -181,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="7dp"
                     android:text="W"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -191,8 +192,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:orientation="vertical"
-                    android:paddingHorizontal="@dimen/fab_margin"
-                    android:paddingVertical="@dimen/fab_margin">
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/champion_w_title_text_view"
@@ -233,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="13dp"
                     android:text="E"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -243,8 +245,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:orientation="vertical"
-                    android:paddingHorizontal="@dimen/fab_margin"
-                    android:paddingVertical="@dimen/fab_margin">
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/champion_e_title_text_view"
@@ -285,7 +288,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="12dp"
                     android:text="R"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -295,8 +298,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:orientation="vertical"
-                    android:paddingHorizontal="@dimen/fab_margin"
-                    android:paddingVertical="@dimen/fab_margin">
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/champion_r_title_text_view"
