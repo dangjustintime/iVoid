@@ -45,7 +45,10 @@ public class  ItemsActivity extends AppCompatActivity {
         itemsRecyclerView = (RecyclerView) findViewById(R.id.item_grid_recycler_view);
         itemsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //call API
-        getAPIData();
+        /* This line of code forces the ItemsActivity to make API calls, four to be exact. Do not uncomment this
+        line unless you want to use our api calls, or you need to test and display the application!
+         */
+        //getAPIData();
 
     }
     public void itemsInfoClick(View v) {
