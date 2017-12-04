@@ -52,6 +52,9 @@ public class ChampionsActivity extends AppCompatActivity {
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
         championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //call API
+        /* This line of code forces the ChampionsActivity to make API calls, four to be exact. Do not uncomment this
+        line unless you want to use our api calls, or you need to test and display the application!
+         */
         //getAPIData();
 
     }

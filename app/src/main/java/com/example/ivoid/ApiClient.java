@@ -12,14 +12,16 @@ import retrofit2.http.Path;
 /**
  * Created by Justin Dang on 11/30/2017.
  */
-
+/*
+API KEYS are put in these strings, at the back of the string starting at RGAPI
+ */
 public interface ApiClient {
-    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-e8fc745c-c4b1-4e0a-b27e-d8bdacd1c2f3")
+    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-770a6429-5fa0-435a-82cb-ec0310eb8ec1")
     Call<Champion> reposForChampion(@Path("id") String id);
-    @GET("/lol/static-data/v3/champions?locale=en_US&dataById=false&api_key=RGAPI-e8fc745c-c4b1-4e0a-b27e-d8bdacd1c2f3")
+    @GET("/lol/static-data/v3/champions?locale=en_US&dataById=false&api_key=RGAPI-770a6429-5fa0-435a-82cb-ec0310eb8ec1")
     Call<ChampionMap> reposForChampionMap();
-    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-e8fc745c-c4b1-4e0a-b27e-d8bdacd1c2f3")
+    @GET("/lol/static-data/v3/champions/{id}?locale=en_US&tags=all&api_key=RGAPI-770a6429-5fa0-435a-82cb-ec0310eb8ec1")
     Call<Item> reposForItem();
-    @GET("/lol/static-data/v3/items?locale=en_US&tags=all&api_key=RGAPI-e8fc745c-c4b1-4e0a-b27e-d8bdacd1c2f3")
+    @GET("/lol/static-data/v3/items?locale=en_US&tags=all&api_key=RGAPI-770a6429-5fa0-435a-82cb-ec0310eb8ec1")
     Call<ItemMap> reposForItemMap();
 }
