@@ -21,6 +21,7 @@ import static com.example.ivoid.R.color.lightGray;
  */
 
 public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapter.ChampionViewHolder> {
+
     //championViewHolder
     public static class ChampionViewHolder extends RecyclerView.ViewHolder {
         public ImageView championImage;
@@ -34,11 +35,13 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
     //member variables
     private Context context;
     private ArrayList<Champion> championList;
+    private String [] imageUrls;
 
     //constructor
     public ChampionGridAdapter(Context context, ArrayList<Champion> championList) {
         this.context = context;
         this.championList = championList;
+        imageUrls = context.getResources().getStringArray(R.array.champion_icon_urls);
     }
     //layout inflater
     public ChampionViewHolder onCreateViewHolder(ViewGroup parent, int ViewType) {
@@ -54,7 +57,7 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
         holder.championImage.setBackgroundColor(lightGray);
         //image loader with picasso
         Picasso.with(context)
-                .load("http://elohell.net/public/champions/avatar/VelKozSquare1.png")
+                .load(imageUrls[position])
                 .into(holder.championImage);
     }
     @Override

@@ -8,7 +8,7 @@ import java.util.List;
  * Created by Justin Dang on 10/21/2017.
  */
 
-public class Champion {
+public class Champion implements Comparable<Champion> {
     public class ability {
         @SerializedName("id")
         private int id;
@@ -41,6 +41,7 @@ public class Champion {
     private String lore;
     @SerializedName("spells")
     private List<ability> abilities;
+    private String imageUrl;
     //stats
     @SerializedName("attackdamage")
     private double attackDamage;
@@ -64,6 +65,8 @@ public class Champion {
     public void setTitle(String title) { this.title = title; }
     public String getLore() { return lore; }
     public void setLore(String lore) { this.lore = lore; }
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
     public double getAttackDamage() { return attackDamage; }
     public void setAttackDamage(double attackDamage) { this.attackDamage = attackDamage; }
     public double getAttackSpeedOffset() { return attackSpeedOffset; }
@@ -80,4 +83,10 @@ public class Champion {
     public void setHpRegen(double hpRegen) { this.hpRegen = hpRegen; }
     public List<ability> getAbilities() { return abilities; }
     public void setAbilities(List<ability> abilities) { this.abilities = abilities; }
+
+    @Override
+    public int compareTo(Champion champion) {
+        return this.name.compareTo(champion.getName());
+    }
+
 }

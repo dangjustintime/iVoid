@@ -2,6 +2,8 @@ package com.example.ivoid.Model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+
 /**
  * Created by Justin Dang on 10/21/2017.
  */
@@ -28,6 +30,9 @@ public class Item {
     private String description;
     @SerializedName("gold")
     private gold price;
+    //an array of the items the item builds into, stores the item ids
+    @SerializedName("into")
+    private ArrayList<Integer> intoItems;
     //getters and settersx
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
@@ -39,4 +44,6 @@ public class Item {
     public void setDescription(String description) { this.description = description; }
     public gold getPrice() { return price; }
     public void setPrice(gold price) { this.price = price; }
+    public ArrayList<Integer> getIntoItems() { return intoItems; }
+    public void setIntoItems(ArrayList<Integer> intoItems) { this.intoItems = intoItems; }
 }

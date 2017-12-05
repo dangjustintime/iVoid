@@ -10,11 +10,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
+import com.example.ivoid.Model.GGObjects;
 import com.example.ivoid.Model.ChampionMap;
 import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemMap;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.lang.*;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -33,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
     public ImageButton randomImageButton;
 
 
-
     private static String API_KEY = "RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b";
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
     private ItemMap itemMap;
     private ArrayList<Item> itemArrayList;
     private Retrofit retrofit = null;
+    private Retrofit retroGG = null;
 
 
     @Override
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
     }
 
@@ -74,24 +78,40 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void getChampGG(){
+        if(retrofit == null) {
+            retrofit = new Retrofit.Builder()
+                    .baseUrl("http://api.champion.gg/")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+
+        ChampionGGAPI GGapi = retrofit.create(ChampionGGAPI.class);
+
+    }
+
+
     public void patchNotesClick(View v){
 
-        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://na.leagueoflegends.com/en/news/game-updates/patch/patch-722-notes"));
-        //    startActivity(intent);
+
+      //  String[] apicall;
+
+      //  apicall[0] = apicall[0].split(".");
+        String call = "423";// = apicall[0];
 
         String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-!-notes";
 
-        String apicall = "723";
-        String replaceString = url.replaceAll("!",apicall );
+        String replaceString = url.replaceAll("!", call );
 
         if (!replaceString.startsWith("http://") && !replaceString.startsWith("https://"))
             replaceString = "http://" + replaceString;
-
 
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(replaceString));
         startActivity(i);
     }
+
+
     public void latestNewsClick(View v){
 
         //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://na.leagueoflegends.com/en/news/game-updates/patch/patch-722-notes"));
