@@ -10,14 +10,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
-import com.example.ivoid.Model.GGObjects;
 import com.example.ivoid.Model.ChampionMap;
 import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemMap;
-import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
-import java.lang.*;
 
 import retrofit2.Call;
 import retrofit2.Callback;

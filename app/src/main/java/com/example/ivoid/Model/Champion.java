@@ -57,7 +57,18 @@ public class Champion implements Comparable<Champion> {
     private double moveSpeed;
     @SerializedName("hpregen")
     private double hpRegen;
-
+    @SerializedName("winRate")
+    private double winRate;
+    @SerializedName("playRate")
+    private double playRate;
+    @SerializedName("gamesPlayed")
+    private int gamesPlayed;
+    @SerializedName("percentRolePlayed")
+    private double percentRolePlayed;
+    @SerializedName("banRate")
+    private double banRate;
+    @SerializedName("role")
+    private String role;
     //getters and setters
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
@@ -83,6 +94,19 @@ public class Champion implements Comparable<Champion> {
     public void setHpRegen(double hpRegen) { this.hpRegen = hpRegen; }
     public List<ability> getAbilities() { return abilities; }
     public void setAbilities(List<ability> abilities) { this.abilities = abilities; }
+    //analytics
+    public  double getWinRate() { return winRate; }
+    public void setWinRate(double winRate) { this.winRate = winRate; }
+    public double getPlayRate() { return playRate; }
+    public void setPlayRate(double playRate) { this.playRate = playRate; }
+    public int getGamesPlayed() { return gamesPlayed; }
+    public void setGamesPlayed(int gamesPlayed) { this.gamesPlayed = gamesPlayed; }
+    public double getPercentRolePlayed() { return percentRolePlayed; }
+    public void setPercentRolePlayed(double percentRolePlayed) { this.percentRolePlayed = percentRolePlayed; }
+    public double getBanRate() { return banRate; }
+    public void setBanRate(double banRate) {this.banRate = banRate; }
+    public String getRole() { return role; }
+    public void setRole(String role) { this.role = role; }
 
     @Override
     public int compareTo(Champion champion) {
