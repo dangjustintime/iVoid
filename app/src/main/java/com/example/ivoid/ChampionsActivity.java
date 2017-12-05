@@ -40,7 +40,6 @@ public class ChampionsActivity extends AppCompatActivity {
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
     private Retrofit retrofit = null;
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
@@ -55,7 +54,7 @@ public class ChampionsActivity extends AppCompatActivity {
         /* This line of code forces the ChampionsActivity to make API calls, four to be exact. Do not uncomment this
         line unless you want to use our api calls, or you need to test and display the application!
          */
-        //getAPIData();
+        getAPIData();
 
     }
     public void championInfoClick(View v) {
