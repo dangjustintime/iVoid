@@ -32,7 +32,7 @@ public class RandomWheelActivity extends AppCompatActivity {
     private LuckyWheel mChampWheel;
     private Button mSpinWheel;
     private Spinner mClassSelector;
-
+    private Button mGotoChampion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +40,18 @@ public class RandomWheelActivity extends AppCompatActivity {
         mChampWheel = (LuckyWheel) findViewById(R.id.champwheel);
         mSpinWheel = (Button) findViewById(R.id.spinButton);
         mClassSelector = (Spinner) findViewById(R.id.spinner_class);
+        mGotoChampion = (Button) findViewById(R.id.button_to_champion);
+        mGotoChampion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RandomWheelActivity.this, "Spin the Wheel to Select a Champion!", Toast.LENGTH_SHORT).show();
+            }
+        });
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.classes, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mClassSelector.setAdapter(adapter);
         setmChampWheel(R.array.characters);
+
         mClassSelector.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -116,6 +124,13 @@ public class RandomWheelActivity extends AppCompatActivity {
                     @Override
                     public void onReachTarget() {
                         Toast.makeText(RandomWheelActivity.this, "You should play as " + Top[random], Toast.LENGTH_SHORT).show();
+                        mGotoChampion.setText("More info for " + Top[random]);
+                        mGotoChampion.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                //pass id through intent to ChampionInfoActivity
+                            }
+                        });
                     }
                 });
             }

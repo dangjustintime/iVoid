@@ -45,7 +45,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:popupBackground="@color/colorBackground" />
-        <!-- android:entries="@array/roles" -->
+
+    <Button
+        android:id="@+id/button_to_champion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorBackground"
+        android:paddingHorizontal="8dp"
+        android:text="More Info" />
+    <!-- android:entries="@array/roles" -->
 
 
 </RelativeLayout>
