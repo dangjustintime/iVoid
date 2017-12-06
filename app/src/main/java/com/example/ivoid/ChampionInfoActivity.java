@@ -105,15 +105,15 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 championRAbilityDescription.setText(responseChampion.getAbilities().get(3).getDescription());
                 String [] tag = responseChampion.getTags();
                 if(tag[0] == "Fighter") {
-
+                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.fighter));
                 } else if(tag[0] == "Tank") {
-
+                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.tank));
                 } else if(tag[0] == "Marksman") {
-
+                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.marksman));
                 } else if(tag[0] == "Support") {
-
+                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.support_icon));
                 } else if(tag[0] == "Assassin") {
-
+                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.slayer));
                 }
 
 
