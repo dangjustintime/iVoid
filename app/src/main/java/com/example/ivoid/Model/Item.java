@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Created by Justin Dang on 10/21/2017.
  */
 
-public class Item {
+public class Item implements Comparable<Item> {
     public class gold {
         @SerializedName("total")
         private int total;
@@ -46,4 +46,9 @@ public class Item {
     public void setPrice(gold price) { this.price = price; }
     public ArrayList<Integer> getIntoItems() { return intoItems; }
     public void setIntoItems(ArrayList<Integer> intoItems) { this.intoItems = intoItems; }
+
+    @Override
+    public int compareTo(Item item) {
+        return this.name.compareTo(item.getName());
+    }
 }

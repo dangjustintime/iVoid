@@ -65,4 +65,17 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
         }
         return itemList.size();
     }
+
+  //  public void Sorter(){
+  //
+  //      for(int i = 0; i < itemList.size();i++){
+  //          for(int i1 = 0; i1 < itemList.size();i1++) {
+  //              if (itemList[i] == ourlist[i1]) {
+  //                  ourlist[i1] = ourlist[i];
+  //                  ourlist[i] = itemList[i];
+  //              }
+  //          }
+  //      }
+
+  //  }
 }

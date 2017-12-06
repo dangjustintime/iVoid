@@ -13,6 +13,7 @@ import com.example.ivoid.Model.Champion;
 import com.example.ivoid.Model.ChampionMap;
 import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemMap;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
@@ -90,15 +91,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void patchNotesClick(View v){
 
+        @SerializedName("patch")
+        String[] patch = new String[1];
 
-      //  String[] apicall;
+        String call = patch[0];
+        patch[0] = call.split(".");
 
-      //  apicall[0] = apicall[0].split(".");
-        String call = "423";// = apicall[0];
 
         String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-!-notes";
 
-        String replaceString = url.replaceAll("!", call );
+        String replaceString = url.replaceAll("!", patch[0] );
 
         if (!replaceString.startsWith("http://") && !replaceString.startsWith("https://"))
             replaceString = "http://" + replaceString;
@@ -110,9 +112,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void latestNewsClick(View v){
-
-        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://na.leagueoflegends.com/en/news/game-updates/patch/patch-722-notes"));
-        //    startActivity(intent);
 
         String url = "https://na.leagueoflegends.com/en/news/";
 

@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -23,6 +24,7 @@ public class ItemMap {
         for(Item item : collection) {
             list.add(item);
         }
+        Collections.sort(list);
         return list;
     }
 }
