@@ -68,7 +68,6 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, String.valueOf(champion.getId()), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, ChampionInfoActivity.class);
                 intent.putExtra("championId", champion.getId());
                 intent.putExtra("splashUrl1", splashUrls[position]);
@@ -80,9 +79,7 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
     @Override
     //get the number of selected toppings
     public int getItemCount() {
-        if (championList == null) {
-            return 0;
-        }
+        if (championList == null) { return 0; }
         return championList.size();
     }
 }

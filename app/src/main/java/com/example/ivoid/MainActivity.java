@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    /*
     public void patchNotesClick(View v){
 
         @SerializedName("patch")
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         i.setData(Uri.parse(replaceString));
         startActivity(i);
     }
-
+    */
 
     public void latestNewsClick(View v){
 

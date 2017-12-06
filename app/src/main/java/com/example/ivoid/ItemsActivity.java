@@ -27,7 +27,6 @@ public class  ItemsActivity extends AppCompatActivity {
     private CardView itemCardView;
     private RecyclerView itemsRecyclerView;
     private ItemGridAdapter itemRecyclerAdapter;
-    ItemListAdapter itemListAdapter;
     Retrofit retrofit = null;
     ArrayList<Item> itemArrayList;
     ItemMap itemMap;
@@ -48,7 +47,7 @@ public class  ItemsActivity extends AppCompatActivity {
         /* This line of code forces the ItemsActivity to make API calls, four to be exact. Do not uncomment this
         line unless you want to use our api calls, or you need to test and display the application!
          */
-        //getAPIData();
+        getAPIData();
 
     }
     public void itemsInfoClick(View v) {

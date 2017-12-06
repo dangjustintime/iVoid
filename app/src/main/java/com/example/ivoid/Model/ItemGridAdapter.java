@@ -2,6 +2,7 @@ package com.example.ivoid.Model;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ivoid.ChampionInfoActivity;
+import com.example.ivoid.ItemInfoActivity;
 import com.example.ivoid.R;
 import com.squareup.picasso.Picasso;
 
@@ -49,13 +52,21 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
     @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
-        Item item = itemList.get(position);
+        final Item item = itemList.get(position);
         holder.itemName.setText(item.getName());
         holder.itemImage.setBackgroundColor(lightGray);
         //image loader with picasso
         Picasso.with(context)
                 .load("http://elohell.net/public/champions/avatar/VelKozSquare1.png")
                 .into(holder.itemImage);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ItemInfoActivity.class);
+                intent.putExtra("itemId", item.getId());
+                context.startActivity(intent);
+            }
+        });
     }
     @Override
     //get the number of selected toppings
@@ -66,16 +77,4 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
         return itemList.size();
     }
 
-  //  public void Sorter(){
-  //
-  //      for(int i = 0; i < itemList.size();i++){
-  //          for(int i1 = 0; i1 < itemList.size();i1++) {
-  //              if (itemList[i] == ourlist[i1]) {
-  //                  ourlist[i1] = ourlist[i];
-  //                  ourlist[i] = itemList[i];
-  //              }
-  //          }
-  //      }
-
-  //  }
 }
