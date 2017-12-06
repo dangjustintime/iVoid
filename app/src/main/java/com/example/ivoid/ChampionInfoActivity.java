@@ -18,7 +18,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ChampionInfoActivity extends AppCompatActivity {
     //intent data
     private int championId;
-    private Retrofit retrofit = null;
+    private Retrofit leagueRetrofit = null;
+    private Retrofit championGGRetrofit = null;
 
     //views
     private TextView championNameTextView;
@@ -43,9 +44,6 @@ public class ChampionInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champion_info);
         championId = getIntent().getIntExtra("championId", 0);
-
-
-
         //bindviews
         championNameTextView = (TextView) findViewById(R.id.champion_name_text_view);
         championTitleTextView = (TextView) findViewById(R.id.champion_title_text_view);
@@ -62,8 +60,6 @@ public class ChampionInfoActivity extends AppCompatActivity {
         championRoleIconImageView = (ImageView) findViewById(R.id.champion_role_icon_image_view);
         championSplashArt1 = (ImageView) findViewById(R.id.champion_splash_image_view);
         championSplashArt2 = (ImageView) findViewById(R.id.champion_splash_image_view2);
-
-
         Picasso.with(getApplicationContext())
                 .load(getIntent().getStringExtra("splashUrl1"))
                 .into(championSplashArt1);
@@ -72,19 +68,19 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 .into(championSplashArt2);
 
         //API call
-        getAPIData();
+        getLeagueAPIData();
 
     }
     //API call
-    public void getAPIData() {
-        if(retrofit == null) {
-            retrofit = new Retrofit.Builder()
+    public void getLeagueAPIData() {
+        if(leagueRetrofit == null) {
+            leagueRetrofit = new Retrofit.Builder()
                     .baseUrl("https://na1.api.riotgames.com")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
 
-        ApiClient client = retrofit.create(ApiClient.class);
+        ApiClient client = leagueRetrofit.create(ApiClient.class);
         //call for championMap
         Call<Champion> callChampion = client.reposForChampion(String.valueOf(championId));
         callChampion.enqueue(new Callback<Champion>() {
@@ -115,8 +111,30 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 } else if(tag[0] == "Assassin") {
                     championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.slayer));
                 }
+                Toast.makeText(ChampionInfoActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onFailure(Call<Champion> call, Throwable t) {
+                Toast.makeText(ChampionInfoActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    //API call
+    public void getChampionGGAPIData() {
+        if(championGGRetrofit == null) {
+            championGGRetrofit = new Retrofit.Builder()
+                    .baseUrl("https://na1.api.riotgames.com")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
 
-
+        ApiClient client = championGGRetrofit.create(ApiClient.class);
+        //call for championMap
+        Call<Champion> callChampion = client.reposForChampion(String.valueOf(championId));
+        callChampion.enqueue(new Callback<Champion>() {
+            @Override
+            public void onResponse(Call<Champion> call, Response<Champion> response) {
+                Champion responseChampion = response.body();
                 Toast.makeText(ChampionInfoActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
