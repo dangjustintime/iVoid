@@ -234,154 +234,146 @@
         <item>Zhonya's Paradox</item>
         <item>Zz' Rot Portal</item>
     </string-array>
-    <string-array name="characters">
-        <item>Aatrox</item>
-        <item>Ahri</item>
-        <item>Akali</item>
-        <item>Alistar</item>
-        <item>Amumu</item>
-        <item>Anivia</item>
-        <item>Annie</item>
-        <item>Ashe</item>
-        <item>Aurelion</item>
-        <item>Azir</item>
-        <item>Bard</item>
-        <item>Blitzcrank</item>
-        <item>Brand</item>
-        <item>Braum</item>
-        <item>Caitlyn</item>
-        <item>Camille</item>
-        <item>Cassiopeia</item>
-        <item>Cho\'Gath</item>
-        <item>Corki</item>
-        <item>Darius</item>
-        <item>Diana</item>
-        <item>Dr. Mundo</item>
-        <item>Draven</item>
-        <item>Ekko</item>
-        <item>Elise</item>
-        <item>Evelynn</item>
-        <item>Ezreal</item>
-        <item>Fiddlesticks</item>
-        <item>Fiora</item>
-        <item>Fizz</item>
-        <item>Galio</item>
-        <item>Gangplank</item>
-        <item>Garen</item>
-        <item>Gnar</item>
-        <item>Gragas</item>
-        <item>Graves</item>
-        <item>Hecarim</item>
-        <item>Heimerdinger</item>
-        //this is not a name it is a collection of sounds
-        <item>Illaoi</item>
-        <item>Irelia</item>
-        <item>Ivern</item>
-        <item>Janna</item>
-        <item>Jarvan</item>
-        <item>Jax</item>
-        <item>Jayce</item>
-        <item>Jhin</item>
-        <item>Jinx</item>
-        <item>Kalista</item>
-        <item>Karma</item>
-        <item>Karthus</item>
-        <item>Kassadin</item>
-        <item>Katarina</item>
-        <item>Kayle</item>
-        <item>Kayn</item>
-        <item>Kennen</item>
-        <item>Kha\'Zix</item>
-        <item>Kindred</item>
-        <item>Kled</item>
-        <item>Kog\'Maw</item>
-        <item>LeBlanc</item>
-        <item>Lee Sin</item>
-        <item>Leona</item>
-        <item>Lissandra</item>
-        <item>Lucian</item>
-        <item>Lulu</item>
-        <item>Lux</item>
-        <item>Malphite</item>
-        <item>Malzahar</item>
-        <item>Maokai</item>
-        <item>Master Yi</item>
-        <item>Miss Fortune</item>
-        //fuck you riot
-        <item>Mordekaiser</item>
-        <item>Morgana</item>
-        <item>Nami</item>
-        <item>Nasus</item>
-        <item>Nautilus</item>
-        <item>Nidalee</item>
-        <item>Nocturne</item>
-        <item>Nunu</item>
-        <item>Olaf</item>
-        //The character from Frozen, not the LOL champ
-        <item>Orianna</item>
-        <item>Ornn</item>
-        <item>Pantheon</item>
-        <item>Poppy</item>
-        <item>Quinn</item>
-        <item>Rakan</item>
-        <item>Rammus</item>
-        <item>Rek\'Sai</item>
-        <item>Renekton</item>
-        <item>Rengar</item>
-        <item>Riven</item>
-        <item>Rumble</item>
-        <item>Ryze</item>
-        <item>Sejuani</item>
-        <item>Shaco</item>
-        <item>Shen</item>
-        <item>Shyvana</item>
-        <item>Singed</item>
-        <item>Sion</item>
-        <item>Sivir</item>
-        <item>Skarner</item>
-        <item>Sona</item>
-        <item>Soraka</item>
-        <item>Swain</item>
-        <item>Syndra</item>
-        <item>Tahm Kench</item>
-        <item>Taliyah</item>
-        <item>Talon</item>
-        <item>Taric</item>
-        <item>Teemo</item>
-        //a MANS champ
-        <item>Thresh</item>
-        <item>Tristana</item>
-        <item>Trundle</item>
-        <item>Tryndamere</item>
-        <item>Twisted Fate</item>
-        //your name cant be twisted fate thats not a name its a concept wtf
-        <item>Twitch</item>
-        <item>Udyr</item>
-        <item>Urgot</item>
-        <item>Varus</item>
-        <item>Vayne</item>
-        <item>Veigar</item>
-        <item>Vel\'Koz</item>
-        <item>Vi</item>
-        //i prefer emacs but to each their own
-        <item>Viktor</item>
-        <item>Vladimir</item>
-        <item>Volibear</item>
-        <item>Warwick</item>
-        <item>Wukong</item>
-        //so is there a Sun Wukong variant in every MOBA?
-        <item>Xayah</item>
-        <item>Xerath</item>
-        <item>Xin Zhao</item>
-        <item>Yasuo</item>
-        <item>Yorick</item>
-        <item>Zac</item>
-        <item>Zed</item>
-        <item>Ziggs</item>
-        <item>Zilean</item>
-        <item>Zyra</item>
-
-    </string-array>
+    <integer-array name="characters">
+        <item name="Aatrox">226</item>
+        <item name="Ahri">103</item>
+        <item name="Akali">84</item>
+        <item name="Alistar">12</item>
+        <item name="Amumu">32</item>
+        <item name="Anivia">34</item>
+        <item name="Annie">1</item>
+        <item name="Ashe">22</item>
+        <item name="Aurelion Sol">136</item>
+        <item name="Azir">268</item>
+        <item name="Bard">432</item>
+        <item name="Blitzcrank">53</item>
+        <item name="Brand">63</item>
+        <item name="Braum">201</item>
+        <item name="Caitlyn">51</item>
+        <item name="Camille">164</item>
+        <item name="Cassiopeia">69</item>
+        <item name="ChoGath">31</item>
+        <item name="Corki">42</item>
+        <item name="Darius">122</item>
+        <item name="Diana">131</item>
+        <item name="DrMundo">36</item>
+        <item name="Draven">119</item>
+        <item name="Ekko">245</item>
+        <item name="Elise">60</item>
+        <item name="Evelynn">28</item>
+        <item name="Ezreal">81</item>
+        <item name="Fiddlesticks">9</item>
+        <item name="Fiora">114</item>
+        <item name="Fizz">105</item>
+        <item name="Galio">3</item>
+        <item name="Gangplank">41</item>
+        <item name="Garen">86</item>
+        <item name="Gnar">150</item>
+        <item name="Gragas">79</item>
+        <item name="Graves">104</item>
+        <item name="Hecarim">120</item>
+        <item name="Heimerdinger">74</item>
+        <item name="Illaoi">420</item>
+        <item name="Irelia">39</item>
+        <item name="Ivern">427</item>
+        <item name="Janna">40</item>
+        <item name="JarvanIV">59</item>
+        <item name="Jax">24</item>
+        <item name="Jayce">126</item>
+        <item name="Jhin">202</item>
+        <item name="Jinx">222</item>
+        <item name="Kalista">429</item>
+        <item name="Karma">43</item>
+        <item name="Karthus">30</item>
+        <item name="Kassadin">38</item>
+        <item name="Katarina">55</item>
+        <item name="Kayle">10</item>
+        <item name="Kayn">141</item>
+        <item name="Kennen">85</item>
+        <item name="KhaZix">121</item>
+        <item name="Kindred">203</item>
+        <item name="Kled">240</item>
+        <item name="KogMaw">96</item>
+        <item name="LeBlanc">7</item>
+        <item name="LeeSin">64</item>
+        <item name="Leona">89</item>
+        <item name="Lissandra">127</item>
+        <item name="Lucian">236</item>
+        <item name="Lulu">117</item>
+        <item name="Lux">99</item>
+        <item name="Malphite">54</item>
+        <item name="Malzahar">90</item>
+        <item name="Maokai">57</item>
+        <item name="MasterYi">11</item>
+        <item name="MissFortune">21</item>
+        <item name="Mordekaiser">82</item>
+        <item name="Morgana">25</item>
+        <item name="Nami">267</item>
+        <item name="Nasus">75</item>
+        <item name="Nautilus">111</item>
+        <item name="Nidalee">76</item>
+        <item name="Nocturne">56</item>
+        <item name="Nunu">20</item>
+        <item name="Olaf">2</item>
+        <item name="Orianna">61</item>
+        <item name="Ornn">516</item>
+        <item name="Pantheon">80</item>
+        <item name="Poppy">78</item>
+        <item name="Quinn">133</item>
+        <item name="Rakan">497</item>
+        <item name="Rammus">33</item>
+        <item name="RekSai">421</item>
+        <item name="Renekton">58</item>
+        <item name="Rengar">107</item>
+        <item name="Riven">92</item>
+        <item name="Rumble">68</item>
+        <item name="Ryze">13</item>
+        <item name="Sejuani">113</item>
+        <item name="Shaco">35</item>
+        <item name="Shen">98</item>
+        <item name="Shyvana">102</item>
+        <item name="Singed">27</item>
+        <item name="Sion">14</item>
+        <item name="Sivir">15</item>
+        <item name="Skarner">72</item>
+        <item name="Sona">37</item>
+        <item name="Soraka">16</item>
+        <item name="Swain">50</item>
+        <item name="Syndra">134</item>
+        <item name="TahmKench">223</item>
+        <item name="Taliyah">163</item>
+        <item name="Talon">91</item>
+        <item name="Taric">44</item>
+        <item name="Teemo">17</item>
+        <item name="Thresh">412</item>
+        <item name="Tristana">18</item>
+        <item name="Trundle">48</item>
+        <item name="Tryndamere">23</item>
+        <item name="TwistedFate">4</item>
+        <item name="Twitch">29</item>
+        <item name="Udyr">77</item>
+        <item name="Urgot">6</item>
+        <item name="Varus">110</item>
+        <item name="Vayne">67</item>
+        <item name="Veigar">45</item>
+        <item name="VelKoz">161</item>
+        <item name="Vi">254</item>
+        <item name="Viktor">112</item>
+        <item name="Vladimir">8</item>
+        <item name="Volibear">106</item>
+        <item name="Warwick">19</item>
+        <item name="Wukong">62</item>
+        <item name="Xayah">498</item>
+        <item name="Xerath">101</item>
+        <item name="XinZhao">5</item>
+        <item name="Yasuo">157</item>
+        <item name="Yorick">83</item>
+        <item name="Zac">154</item>
+        <item name="Zed">238</item>
+        <item name="Ziggs">115</item>
+        <item name="Zilean">26</item>
+        <item name="Zyra">143</item>
+    </integer-array>
     <string-array name="classes">//are subclasses necessary? This is mainly to aid the randomize
         wheel, to allow you to pick at random for a specific role
         <item>Top</item>
@@ -827,7 +819,6 @@
         <item>https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Zoe.png</item>
         <item>https://ddragon.leagueoflegends.com/cdn/7.23.1/img/champion/Zyra.png</item>
     </string-array>
-
     //item icon urls
     <string-array name="item_icon_urls">
         //starter items
