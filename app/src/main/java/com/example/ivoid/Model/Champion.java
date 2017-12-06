@@ -9,9 +9,18 @@ import java.util.List;
  */
 
 public class Champion implements Comparable<Champion> {
+    public class Passive {
+        @SerializedName("name")
+        private String name;
+        @SerializedName("description")
+        private String description;
+        //getters and setters
+        public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
+        public String getDescription() { return description; }
+        public void setDescription(String description) { this.description = description; }
+    }
     public class ability {
-        @SerializedName("id")
-        private int id;
         @SerializedName("name")
         private String name;
         @SerializedName("costBurn")
@@ -21,8 +30,6 @@ public class Champion implements Comparable<Champion> {
         @SerializedName("description")
         private String description;
         //getters and setters
-        public int getId() { return id; }
-        public void setId(int id) { this.id = id; }
         public String getName() { return name;}
         public void setName(String name) { this.name = name; }
         public String getCost() { return cost; }
@@ -33,15 +40,21 @@ public class Champion implements Comparable<Champion> {
         public void setDescription(String description) { this.description = description; }
     }
     //name, title, lore
+    @SerializedName("id")
+    private int id;
     @SerializedName("name")
     private String name;
     @SerializedName("title")
     private String title;
     @SerializedName("lore")
     private String lore;
+    @SerializedName("passive")
+    private Passive passive;
     @SerializedName("spells")
     private List<ability> abilities;
-    private String imageUrl;
+    @SerializedName("tags")
+    private String [] tags;
+    private String [] splashUrls;
     //stats
     @SerializedName("attackdamage")
     private double attackDamage;
@@ -57,27 +70,17 @@ public class Champion implements Comparable<Champion> {
     private double moveSpeed;
     @SerializedName("hpregen")
     private double hpRegen;
-    @SerializedName("winRate")
-    private double winRate;
-    @SerializedName("playRate")
-    private double playRate;
-    @SerializedName("gamesPlayed")
-    private int gamesPlayed;
-    @SerializedName("percentRolePlayed")
-    private double percentRolePlayed;
-    @SerializedName("banRate")
-    private double banRate;
-    @SerializedName("role")
-    private String role;
     //getters and setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
     public String getLore() { return lore; }
     public void setLore(String lore) { this.lore = lore; }
-    public String getImageUrl() { return imageUrl; }
-    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+    public String[] getTags() { return tags; }
+    public void setTags(String[] tags) { this.tags = tags; }
     public double getAttackDamage() { return attackDamage; }
     public void setAttackDamage(double attackDamage) { this.attackDamage = attackDamage; }
     public double getAttackSpeedOffset() { return attackSpeedOffset; }
@@ -92,25 +95,15 @@ public class Champion implements Comparable<Champion> {
     public void setMoveSpeed(double moveSpeed) { this.moveSpeed = moveSpeed; }
     public double getHpRegen() { return hpRegen; }
     public void setHpRegen(double hpRegen) { this.hpRegen = hpRegen; }
+    public Passive getPassive() { return passive; }
+    public void setPassive(Passive passive) { this.passive = passive; }
     public List<ability> getAbilities() { return abilities; }
     public void setAbilities(List<ability> abilities) { this.abilities = abilities; }
-    //analytics
-    public  double getWinRate() { return winRate; }
-    public void setWinRate(double winRate) { this.winRate = winRate; }
-    public double getPlayRate() { return playRate; }
-    public void setPlayRate(double playRate) { this.playRate = playRate; }
-    public int getGamesPlayed() { return gamesPlayed; }
-    public void setGamesPlayed(int gamesPlayed) { this.gamesPlayed = gamesPlayed; }
-    public double getPercentRolePlayed() { return percentRolePlayed; }
-    public void setPercentRolePlayed(double percentRolePlayed) { this.percentRolePlayed = percentRolePlayed; }
-    public double getBanRate() { return banRate; }
-    public void setBanRate(double banRate) {this.banRate = banRate; }
-    public String getRole() { return role; }
-    public void setRole(String role) { this.role = role; }
+    public String[] getSplashUrls() { return splashUrls; }
+    public void setSplashUrls(String[] splashUrls) { this.splashUrls = splashUrls; }
 
     @Override
     public int compareTo(Champion champion) {
         return this.name.compareTo(champion.getName());
     }
-
 }

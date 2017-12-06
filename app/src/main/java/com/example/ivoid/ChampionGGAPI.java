@@ -16,6 +16,6 @@ import retrofit2.http.Path;
 
 public interface ChampionGGAPI {
     //get winRate, playRate, gamesPlayed, percentRolePlayed, banRate, role
-    @GET("/champions/{id}?api_key=2c2b2ef84cd5528a186e2c77efac5fe1")
+        @GET("/champions/{id}?api_key=2c2b2ef84cd5528a186e2c77efac5fe1")
     Call<Champion> reposforChampionAnalytics(@Path("id") String id);
 }

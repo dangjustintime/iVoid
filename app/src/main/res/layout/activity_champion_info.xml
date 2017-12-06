@@ -81,23 +81,14 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/champion_role_icon"
+                    android:id="@+id/champion_role_icon_image_view"
                     android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|left"
                     app:srcCompat="@drawable/mage" />
-
-                <ImageView
-                    android:id="@+id/champion_lane_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|left"
-                    app:srcCompat="@drawable/middle_icon" />
             </LinearLayout>
 
         </FrameLayout>
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
