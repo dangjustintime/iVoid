@@ -234,7 +234,7 @@
         <item>Zhonya's Paradox</item>
         <item>Zz' Rot Portal</item>
     </string-array>
-    <integer-array name="characters">
+    <string-array name="characters">
         <item name="Aatrox">226</item>
         <item name="Ahri">103</item>
         <item name="Akali">84</item>
@@ -373,7 +373,7 @@
         <item name="Ziggs">115</item>
         <item name="Zilean">26</item>
         <item name="Zyra">143</item>
-    </integer-array>
+    </string-array>
     <string-array name="classes">//are subclasses necessary? This is mainly to aid the randomize
         wheel, to allow you to pick at random for a specific role
         <item>Top</item>

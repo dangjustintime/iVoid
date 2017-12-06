@@ -1,5 +1,6 @@
 package com.example.ivoid;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -20,12 +21,13 @@ import com.bluehomestudio.luckywheel.WheelItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by Gage on 10/20/2017.
  */
-//uses https://android-arsenal.com/details/1/5640 API
+//uses https;//android-arsenal.com/details/1/5640 API
     //LuckyWheel!
 
 public class RandomWheelActivity extends AppCompatActivity {
@@ -128,12 +130,158 @@ public class RandomWheelActivity extends AppCompatActivity {
                         mGotoChampion.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                //pass id through intent to ChampionInfoActivity
+                                String champ = Top[random];
+                                //champ = champ.replaceAll("[^a-zA-Z]", "");
+                                String[] stringarray = getApplicationContext().getResources().getStringArray(R.array.characters);
+                                int id = getChampId(champ);
+                                Intent i =  new Intent(RandomWheelActivity.this, ChampionInfoActivity.class);
+                                i.putExtra("championId", id);
+                                startActivity(i);
+                            
                             }
                         });
                     }
                 });
             }
         });
+    }
+    public int getChampId(String champ){
+        switch(champ){
+             case "Aatrox":      return 266; 
+             case "Thresh":      return 412; 
+            case "Tryndamere":   return 23;  
+            case "Gragas":       return 79;  
+            case "Cassiopeia":   return 69;  
+             case "Aurelion Sol":  return 136; 
+            case "Ryze":         return 13;  
+            case "Poppy":        return 78;  
+            case "Sion":         return 14;  
+            case "Annie":        return 1;   
+             case "Jhin":        return 202; 
+            case "Karma":        return 43;  
+             case "Nautilus":    return 111; 
+             case "Kled":        return 240; 
+            case "Lux":          return 99;  
+             case "Ahri":        return 103; 
+            case "Olaf":         return 2;   
+             case "Viktor":      return 112; 
+            case "Anivia":       return 34;  
+            case "Singed":       return 27;  
+            case "Garen":        return 86;  
+             case "Lissandra":   return 127; 
+            case "Maokai":       return 57;  
+            case "Morgana":      return 25;  
+            case "Evelynn":      return 28;  
+             case "Fizz":        return 105; 
+            case "Heimerdinger": return 74;  
+             case "Zed":         return 238; 
+            case "Rumble":       return 68;  
+            case "Mordekaiser":  return 82;  
+            case "Sona":         return 37;  
+            case "Kog'Maw":      return 96;  
+            case "Katarina":     return 55;  
+             case "Lulu":        return 117; 
+            case "Ashe":         return 22;  
+            case "Karthus":      return 30;  
+            case "Alistar":      return 12;  
+             case "Darius":      return 122; 
+            case "Vayne":        return 67;  
+             case "Varus":       return 110; 
+            case "Udyr":         return 77;  
+            case "Leona":        return 89;  
+             case "Jayce":       return 126; 
+             case "Syndra":      return 134; 
+            case "Pantheon":     return 80;  
+            case "Riven":        return 92;  
+             case "Kha'Zix":     return 121; 
+             case "Corki":       return 42;  
+             case "Azir":        return 268; 
+            case "Caitlyn":      return 51;  
+            case "Nidalee":      return 76;  
+            case "Kennen":       return 85;  
+            case "Galio":        return 3;   
+            case "Veigar":       return 45;  
+             case "Bard":        return 432; 
+             case "Gnar":        return 150; 
+             case "Malzahar":    return 90;  
+             case "Graves":      return 104; 
+             case "Vi":          return 254; 
+            case "Kayle":        return 10;  
+            case "Irelia":       return 39;  
+            case "Lee Sin":      return 64;  
+             case "Illaoi":      return 420; 
+            case "Elise":        return 60;  
+             case "Volibear":    return 106; 
+            case "Nunu":         return 20;  
+            case "Twisted Fate": return 4;   
+            case "Jax":          return 24;  
+             case "Shyvana":     return 102; 
+             case "Kalista":     return 429; 
+            case "Dr. Mundo":    return 36;  
+             case "Ivern":       return 427; 
+             case "Diana":       return 131; 
+             case "Tahm Kench":  return 223; 
+            case "Brand":        return 63;  
+             case "Sejuani":     return 113; 
+            case "Vladimir":     return 8;   
+             case "Zac":         return 154; 
+             case "Rek'Sai":     return 421; 
+             case "Quinn":       return 133; 
+            case "Akali":        return 84;  
+             case "Taliyah":     return 163; 
+            case "Tristana":     return 18;  
+             case "Hecarim":     return 120; 
+            case "Sivir":        return 15;  
+             case "Lucian":      return 236; 
+             case "Rengar":      return 107; 
+            case "Warwick":      return 19;  
+            case "Skarner":      return 72;  
+            case "Malphite":     return 54;  
+             case "Yasuo":       return 157; 
+             case "Xerath":      return 101; 
+            case "Teemo":        return 17;  
+            case "Nasus":        return 75;  
+            case "Renekton":     return 58;  
+             case "Draven":      return 119; 
+            case "Shaco":        return 35;  
+            case "Swain":        return 50;  
+            case "Talon":        return 91;  
+            case "Janna":        return 40;  
+             case "Ziggs":       return 115; 
+             case "Ekko":        return 245; 
+            case "Orianna":      return 61;  
+             case "Fiora":       return 114; 
+            case "Fiddlesticks": return 9;   
+            case "Cho'Gath":     return 31;  
+            case "Rammus":       return 33;  
+            case "LeBlanc":      return 7;   
+            case "Soraka":       return 16;  
+            case "Zilean":       return 26;  
+            case "Nocturne":     return 56;  
+             case "Jinx":        return 222; 
+            case "Yorick":       return 83;  
+            case "Urgot":        return 6;   
+             case "Kindred":     return 203; 
+            case "Miss Fortune": return 21;  
+            case "Wukong":       return 62;  
+            case "Blitzcrank":   return 53;  
+            case "Shen":         return 98;  
+             case "Braum":       return 201; 
+            case "Xin Zhao":     return 5;   
+            case "Twitch":       return 29;  
+            case "Master Yi":    return 11;  
+            case "Taric":        return 44;  
+            case "Amumu":        return 32;  
+            case "Gangplank":    return 41;  
+            case "Trundle":      return 48;  
+            case "Kassadin":     return 38;  
+             case "Vel'Koz":     return 161; 
+             case "Zyra":        return 143; 
+             case "Nami":        return 267; 
+            case "Jarvan IV":    return 59;  
+            case "Ezreal":       return 81; 
+            default:
+                return 0; 
+        }
     }
 }
