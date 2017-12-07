@@ -37,11 +37,13 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
     //member variables
     private Context context;
     private ArrayList<Item> itemList;
+    private String[] iconurls;
 
     //constructor
     public ItemGridAdapter(Context context, ArrayList<Item> itemList) {
         this.context = context;
         this.itemList = itemList;
+        iconurls = context.getResources().getStringArray(R.array.item_icon_urls);
     }
     //layout inflater
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int ViewType) {
@@ -51,19 +53,20 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
     //view binder
     @SuppressLint("ResourceAsColor")
     @Override
-    public void onBindViewHolder(ItemViewHolder holder, int position) {
+    public void onBindViewHolder(ItemViewHolder holder,final int position) {
         final Item item = itemList.get(position);
         holder.itemName.setText(item.getName());
         holder.itemImage.setBackgroundColor(lightGray);
         //image loader with picasso
         Picasso.with(context)
-                .load("http://elohell.net/public/champions/avatar/VelKozSquare1.png")
+                .load(iconurls[position])
                 .into(holder.itemImage);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, ItemInfoActivity.class);
                 intent.putExtra("itemId", item.getId());
+                intent.putExtra("iconurls", iconurls[position]);
                 context.startActivity(intent);
             }
         });
