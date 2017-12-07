@@ -68,7 +68,7 @@ public class ItemInfoActivity extends AppCompatActivity {
                 itemPriceBuyTextView.setText(String.valueOf(responseItem.getPrice().getTotal()));
                 itemPlainTextTextView.setText(responseItem.getPlainText());
                 itemDescriptionTextView.setText(responseItem.getDescription());
-                itemPriceSellTextView.setText(responseItem.getPrice().getSell());
+               // itemPriceSellTextView.setText(responseItem.getPrice().getSell());
                 //Toast.makeText(ItemInfoActivity.this, "Item Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
