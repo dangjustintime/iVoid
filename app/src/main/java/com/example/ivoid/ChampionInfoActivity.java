@@ -121,15 +121,29 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 championRAbilityDescription.setText(responseChampion.getAbilities().get(3).getDescription());
 
                 if(responseChampion.getTags().get(0) == "Fighter") {
-                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.fighter));
+                    Picasso.with(getApplicationContext())
+                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8f/Fighter_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162637")
+                            .into(championRoleIconImageView);
                 } else if(responseChampion.getTags().get(0) == "Tank") {
-                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.tank));
+                    Picasso.with(getApplicationContext())
+                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/5/5a/Tank_icon.png/revision/latest?cb=20170514162639")
+                            .into(championRoleIconImageView);
                 } else if(responseChampion.getTags().get(0) == "Marksman") {
-                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.marksman));
+                    Picasso.with(getApplicationContext())
+                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7f/Marksman_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162638")
+                            .into(championRoleIconImageView);
                 } else if(responseChampion.getTags().get(0) == "Support") {
-                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.support_icon));
+                    Picasso.with(getApplicationContext())
+                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/5/58/Controller_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162637")
+                            .into(championRoleIconImageView);
                 } else if(responseChampion.getTags().get(0) == "Assassin") {
-                    championRoleIconImageView.setBackground(getResources().getDrawable(R.drawable.slayer));
+                    Picasso.with(getApplicationContext())
+                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Slayer_icon.png/revision/latest?cb=20170514162639")
+                            .into(championRoleIconImageView);
+                } else if(responseChampion.getTags().get(0) == "Mage") {
+                    Picasso.with(getApplicationContext())
+                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Mage_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162638")
+                            .into(championRoleIconImageView);
                 }
             }
             @Override

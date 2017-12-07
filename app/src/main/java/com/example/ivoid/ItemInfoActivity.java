@@ -1,13 +1,13 @@
 package com.example.ivoid;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ivoid.Model.Champion;
 import com.example.ivoid.Model.Item;
+import com.squareup.picasso.Picasso;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,12 +18,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ItemInfoActivity extends AppCompatActivity {
     private Retrofit retrofit = null;
     private int itemId;
-    //view
+    private String itemImageUrl;
+    //views
     TextView itemNameTextView;
     ImageView itemIconImageView;
     TextView itemPriceBuyTextView;
     TextView itemPlainTextTextView;
     TextView itemDescriptionTextView;
+    TextView itemPriceSellTextView;
 
 
 
@@ -32,12 +34,17 @@ public class ItemInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_info);
         itemId = getIntent().getIntExtra("itemId",0);
+        itemImageUrl = getIntent().getStringExtra("iconUrl");
         //bind views
         itemNameTextView = (TextView) findViewById(R.id.item_name_text_view);
         itemIconImageView = (ImageView) findViewById(R.id.item_icon_image_view);
         itemPriceBuyTextView = (TextView) findViewById(R.id.item_price_buy_text_view);
         itemPlainTextTextView = (TextView) findViewById(R.id.item_plaintext_text_view);
         itemDescriptionTextView = (TextView) findViewById(R.id.item_description_text_view);
+        itemPriceSellTextView = (TextView) findViewById(R.id.item_price_sell_text_view);
+        Picasso.with(this)
+                .load(itemImageUrl)
+                .into(itemIconImageView);
 
         //api call
         getAPIData();
@@ -62,6 +69,7 @@ public class ItemInfoActivity extends AppCompatActivity {
                 itemPriceBuyTextView.setText(String.valueOf(responseItem.getPrice().getTotal()));
                 itemPlainTextTextView.setText(responseItem.getPlainText());
                 itemDescriptionTextView.setText(responseItem.getDescription());
+                itemPriceSellTextView.setText(responseItem.getPrice().getSell());
                 Toast.makeText(ItemInfoActivity.this, "Item Response Success", Toast.LENGTH_LONG).show();
             }
             @Override

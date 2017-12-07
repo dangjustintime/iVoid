@@ -54,6 +54,25 @@
                     android:text="50"
                     android:textColor="@color/gold"
                     android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ("
+                    android:textColor="@color/gold"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/item_price_sell_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="@color/gold"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:textColor="@color/gold"
+                    android:textSize="20dp" />
 
             </LinearLayout>
 

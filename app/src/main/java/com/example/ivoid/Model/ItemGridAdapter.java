@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ivoid.ChampionInfoActivity;
 import com.example.ivoid.ItemInfoActivity;
 import com.example.ivoid.R;
 import com.squareup.picasso.Picasso;
@@ -66,7 +65,7 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
             public void onClick(View view) {
                 Intent intent = new Intent(context, ItemInfoActivity.class);
                 intent.putExtra("itemId", item.getId());
-                intent.putExtra("iconurls", iconurls[position]);
+                intent.putExtra("iconUrl", iconurls[position]);
                 context.startActivity(intent);
             }
         });
