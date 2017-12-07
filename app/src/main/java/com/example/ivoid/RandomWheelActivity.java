@@ -279,7 +279,10 @@ public class RandomWheelActivity extends AppCompatActivity {
              case "Zyra":        return 143; 
              case "Nami":        return 267; 
             case "Jarvan IV":    return 59;  
-            case "Ezreal":       return 81; 
+            case "Ezreal":       return 81;
+            case "Kayn":        return 141;
+            case "Ornn":         return 516;
+            case "Zoe":          return 142;
             default:
                 return 0; 
         }
