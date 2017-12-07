@@ -55,7 +55,7 @@ public class Champion implements Comparable<Champion> {
     @SerializedName("spells")
     private List<ability> abilities;
     @SerializedName("tags")
-    private String [] tags;
+    private List<String> tags;
     private String [] splashUrls;
     //stats
     @SerializedName("attackdamage")
@@ -84,8 +84,8 @@ public class Champion implements Comparable<Champion> {
     public void setTitle(String title) { this.title = title; }
     public String getLore() { return lore; }
     public void setLore(String lore) { this.lore = lore; }
-    public String[] getTags() { return tags; }
-    public void setTags(String[] tags) { this.tags = tags; }
+    public List<String> getTags() { return tags; }
+    public void setTags(List<String> tags) { this.tags = tags; }
     public double getAttackDamage() { return attackDamage; }
     public void setAttackDamage(double attackDamage) { this.attackDamage = attackDamage; }
     public double getAttackSpeedOffset() { return attackSpeedOffset; }
