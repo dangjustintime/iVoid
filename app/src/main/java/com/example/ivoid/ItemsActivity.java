@@ -36,7 +36,6 @@ public class  ItemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
-        itemCardView = (CardView) findViewById(R.id.item_card_view);
         itemCardView.setCardBackgroundColor(R.color.lightGray);
 
 
@@ -74,11 +73,11 @@ public class  ItemsActivity extends AppCompatActivity {
                 ItemMap responseItemMap = response.body();
                 ArrayList<Item> responseItemArrayList = responseItemMap.getList();
                 itemsRecyclerView.setAdapter(new ItemGridAdapter(getApplicationContext(), responseItemArrayList));
-                Toast.makeText(ItemsActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ItemsActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<ItemMap> call, Throwable t) {
-                Toast.makeText(ItemsActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ItemsActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

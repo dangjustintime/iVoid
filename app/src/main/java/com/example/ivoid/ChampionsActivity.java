@@ -80,11 +80,11 @@ public class ChampionsActivity extends AppCompatActivity {
                 ChampionMap responseChampionMap = response.body();
                 ArrayList<Champion> responseChampionArrayList = responseChampionMap.getList();
                 championsRecyclerView.setAdapter(new ChampionGridAdapter(getApplicationContext(), responseChampionArrayList));
-                Toast.makeText(ChampionsActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ChampionsActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {
-                Toast.makeText(ChampionsActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ChampionsActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

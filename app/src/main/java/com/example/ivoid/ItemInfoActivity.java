@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.ivoid.Model.Item;
 import com.squareup.picasso.Picasso;
@@ -70,11 +69,11 @@ public class ItemInfoActivity extends AppCompatActivity {
                 itemPlainTextTextView.setText(responseItem.getPlainText());
                 itemDescriptionTextView.setText(responseItem.getDescription());
                 itemPriceSellTextView.setText(responseItem.getPrice().getSell());
-                Toast.makeText(ItemInfoActivity.this, "Item Response Success", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ItemInfoActivity.this, "Item Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<Item> call, Throwable t) {
-                Toast.makeText(ItemInfoActivity.this, "Item Response Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ItemInfoActivity.this, "Item Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

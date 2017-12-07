@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
 import com.example.ivoid.Model.ChampionAnalytics;
@@ -137,11 +136,11 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<ItemMap> call, Response<ItemMap> response) {
                 ItemMap responseItemMap = response.body();
                 ArrayList<Item> responseItemArrayList = responseItemMap.getList();
-                Toast.makeText(MainActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<ItemMap> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
             }
         });
         //get champion map
@@ -151,11 +150,11 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
                 ChampionMap responseChampionMap = response.body();
                 ArrayList<Champion> responseChampionArrayList = responseChampionMap.getList();
-                Toast.makeText(MainActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -184,11 +183,11 @@ public class MainActivity extends AppCompatActivity {
                 championDeaths.setText(responseChampionAnalytics.get(0).getDeaths().getVal());
                 championAssists.setText(responseChampionAnalytics.get(0).getAssists().getVal());
                 */
-                Toast.makeText(MainActivity.this, responseChampionAnalytics.get(0).getDeaths().getVal(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, responseChampionAnalytics.get(0).getDeaths().getVal(), Toast.LENGTH_LONG).show();
             }
             @Override
             public void onFailure(Call<List<ChampionAnalytics>> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "ChampionGG Response Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "ChampionGG Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }
