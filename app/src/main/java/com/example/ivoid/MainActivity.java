@@ -14,9 +14,9 @@ import com.example.ivoid.Model.ChampionAnalytics;
 import com.example.ivoid.Model.ChampionMap;
 import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemMap;
-import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private ItemMap itemMap;
     private ArrayList<Item> itemArrayList;
     private Retrofit retrofit = null;
-    private Retrofit retroGG = null;
+    private Retrofit championGGRetrofit = null;
 
 
     @Override
@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getChampionGGAPIData();
 
 
     }
@@ -154,6 +156,39 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void getChampionGGAPIData() {
+        if(championGGRetrofit == null) {
+            championGGRetrofit = new Retrofit.Builder()
+                    .baseUrl("http://api.champion.gg")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+
+        ChampionGGAPI client = championGGRetrofit.create(ChampionGGAPI.class);
+        //call for championMap
+        Call<List<ChampionAnalytics>> callChampionAnalytics = client.reposForChampionAnalytics("Jax");
+        callChampionAnalytics.enqueue(new Callback<List<ChampionAnalytics>>() {
+            @Override
+            public void onResponse(Call<List<ChampionAnalytics>> call, Response<List<ChampionAnalytics>> response) {
+                List<ChampionAnalytics> responseChampionAnalytics = response.body();
+
+                /*
+                championWinRate.setText(responseChampionAnalytics.get(0).getWinPercent().getVal());
+                championPlayRate.setText(responseChampionAnalytics.get(0).getPlayPercent().getVal());
+                championBanRate.setText(responseChampionAnalytics.get(0).getBanPercent().getVal());
+                championKills.setText(responseChampionAnalytics.get(0).getKills().getVal());
+                championDeaths.setText(responseChampionAnalytics.get(0).getDeaths().getVal());
+                championAssists.setText(responseChampionAnalytics.get(0).getAssists().getVal());
+                */
+                Toast.makeText(MainActivity.this, responseChampionAnalytics.get(0).getDeaths().getVal(), Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onFailure(Call<List<ChampionAnalytics>> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "ChampionGG Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

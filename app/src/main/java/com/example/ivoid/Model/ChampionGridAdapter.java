@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.ivoid.ChampionInfoActivity;
 import com.example.ivoid.R;
@@ -72,6 +71,7 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
                 intent.putExtra("championId", champion.getId());
                 intent.putExtra("splashUrl1", splashUrls[position]);
                 intent.putExtra("splashUrl2", splashUrls2[position]);
+                intent.putExtra("championKey", champion.getKey());
                 context.startActivity(intent);
             }
         });

@@ -26,7 +26,7 @@ public class Item implements Comparable<Item> {
     private String name;
     @SerializedName("plaintext")
     private String plainText;
-    @SerializedName("description")
+    @SerializedName("sanitizedDescription")
     private String description;
     @SerializedName("gold")
     private gold price;

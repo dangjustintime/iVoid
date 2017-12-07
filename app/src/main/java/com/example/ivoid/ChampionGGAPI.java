@@ -1,6 +1,8 @@
 package com.example.ivoid;
 
-import com.example.ivoid.Model.Champion;
+import com.example.ivoid.Model.ChampionAnalytics;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -16,6 +18,6 @@ import retrofit2.http.Path;
 
 public interface ChampionGGAPI {
     //get winRate, playRate, gamesPlayed, percentRolePlayed, banRate, role
-        @GET("/champions/{id}?api_key=2c2b2ef84cd5528a186e2c77efac5fe1")
-    Call<Champion> reposforChampionAnalytics(@Path("id") String id);
+    @GET("/champion/{name}/general?api_key=2c2b2ef84cd5528a186e2c77efac5fe1")
+    Call<List<ChampionAnalytics>> reposForChampionAnalytics(@Path("name") String championName);
 }

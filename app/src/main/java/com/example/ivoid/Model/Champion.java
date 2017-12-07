@@ -44,6 +44,8 @@ public class Champion implements Comparable<Champion> {
     private int id;
     @SerializedName("name")
     private String name;
+    @SerializedName("key")
+    private String key;
     @SerializedName("title")
     private String title;
     @SerializedName("lore")
@@ -70,11 +72,14 @@ public class Champion implements Comparable<Champion> {
     private double moveSpeed;
     @SerializedName("hpregen")
     private double hpRegen;
+
     //getters and setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
+    public String getKey() { return key; }
+    public void setKey(String key) { this.key = key; }
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
     public String getLore() { return lore; }

@@ -7,44 +7,36 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class ChampionAnalytics {
-    public class Id {
-        @SerializedName("championId")
-        private int championId;
-        @SerializedName("role")
-        private String role;
-        //getters and setters
-        public int getChampionId() { return championId; }
-        public void setChampionId(int championId) { this.championId = championId; }
-        public String getRole() { return role; }
-        public void setRole(String role) { this.role = role; }
+    public class Statistic {
+        @SerializedName("val")
+        private String val;
+        public String getVal() { return val; }
+        public void setVal(String val) { this.val = val; }
     }
-    @SerializedName("id")
-    private Id id;
-    @SerializedName("elo")
-    private String elo;
-    @SerializedName("patch")
-    private String patch;
-    @SerializedName("winRate")
-    private double winRate;
-    @SerializedName("playRate")
-    private double playRate;
-    @SerializedName("gamesPlayed")
-    private int gamesPlayed;
+    @SerializedName("winPercent")
+    private Statistic winPercent;
+    @SerializedName("playPercent")
+    private Statistic playPercent;
     @SerializedName("banRate")
-    private double banRate;
+    private Statistic banPercent;
+    @SerializedName("kills")
+    private Statistic kills;
+    @SerializedName("deaths")
+    private Statistic deaths;
+    @SerializedName("assists")
+    private Statistic assists;
+
     //getters and setters
-    public Id getId() { return id; }
-    public void setId(Id id) { this.id = id; }
-    public String getElo() { return elo; }
-    public void setElo(String elo) { this.elo = elo; }
-    public String getPatch() { return patch; }
-    public void setPatch(String patch) { this.patch = patch; }
-    public double getWinRate() { return winRate; }
-    public void setWinRate(double winRate) { this.winRate = winRate; }
-    public double getPlayRate() { return playRate; }
-    public void setPlayRate(double playRate) { this.playRate = playRate; }
-    public int getGamesPlayed() { return gamesPlayed; }
-    public void setGamesPlayed(int gamesPlayed) { this.gamesPlayed = gamesPlayed; }
-    public double getBanRate() { return banRate; }
-    public void setBanRate(double banRate) { this.banRate = banRate; }
+    public Statistic getWinPercent() { return winPercent; }
+    public void setWinPercent(Statistic winPercent) { this.winPercent = winPercent; }
+    public Statistic getPlayPercent() { return playPercent; }
+    public void setPlayPercent(Statistic playPercent) { this.playPercent = playPercent; }
+    public Statistic getBanPercent() { return banPercent; }
+    public void setBanPercent(Statistic banPercent) { this.banPercent = banPercent; }
+    public Statistic getKills() { return kills; }
+    public void setKills(Statistic kills) { this.kills = kills; }
+    public Statistic getDeaths() { return deaths; }
+    public void setDeaths(Statistic deaths) { this.deaths = deaths; }
+    public Statistic getAssists() { return assists; }
+    public void setAssists(Statistic assists) { this.assists = assists; }
 }

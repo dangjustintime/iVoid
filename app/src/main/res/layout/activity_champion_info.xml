@@ -355,6 +355,68 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kills"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/champion_kills_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textSize="50sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deaths"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/champion_deaths_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17"
+                        android:textSize="50sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Assist"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/champion_assists_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textSize="50sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
                 <LinearLayout
@@ -367,9 +429,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Win Rate"
-                        android:textSize="20sp"/>
+                        android:textSize="18sp"/>
                     <TextView
-                        android:id="@+id/play_rate_text_view"
+                        android:id="@+id/champion_win_rate_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0.07%"
@@ -386,9 +448,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Play Rate"
-                        android:textSize="20sp"/>
+                        android:textSize="18sp"/>
                     <TextView
-                        android:id="@+id/win_rate_text_view"
+                        android:id="@+id/champion_play_rate_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="50.6%"
@@ -404,61 +466,26 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Play Rate"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:id="@+id/games_played_text_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="43730"
-                        android:textSize="40sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="5dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Percent Role Played"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:id="@+id/percent_role_played"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="89.0%"
-                        android:textSize="40sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="5dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="Ban Rate"
-                        android:textSize="20sp"/>
+                        android:textSize="18sp"/>
                     <TextView
-                        android:id="@+id/ban_rate_text_view"
+                        android:id="@+id/champion_ban_rate_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0.003%"
+                        android:text="0.84%"
                         android:textSize="40sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="*Average per game "/>
+
         </LinearLayout>
+
+
 
     </LinearLayout>
 </ScrollView>
