@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
+import com.example.ivoid.Model.ChampionAnalytics;
 import com.example.ivoid.Model.ChampionMap;
 import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemMap;
@@ -88,19 +89,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*
+
     public void patchNotesClick(View v){
+        String patch = "";      //insert apicall patch # here
 
-        @SerializedName("patch")
-        String[] patch = new String[1];
-
-        String call = patch[0];
-        patch[0] = call.split(".");
-
-
-        String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-!-notes";
-
-        String replaceString = url.replaceAll("!", patch[0] );
+        String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/";
+        //String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-!-notes";
+        String replaceString = url.replaceAll("!", patch );
 
         if (!replaceString.startsWith("http://") && !replaceString.startsWith("https://"))
             replaceString = "http://" + replaceString;
@@ -109,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         i.setData(Uri.parse(replaceString));
         startActivity(i);
     }
-    */
+
 
     public void latestNewsClick(View v){
 
