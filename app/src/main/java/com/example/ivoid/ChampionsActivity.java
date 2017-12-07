@@ -44,8 +44,8 @@ public class ChampionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
 
-        championCardView = (CardView) findViewById(R.id.champion_card_view);
-        championCardView.setCardBackgroundColor(R.color.purple);
+        //championCardView = (CardView) findViewById(R.id.champion_card_view);
+        //championCardView.setCardBackgroundColor(R.color.purple);
 
         //recycler view
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);

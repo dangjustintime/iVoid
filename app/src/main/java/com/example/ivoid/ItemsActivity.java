@@ -36,7 +36,7 @@ public class  ItemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
-        itemCardView.setCardBackgroundColor(R.color.lightGray);
+        //itemCardView.setCardBackgroundColor(R.color.lightGray);
 
 
         //recycler view
