@@ -1060,7 +1060,7 @@
         +        <item>Aatrox</item>
         +        <item>Akali</item>
         +        <item>Camille</item>
-        +        <item>Cho-Gath</item>
+        +        <item>Cho\'Gath</item>
         +        <item>Darius</item>
         +        <item>Dr. Mundo</item>
         +        <item>Fiora</item>
@@ -1135,7 +1135,7 @@
         <item>Talon</item>
         <item>Twisted Fate</item>
         <item>Veigar</item>
-        <item>Vel'Koz</item>
+        <item>Vel\'Koz</item>
         <item>Viktor</item>
         <item>Vladimir</item>
         <item>Xerath</item>
@@ -1163,15 +1163,15 @@
         <item>Tahm Kench</item>
         <item>Taric</item>
         <item>Thresh</item>
-        <item>Vel'Koz</item>
+        <item>Vel\'Koz</item>
         <item>Zilean</item>
         <item>Zyra</item>
     </string-array>
     <string-array name="Jungle">
         <item>Aatrox</item>
         <item>Amumu</item>
-        <item>Cho'Gath</item>
-        <item>Dr. Mundo</item>
+        <item>Cho\'Gath</item>
+        <item>Dr\. Mundo</item>
         <item>Ekko</item>
         <item>Elise</item>
         <item>Evelynn</item>
@@ -1185,7 +1185,7 @@
         <item>Jarvan IV</item>
         <item>Kayn</item>
         <item>Kayn</item>
-        <item>Kha'Zix</item>
+        <item>Kha\'Zix</item>
         <item>Kindred</item>
         <item>Lee Sin</item>
         <item>Master Yi</item>
@@ -1196,7 +1196,7 @@
         <item>Ornn</item>
         <item>Pantheon</item>
         <item>Rammus</item>
-        <item>Rek'Sai</item>
+        <item>Rek\'Sai</item>
         <item>Rengar</item>
         <item>Sejuani</item>
         <item>Shaco</item>
@@ -1218,7 +1218,7 @@
         <item>Jhin</item>
         <item>Jinx</item>
         <item>Kalista</item>
-        <item>Kog'Maw</item>
+        <item>Kog\'Maw</item>
         <item>Lucian</item>
         <item>Miss Fortune</item>
         <item>Sivir</item>

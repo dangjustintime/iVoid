@@ -27,7 +27,6 @@ public class ChampionInfoActivity extends AppCompatActivity {
     //views
     private TextView championNameTextView;
     private TextView championTitleTextView;
-    private ImageView championRoleIconImageView;
     private ImageView championSplashArt1;
     private ImageView championSplashArt2;
     private TextView championPassiveName;
@@ -67,7 +66,6 @@ public class ChampionInfoActivity extends AppCompatActivity {
         championEAbilityDescription = (TextView) findViewById(R.id.champion_e_description_text_view);
         championRAbilityName = (TextView) findViewById(R.id.champion_r_title_text_view);
         championRAbilityDescription = (TextView) findViewById(R.id.champion_r_description_text_view);
-        championRoleIconImageView = (ImageView) findViewById(R.id.champion_role_icon_image_view);
         championSplashArt1 = (ImageView) findViewById(R.id.champion_splash_image_view);
         championSplashArt2 = (ImageView) findViewById(R.id.champion_splash_image_view2);
         championWinRate = (TextView) findViewById(R.id.champion_win_rate_text_view);
@@ -118,32 +116,6 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 championEAbilityDescription.setText(responseChampion.getAbilities().get(2).getDescription());
                 championRAbilityName.setText(responseChampion.getAbilities().get(3).getName());
                 championRAbilityDescription.setText(responseChampion.getAbilities().get(3).getDescription());
-
-                if(responseChampion.getTags().get(0) == "Fighter") {
-                    Picasso.with(getApplicationContext())
-                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8f/Fighter_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162637")
-                            .into(championRoleIconImageView);
-                } else if(responseChampion.getTags().get(0) == "Tank") {
-                    Picasso.with(getApplicationContext())
-                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/5/5a/Tank_icon.png/revision/latest?cb=20170514162639")
-                            .into(championRoleIconImageView);
-                } else if(responseChampion.getTags().get(0) == "Marksman") {
-                    Picasso.with(getApplicationContext())
-                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7f/Marksman_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162638")
-                            .into(championRoleIconImageView);
-                } else if(responseChampion.getTags().get(0) == "Support") {
-                    Picasso.with(getApplicationContext())
-                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/5/58/Controller_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162637")
-                            .into(championRoleIconImageView);
-                } else if(responseChampion.getTags().get(0) == "Assassin") {
-                    Picasso.with(getApplicationContext())
-                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Slayer_icon.png/revision/latest?cb=20170514162639")
-                            .into(championRoleIconImageView);
-                } else if(responseChampion.getTags().get(0) == "Mage") {
-                    Picasso.with(getApplicationContext())
-                            .load("https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Mage_icon.png/revision/latest/scale-to-width-down/96?cb=20170514162638")
-                            .into(championRoleIconImageView);
-                }
             }
             @Override
             public void onFailure(Call<Champion> call, Throwable t) { }

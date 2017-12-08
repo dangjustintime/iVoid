@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public ImageButton randomImageButton;
 
 
-    private static String API_KEY = "RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b";
+    private static String API_KEY = "RGAPI-04f6ba43-8c0b-448e-8d14-065b96eb5c7b";
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
     private ItemMap itemMap;
@@ -92,17 +92,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void patchNotesClick(View v){
-        String patch = "";      //insert apicall patch # here
 
         String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/";
         //String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-!-notes";
-        String replaceString = url.replaceAll("!", patch );
 
-        if (!replaceString.startsWith("http://") && !replaceString.startsWith("https://"))
-            replaceString = "http://" + replaceString;
+        if (!url.startsWith("http://") && !url.startsWith("https://"))
+            url = "http://" + url;
 
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(replaceString));
+        i.setData(Uri.parse(url));
         startActivity(i);
     }
 
