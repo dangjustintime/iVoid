@@ -118,7 +118,7 @@ public class RandomWheelActivity extends AppCompatActivity {
         mSpinWheel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final int random = ThreadLocalRandom.current().nextInt(Top.length);
+               final int random = ThreadLocalRandom.current().nextInt(Top.length);
                 mChampWheel.rotateWheelTo(random);
                 mChampWheel.setLuckyWheelReachTheTarget(new OnLuckyWheelReachTheTarget() {
                     @Override
@@ -135,11 +135,16 @@ public class RandomWheelActivity extends AppCompatActivity {
                                 Intent i =  new Intent(RandomWheelActivity.this, ChampionInfoActivity.class);
                                 String url1 = getUrl1(champ);
                                 String url2 = getUrl2(champ);
+                                String key = champ;
+                                key = key.replaceAll("[^\\w]", "");
+
+
                                 i.putExtra("championId", id);
                                 i.putExtra("splashUrl1", url1);
                                 i.putExtra("splashUrl2", url2);
+                                i.putExtra("championKey", key);
                                 startActivity(i);
-                            
+
                             }
                         });
                     }

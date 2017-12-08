@@ -8,7 +8,9 @@ import net.rithms.riot.api.RiotApi;
 /**
  * Created by Gage on 11/17/2017.
  */
+/*This is a Java Wrapper Implementation of the API calls. Isn't used for this iteration, but may be useful in the future!
 
+ */
 public class MyApi extends Application {
     private RiotApi api;
     public MyApi(){
