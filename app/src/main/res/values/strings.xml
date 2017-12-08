@@ -392,6 +392,10 @@
     <string name="updates_button">Updates Button</string>
     <string name="random_button">Random Button</string>
 
+
+    // All URLs are used buy an image loader library called Picasso
+    // Picasso is used inorder to minimize applicaton size in phone
+
     //Champion Splash Art
     <string-array name="champion_splash_urls">
         <item>https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg</item>
