@@ -92,17 +92,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void patchNotesClick(View v){
-        String patch = "";      //insert apicall patch # here
 
         String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/";
         //String url = "https://na.leagueoflegends.com/en/news/game-updates/patch/patch-!-notes";
-        String replaceString = url.replaceAll("!", patch );
 
-        if (!replaceString.startsWith("http://") && !replaceString.startsWith("https://"))
-            replaceString = "http://" + replaceString;
+        if (!url.startsWith("http://") && !url.startsWith("https://"))
+            url = "http://" + url;
 
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(replaceString));
+        i.setData(Uri.parse(url));
         startActivity(i);
     }
 

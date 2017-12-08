@@ -7,7 +7,6 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.ivoid.Model.Item;
 import com.example.ivoid.Model.ItemGridAdapter;
