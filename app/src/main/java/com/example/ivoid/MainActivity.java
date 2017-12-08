@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public ImageButton randomImageButton;
 
 
-    private static String API_KEY = "RGAPI-1a744bc7-e7f3-4963-915c-6ca5b7a92c3b";
+    private static String API_KEY = "RGAPI-04f6ba43-8c0b-448e-8d14-065b96eb5c7b";
     private ChampionMap championMap;
     private ArrayList<Champion> championArrayList;
     private ItemMap itemMap;
