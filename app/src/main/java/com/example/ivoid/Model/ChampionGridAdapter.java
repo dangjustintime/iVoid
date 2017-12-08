@@ -21,7 +21,7 @@ import static com.example.ivoid.R.color.lightGray;
 /**
  * Created by Justin Dang on 11/30/2017.
  */
-
+//View class used to render Champion Data into ChampionActivity
 public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapter.ChampionViewHolder> {
 
     //championViewHolder
@@ -40,6 +40,7 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
     private String [] imageUrls;
     private String [] splashUrls;
     private String [] splashUrls2;
+
     //constructor
     public ChampionGridAdapter(Context context, ArrayList<Champion> championList) {
         this.context = context;
@@ -48,11 +49,13 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
         splashUrls = context.getResources().getStringArray(R.array.champion_splash_urls);
         splashUrls2 = context.getResources().getStringArray(R.array.champion_splash_urls2);
     }
+
     //layout inflater
     public ChampionViewHolder onCreateViewHolder(ViewGroup parent, int ViewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.champion_grid_card, parent, false);
         return new ChampionViewHolder(v);
     }
+
     //view binder
     @SuppressLint("ResourceAsColor")
     @Override
@@ -67,6 +70,7 @@ public class ChampionGridAdapter extends RecyclerView.Adapter<ChampionGridAdapte
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //start new activity with passed data
                 Intent intent = new Intent(context, ChampionInfoActivity.class);
                 intent.putExtra("championId", champion.getId());
                 intent.putExtra("splashUrl1", splashUrls[position]);

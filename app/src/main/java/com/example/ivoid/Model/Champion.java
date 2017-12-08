@@ -7,8 +7,9 @@ import java.util.List;
 /**
  * Created by Justin Dang on 10/21/2017.
  */
-
+//model class used for containing Champion Data from Riot API
 public class Champion implements Comparable<Champion> {
+    //member data
     public class Passive {
         @SerializedName("name")
         private String name;
@@ -107,6 +108,7 @@ public class Champion implements Comparable<Champion> {
     public String[] getSplashUrls() { return splashUrls; }
     public void setSplashUrls(String[] splashUrls) { this.splashUrls = splashUrls; }
 
+    //sort alphabetically by champion name
     @Override
     public int compareTo(Champion champion) {
         return this.name.compareTo(champion.getName());

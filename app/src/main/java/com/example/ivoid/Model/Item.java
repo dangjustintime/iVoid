@@ -7,8 +7,9 @@ import java.util.ArrayList;
 /**
  * Created by Justin Dang on 10/21/2017.
  */
-
+//model class used for containing Item Data from Riot API
 public class Item implements Comparable<Item> {
+    //member data
     public class gold {
         @SerializedName("total")
         private int total;
@@ -53,6 +54,7 @@ public class Item implements Comparable<Item> {
     public ArrayList<Integer> getIntoItems() { return intoItems; }
     public void setIntoItems(ArrayList<Integer> intoItems) { this.intoItems = intoItems; }
 
+    //allows for sorting by item name alphabetically
     @Override
     public int compareTo(Item item) {
         return this.name.compareTo(item.getName());

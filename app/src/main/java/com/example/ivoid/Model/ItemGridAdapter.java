@@ -21,9 +21,9 @@ import static com.example.ivoid.R.color.lightGray;
 /**
  * Created by Justin Dang on 12/3/2017.
  */
-
+//View class used to render Item Data into ChampionActivity
 public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemViewHolder> {
-    //championViewHolder
+    //itemViewHolder
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
         public ImageView itemImage;
         public TextView itemName;
@@ -63,6 +63,7 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.ItemVi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //start new activity with passed data
                 Intent intent = new Intent(context, ItemInfoActivity.class);
                 intent.putExtra("itemId", item.getId());
                 intent.putExtra("iconUrl", iconurls[position]);

@@ -5,8 +5,9 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Justin Dang on 12/6/2017.
  */
-
+//model class used for containing Champion Analytics Data from ChampionGG API
 public class ChampionAnalytics {
+    //member data
     public class Statistic {
         @SerializedName("val")
         private String val;
