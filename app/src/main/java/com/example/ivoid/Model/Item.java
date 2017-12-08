@@ -28,6 +28,12 @@ public class Item implements Comparable<Item> {
     private String plainText;
     @SerializedName("sanitizedDescription")
     private String description;
+
+    public boolean getInStore() { return inStore; }
+    public void setInStore(boolean inStore) { this.inStore = inStore; }
+
+    @SerializedName("inStore")
+    private boolean inStore = true;
     @SerializedName("gold")
     private gold price;
     //an array of the items the item builds into, stores the item ids
