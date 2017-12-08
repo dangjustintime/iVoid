@@ -129,7 +129,6 @@ public class RandomWheelActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View view) {
                                 String champ = Top[random];
-                                //champ = champ.replaceAll("[^a-zA-Z]", "");
                                 String[] stringarray = getApplicationContext().getResources().getStringArray(R.array.characters);
                                 int id = getChampId(champ);
                                 Intent i =  new Intent(RandomWheelActivity.this, ChampionInfoActivity.class);
