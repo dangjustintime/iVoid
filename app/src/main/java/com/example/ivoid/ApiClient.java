@@ -22,8 +22,8 @@ public interface ApiClient {
     Call<Champion> reposForChampion(@Path("id") String id);
     @GET("/lol/static-data/v3/champions?locale=en_US&dataById=false&api_key=RGAPI-75b684dd-55e7-43d9-aff5-b7a86c2d11ce")
     Call<ChampionMap> reposForChampionMap();
-    @GET("/lol/static-data/v3/items/{id}?locale=en_US&tags=all&api_key=RGAPI-808d1589-5ad7-4660-923b-bccbce23bc3e")
+    @GET("/lol/static-data/v3/items/{id}?locale=en_US&tags=all&api_key=RGAPI-75b684dd-55e7-43d9-aff5-b7a86c2d11ce")
     Call<Item> reposForItem(@Path("id") String id);
-    @GET("/lol/static-data/v3/items?locale=en_US&tags=all&api_key=RGAPI-808d1589-5ad7-4660-923b-bccbce23bc3e")
+    @GET("/lol/static-data/v3/items?locale=en_US&tags=all&api_key=RGAPI-75b684dd-55e7-43d9-aff5-b7a86c2d11ce")
     Call<ItemMap> reposForItemMap();
 }
