@@ -75,19 +75,6 @@
                     android:text="The Eye of the Void"
                     android:textSize="18sp" />
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/champion_role_icon_image_view"
-                    android:layout_width="76dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|left"
-                    android:src="@drawable/slayer"/>
-            </LinearLayout>
-
         </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
