@@ -76,7 +76,7 @@ public class ChampionInfoActivity extends AppCompatActivity {
         championAssists = (TextView) findViewById(R.id.champion_assists_text_view);
 
 
-        //image loader
+        //image loader using Picasso Library
         Picasso.with(getApplicationContext())
                 .load(getIntent().getStringExtra("splashUrl1"))
                 .into(championSplashArt1);
@@ -89,6 +89,9 @@ public class ChampionInfoActivity extends AppCompatActivity {
         getChampionGGAPIData();
     }
     //API call
+    /*
+        #################### APPLICATION CRASHES IF API RATE LIMIT IS REACHED ####################
+     */
     public void getLeagueAPIData() {
         if(leagueRetrofit == null) {
             leagueRetrofit = new Retrofit.Builder()
@@ -98,9 +101,10 @@ public class ChampionInfoActivity extends AppCompatActivity {
         }
 
         ApiClient client = leagueRetrofit.create(ApiClient.class);
-        //call for championMap
+        //Get API Data for Champion from HTTP response
         Call<Champion> callChampion = client.reposForChampion(String.valueOf(championId));
         callChampion.enqueue(new Callback<Champion>() {
+            //if request successful, set views to data
             @Override
             public void onResponse(Call<Champion> call, Response<Champion> response) {
                 Champion responseChampion = response.body();
@@ -117,6 +121,7 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 championRAbilityName.setText(responseChampion.getAbilities().get(3).getName());
                 championRAbilityDescription.setText(responseChampion.getAbilities().get(3).getDescription());
             }
+            //if request failed, do nothing
             @Override
             public void onFailure(Call<Champion> call, Throwable t) { }
         });
@@ -131,9 +136,10 @@ public class ChampionInfoActivity extends AppCompatActivity {
         }
 
         ChampionGGAPI client = championGGRetrofit.create(ChampionGGAPI.class);
-        //call for championMap
+        ////Get ChampionGG Data for Champion from HTTP response
         Call<List<ChampionAnalytics>> callChampionAnalytics = client.reposForChampionAnalytics(championKey);
         callChampionAnalytics.enqueue(new Callback<List<ChampionAnalytics>>() {
+            //if request successful, set views to data
             @Override
             public void onResponse(Call<List<ChampionAnalytics>> call, Response<List<ChampionAnalytics>> response) {
                 List<ChampionAnalytics> responseChampionAnalytics = response.body();
@@ -143,11 +149,10 @@ public class ChampionInfoActivity extends AppCompatActivity {
                 championKills.setText(responseChampionAnalytics.get(0).getKills().getVal());
                 championDeaths.setText(responseChampionAnalytics.get(0).getDeaths().getVal());
                 championAssists.setText(responseChampionAnalytics.get(0).getAssists().getVal());
-                //Toast.makeText(ChampionInfoActivity.this, "ChampionGG Response Success", Toast.LENGTH_LONG).show();
             }
+            //if request failed, do nothing
             @Override
             public void onFailure(Call<List<ChampionAnalytics>> call, Throwable t) {
-                //Toast.makeText(ChampionInfoActivity.this, "ChampionGG Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

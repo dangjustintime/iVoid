@@ -1,29 +1,15 @@
 package com.example.ivoid;
 
-import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.ListAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.ivoid.Model.Champion;
 import com.example.ivoid.Model.ChampionGridAdapter;
 import com.example.ivoid.Model.ChampionMap;
 
-import net.rithms.riot.api.RiotApiException;
-import net.rithms.riot.api.endpoints.summoner.dto.Summoner;
-import net.rithms.riot.constant.Platform;
-
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -34,20 +20,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ChampionsActivity extends AppCompatActivity {
     public static final String API_KEY = "RGAPI-3a0b7441-0440-42e9-9546-b0c91bc987fb";
 
-    private CardView championCardView;
     private RecyclerView championsRecyclerView;
-    private ChampionGridAdapter championRecyclerAdapter;
-    private ChampionMap championMap;
-    private ArrayList<Champion> championArrayList;
     private Retrofit retrofit = null;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
 
-        //championCardView = (CardView) findViewById(R.id.champion_card_view);
-        //championCardView.setCardBackgroundColor(R.color.purple);
-
-        //recycler view
+        //bind and regenerate recycler view
         championsRecyclerView = (RecyclerView) findViewById(R.id.champion_grid_recycler_view);
         championsRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //call API
@@ -57,12 +36,10 @@ public class ChampionsActivity extends AppCompatActivity {
         getAPIData();
 
     }
-    public void championInfoClick(View v) {
-        //Start ItemsActivity
-        Intent intent = new Intent (ChampionsActivity.this, ChampionInfoActivity.class);
-        startActivity(intent);
-    }
     //API call
+    /*
+        #################### APPLICATION CRASHES IF API RATE LIMIT IS REACHED ####################
+     */
     public void getAPIData() {
         if(retrofit == null) {
             retrofit = new Retrofit.Builder()
@@ -72,19 +49,19 @@ public class ChampionsActivity extends AppCompatActivity {
         }
 
         ApiClient client = retrofit.create(ApiClient.class);
-        //call for championMap
+        //Get API data for ChampionMap from HTTP Response
         Call<ChampionMap> callChampionMap = client.reposForChampionMap();
         callChampionMap.enqueue(new Callback<ChampionMap>() {
+            //if successful, get API Data and render it with recyclerview
             @Override
             public void onResponse(Call<ChampionMap> call, Response<ChampionMap> response) {
                 ChampionMap responseChampionMap = response.body();
                 ArrayList<Champion> responseChampionArrayList = responseChampionMap.getList();
                 championsRecyclerView.setAdapter(new ChampionGridAdapter(getApplicationContext(), responseChampionArrayList));
-                //Toast.makeText(ChampionsActivity.this, "Champion Response Success", Toast.LENGTH_LONG).show();
             }
+            //if failed, do nothing
             @Override
             public void onFailure(Call<ChampionMap> call, Throwable t) {
-                //Toast.makeText(ChampionsActivity.this, "Champion Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

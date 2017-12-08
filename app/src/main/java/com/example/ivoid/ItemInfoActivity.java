@@ -49,6 +49,9 @@ public class ItemInfoActivity extends AppCompatActivity {
         getAPIData();
     }
     //API call
+    /*
+        #################### APPLICATION CRASHES IF API RATE LIMIT IS REACHED ####################
+     */
     public void getAPIData() {
         if(retrofit == null) {
             retrofit = new Retrofit.Builder()
@@ -58,9 +61,10 @@ public class ItemInfoActivity extends AppCompatActivity {
         }
 
         ApiClient client = retrofit.create(ApiClient.class);
-        //call for championMap
+        //get API data for Item from HTTP Response
         Call<Item> callItem = client.reposForItem(String.valueOf(itemId));
         callItem.enqueue(new Callback<Item>() {
+            //if request successful, set views with data
             @Override
             public void onResponse(Call<Item> call, Response<Item> response) {
                 Item responseItem = response.body();
@@ -69,11 +73,10 @@ public class ItemInfoActivity extends AppCompatActivity {
                 itemPlainTextTextView.setText(responseItem.getPlainText());
                 itemDescriptionTextView.setText(responseItem.getDescription());
                 itemPriceSellTextView.setText(String.valueOf(responseItem.getPrice().getSell()));
-                //Toast.makeText(ItemInfoActivity.this, "Item Response Success", Toast.LENGTH_LONG).show();
             }
+            //if request failed, do nothing
             @Override
             public void onFailure(Call<Item> call, Throwable t) {
-                //Toast.makeText(ItemInfoActivity.this, "Item Response Failed", Toast.LENGTH_LONG).show();
             }
         });
     }
