@@ -20,9 +20,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.firebase:firebase-database:11.0.4'
-    implementation 'com.google.firebase:firebase-storage:11.0.4'
-    implementation 'com.google.firebase:firebase-auth:11.0.4'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //luckywheel
     compile 'com.github.mmoamenn:LuckyWheel_Android:0.0.2'
